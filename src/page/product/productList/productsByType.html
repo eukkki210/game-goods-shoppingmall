@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㅇㅇ샵 상품</title>
+     <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- jquery 다운 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+      
+    <style>
+        .container {
+            width: 100vw;
+            margin-left: 5% ;
+            margin-right: 5%;
+        }
+
+        .typeButtonGroup {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }   
+        .littleBorderButton {
+            border-radius: 20%;
+            background-color: ghostwhite;
+            color: rgba(0, 0, 0, 0.7); 
+            line-height: 40pt;
+            padding: 0 16pt;
+            text-align: center;
+            margin-right: 20pt;
+            margin-bottom: 20pt;
+        }
+
+        .typeGoodsGroup {
+            display: block;
+            justify-content : center;
+            align-items: flex-start;
+        }
+        .typeGoodsList {
+            margin-left: 10pt;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .Goods > img {
+            width: 275px;
+            height: 275px;
+        }
+        .Goods > div{
+            padding-left: 20pt;
+        }
+        .Goods div:nth-child(2){
+            font-weight: bold;
+        }
+        .moreBtn {
+            display: none;
+            text-align: center;
+        }
+
+                /* 크기 조건 max, max-width,/min-height
+            max-width : 오른쪽에 나온숫자 값 이하일 떄 적용하는 그래픽
+            min-width : width가 오른쪽 이상일때 적용하는 그래픽
+        */
+    @media screen and (max-width : 768px) {
+        .container {
+            margin-left: 0 ;
+            margin-right: 0;
+        }
+        .Goods > img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>1header</div>
+        <div>2header</div>
+        <br>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../typeBanner/shop1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../typeBanner/shop2.jpg" class="d-block w-100" alt="...">
+                            <!-- <button type="button">버튼 체크</button> -->
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+            </div>
+
+            <br>
+            <div>
+                <ul class="typeButtonGroup">
+                    <li class="littleBorderButton">폰케이스</li>
+                    <li class="littleBorderButton">에어팟</li>
+                    <li class="littleBorderButton"> 의류</li>
+                    <li class="littleBorderButton">스태츄</li>
+                    <li class="littleBorderButton">인형</li>
+                    <li class="littleBorderButton">마우스 패드</li>
+                    <li class="littleBorderButton">보조 충전기</li>
+                    <li class="littleBorderButton">기타 굿즈</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="typeGoodsGroup">
+                <h2>상품</h2>
+                <div class="typeGoodsList">
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                    <div class="Goods">
+                        <img src="../../../img/포로.png"></img>
+                        <div>포로</div>
+                        <div>30,000원</div>
+                    </div>
+                </div>
+                <br>
+                <div class="moreBtn">
+                    <button  type="button">더보기</button>
+                </div>
+
+            </div>
+          
+    
+        </div>
+ 
+    </main>
+
+
+
+     <!-- 부트스트랩 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
