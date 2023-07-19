@@ -1,0 +1,117 @@
+body {
+    margin: 10px;
+}
+
+.header {
+    position: relative;
+    width: auto;
+    height: 72px;
+    margin: auto 32px;
+    padding: 0 80px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        /* flex-direction: row;
+        justify-content: space-between; */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.body {
+    width: auto;
+    height: 3000px;
+    display: block;
+    position: relative;
+}
+
+.new-goods {
+}
+
+.mid-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.goods-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.goods-list-item {
+    flex: 0 0 calc(25% - 10px);
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.goods-list-thumb {
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
+
+.goods-list-games{
+    display: flex;
+    align-items: center;
+}
+
+.goods-list-game-name {
+    display: block;
+    padding: 0 44px 0 76px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: -.2px;
+}
+
+.goods-list-products {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 131px;
+}
+
+.games-product-item {
+    width: 48.8%;
+}
+
+.goods-img-bg-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.goods-img {
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
