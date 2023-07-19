@@ -1,0 +1,138 @@
+.container {
+    width: 100vw;
+    margin-left: 5% ;
+    margin-right: 5%;
+}
+
+/* hover되었을 떄 클래스들 pointer 변경 */
+.Goods > span:hover {
+    cursor: pointer;
+}
+.slide:hover{
+    cursor: pointer;
+}
+.buttonClass:hover{
+    cursor: pointer;
+}
+
+/* a에서 font 스타일 바뀌는 거 방지 */
+a {
+    text-decoration: none;
+}   
+/* 버튼 클래스들 전부 해당속성 적용 */
+.buttonClass {
+    border-radius: 20%;
+    background-color: ghostwhite;
+    color: rgba(0, 0, 0, 0.7); 
+    line-height: 40pt;
+    padding: 0 16pt;
+}
+
+/* ul리스트, flex적용 */
+.typeButtonGroup {
+    display: flex;
+    flex-wrap: wrap;
+    /* li앞에 붙는 *제거 */
+    list-style-type: none;
+}   
+/* li에 border 적용하기 */
+.littleBorderButton {
+    text-align: center;
+    margin-right: 20pt;
+    margin-bottom: 20pt;
+}
+/* 뭔가 하려다가 아래에 컨테이너를 하나 더 넣었음 */
+.typeGoodsGroup {
+    display: block;
+
+}
+/* 여기에 space-betwewen, flex-start 적용 정렬, wrap 적용 */
+/* .typeGoodsList {
+    margin-left: 10pt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content : space-between;
+    align-items: flex-start;
+} */
+
+.typeGoodsList {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 8px;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 28px;
+    row-gap: 28px;
+    
+} 
+
+/* 굿즈에 반응형 */
+.Goods {
+    position: relative;
+}
+/* 이미지에 크기 */
+.Goods > a > img {
+    max-width: 100%;
+}
+/* 좋아요 버튼(장바구니)에 z-idx, absolute적용 */
+.Goods > span {
+    position: absolute;
+    top: 3pt;
+    right: 10pt;
+    z-index: 1;
+}
+.Goods > a > div{
+    padding-left: 16pt;
+    color: black;
+}
+.Goods div:nth-child(2){
+    font-weight: bold;
+}
+.moreBtnContainer {
+    text-align: center;
+}
+.moreBtn {
+    border: none;
+}
+
+        /* 크기 조건 max, max-width,/min-height
+    max-width : 오른쪽에 나온숫자 값 이하일 떄 적용하는 그래픽
+    min-width : width가 오른쪽 이상일때 적용하는 그래픽
+*/
+/* 더보기 버튼을 위해서 없앴음. 나중에 봐야하면 display : block */
+.typeGoodsList > div:nth-child(n+5){
+    display  : none;
+}
+
+@media screen and (max-width : 768px) {
+.container {
+    margin-left: 0 ;
+    margin-right: 0;
+    max-width: 100%;
+}
+.typeGoodsList{
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+.Goods > a > img {
+    width: 250px;
+    height: 250px;
+}
+}
+@media screen and (max-width : 568px) {
+.container {
+    max-width: 100%;
+    margin-left: 0 ;
+    margin-right: 0;
+}
+.typeGoodsList{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+.Goods > a > img {
+    width: 200px;
+    height: 200px;
+}
+}
+
