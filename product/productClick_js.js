@@ -1,14 +1,9 @@
 
 //버튼 명암 생기는 function
-$(".box").hover(function(){
-   $(this).css("border", "3px solid");
-},
-function(){
-    $(this).css("border", "1px solid");
-})
-//
+// hover는 css로 주고 버튼 클릭했을 때 기존에 있던거 지우고 누른거 class 추가
 $(".box").on("click", function(){
-    $(this).css("border", "3px solid red")
+    $(".box").removeClass("active")
+    $(this).addClass("active")
 },)
 
 
