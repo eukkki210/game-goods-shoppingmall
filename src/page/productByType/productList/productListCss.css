@@ -23,11 +23,10 @@ a {
 }   
 /* 버튼 클래스들 전부 해당속성 적용 */
 .buttonClass {
-    height: 70%;
     border-radius: 0%;
     background-color: ghostwhite;
     color: rgba(0, 0, 0, 0.7); 
-    line-height: 70%;
+    line-height: 40pt;
     margin-right: 0;
     padding-right: 0;
 }
@@ -107,6 +106,7 @@ a {
     text-align: center;
 }
 .moreBtn {
+    padding: 0 15pt;
     border: none;
 }
         /* 크기 조건 max, max-width,/min-height
@@ -196,5 +196,4 @@ dl > .dt_title{
     height: 200px;
 }
 }
-
 
