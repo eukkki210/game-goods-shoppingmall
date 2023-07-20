@@ -15,17 +15,12 @@
     .left{
         width: 50%;
         height: 2000px;
-        /* border: 1px solid #000000; */
-        /* float: left; */
         box-sizing: border-box;
-        /* position:relative; */
 
     }
     div.right{
         width: 40%;
         height: 600px;
-        /* border: 1px solid #000000; */
-        /* float: right; */
         box-sizing: border-box;
         padding-left: 3%;
         padding-top : 2%;
@@ -36,7 +31,6 @@
     div.content{
         display: flex;
         width: auto;
-        /* height: 6000px; */
         max-width: 1280px;
         margin: auto;
     }

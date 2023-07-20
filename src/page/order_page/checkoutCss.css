@@ -1,0 +1,176 @@
+.rightBar > *{
+    font-size: 12px;
+}
+.containers{
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    width: auto;
+    max-width: 1280px;
+    margin: auto;
+}
+.sectionHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 64px 0 20px;
+}
+.deliveryInfo > div > label{
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: -0.2px;
+    color: rgb(17, 17, 17);
+    margin-bottom: 8px;
+}
+.orderInfo > div > input{
+    display: block;
+    padding: 14px 16px 12px 16px;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+    padding: 16px 24px 14px;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+    width: calc(100% - 50px);
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: -.2px;
+    margin-bottom: 8px;
+}
+.deliveryInfo > div > input{
+    display: block;
+    padding: 14px 16px 12px 16px;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+    padding: 16px 24px 14px;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+    width: calc(100% - 50px);
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: -.2px;
+    margin-bottom: 8px;
+}
+.sectionHeader{
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: -.3px;
+    color: #111;
+}
+.sectionBody > div > span{
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -.2px;
+    color: #111;
+}
+.sectionBody > div > div {
+    padding: 8px 0 8px 18px;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: -.2px;
+    color: #4e4e4e;
+}
+.buy{
+    width: 100%;
+    border: none;
+    z-index: 3;
+    background-color: #111;
+    color: #fff;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: -.2px;
+    text-align: center;
+    border-radius: 8px;
+}
+.leftBar{
+    width: 70%;
+    box-sizing: border-box;
+}
+.rightBar{
+    width: 40%;
+    height: 600px;
+    box-sizing: border-box;
+    padding-left: 3%;
+    position: sticky;
+    top: 0px;
+    left: 55%;
+}
+.cartStoreItem1, .checkoutOrderInfo2{
+    padding: 0 1.428571428571429rem;
+    border-radius: 8px;
+    border: 1px solid #ededed;
+    margin-bottom: 1.7rem;
+}
+.cartStoreItem_1 > div{
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4e4e4e;
+}
+.cartStoreItem_2 > div{
+    height: 53px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+}
+.rightTitle{
+    font-size: 26px;
+    font-weight: 600;
+    color: #111;
+    margin: 64px 0 20px;
+}
+.pso_image{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.preShoppingOrderItem1{
+
+}
+.pso_1{
+    display: flex;
+
+}
+.pso_2{
+    display: flex;
+    justify-content: space-between;
+}
+.pso_3{
+    display: flex;
+    justify-content: space-between;
+}
+.orderInfo{
+    color: #111;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #4e4e4e;
+}   
+.orderAll > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+.checkbox > div {
+    padding-bottom: 10px;
+}
+.postAddress{
+    border-radius: 10px;
+}
