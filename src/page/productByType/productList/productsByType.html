@@ -57,14 +57,54 @@
             <div>
                 <ul class="typeButtonGroup">
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Doll')">인형</li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Airpot')">에어팟  </li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Clothes')"> 의류</li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Statue')">스태츄</li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Phonecase')">폰케이스</li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Pad')">마우스 패드</li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Charge')">보조 충전기</li>
-                    <li class="littleBorderButton buttonClass", onclick="borderBtnClicked('Goods')">기타 굿즈</li>
+                    <li  onclick="borderBtnClicked('Doll')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">인형</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Airpot')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">에어팟</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Clothes')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">의류</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Statue')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">스태츄</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Phonecase')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">모바일 ACC</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Accessory')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">악세서리</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Pad')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">마우스 패드</p>
+                    </li>
+                    <li  onclick="borderBtnClicked('Goods')">
+                        <div class="buttonClass">
+                            <img src="">
+                        </div>
+                        <p class="littleBorderButton">기타 굿즈</p>
+                    </li>
                 </ul>
             </div>
 
@@ -428,7 +468,7 @@
 
 
       <script>
-
+        localStorage.clear()
         // /* 좋아요 버튼(하트)에 모달 링크 달기 */
         // $(".Goods > i:last-child").
 
@@ -452,16 +492,46 @@
             // location.href= "https://www.naver.com"
         }
         function favoriteBtn(favoritegoods,sourceBtn){
-            console.log(sourceBtn)
+
             if ( $(sourceBtn).hasClass("fa-regular")){
                 $(sourceBtn).removeClass("fa-regular")
                 $(sourceBtn).addClass("fa-solid")
+                $(sourceBtn).addClass("red")
+
             }else if($(sourceBtn).hasClass("fa-solid")){
                 $(sourceBtn).removeClass("fa-solid")
+                $(sourceBtn).removeClass("red")
                 $(sourceBtn).addClass("fa-regular")
             }
-            localStorage.setItem("key", favoritegoods);
 
+            // 형제들에서, 위치,굳즈이름,게임이름,가격,Type을 가져온다.
+            let parentArray= $( sourceBtn).prev().children() ;
+
+            const parentSrc = $(parentArray[0]).attr("src");
+            const goodsID = favoritegoods;
+            const parentGoodsName =  $(parentArray[1]).text();
+            const parentGameName =  $(parentArray[2]).text();
+            const parentPrice =  $(parentArray[3]).text();
+            const goodsType = "인형"
+            
+            let myfavoriteGoods= localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
+            let data = new Object()
+            console.log(myfavoriteGoods)
+            if(myfavoriteGoods != null){
+                data.number= myfavoriteGoods.length;
+            }else{
+                data.number= 0;
+            }
+            data.src=parentSrc
+            data.goodsName=parentGoodsName
+            data.gameName=parentGameName
+            data.price=parentPrice
+            data.goodsType=goodsType
+
+            myfavoriteGoods.push(data)
+            
+            localStorage.setItem("바구니", JSON.stringify(myfavoriteGoods));
+            console.log(localStorage.getItem("바구니"))
             // location.href="https://www.daum.net"
         }
 
