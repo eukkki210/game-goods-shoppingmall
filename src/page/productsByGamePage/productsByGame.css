@@ -1,0 +1,93 @@
+
+body {
+    background-color: red;
+}
+
+.header-footer-container {
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    border: 1px solid grey;
+}
+
+.banner-carousel {
+    margin: 0 5%;
+}
+.banner-carousel-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#page-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5% auto;
+    border-bottom: 1px solid grey;
+}
+
+/* .games-category-slider-container {
+    background-color: rgb(57, 57, 134);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 5%;
+    height: 140px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.games-category-item {
+    margin: auto;
+}
+
+.games-category-item-img {
+    width: 90px;
+    height: 90px;
+}
+
+.games-category-item-name {
+    color: white;
+} */
+
+.slick-container {
+    border-radius: 20px;
+    background-color: black;
+    margin: 0 5%;
+}
+
+.items-count-and-sorting {
+    height: 24px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.games-category-item-img {
+    width: 80px;
+}
+
+.games-category-item-name {
+    color: white;
+}
+
+.product-items-container {
+    margin: 5%;
+    padding: 3% 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1.5fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    gap: 20px;
+    background-color: ghostwhite;
+}
+
+.item-img {
+    width: 230px;
+    border-radius: 20px;
+}
+
+.product-info {
+    color:black;
+    background-color: ghostwhite;
+}
+
