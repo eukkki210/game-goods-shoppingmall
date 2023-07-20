@@ -1,6 +1,6 @@
 
-body {
-    background-color: red;
+main {
+    height: 2500px;
 }
 
 .header-footer-container {
@@ -19,66 +19,103 @@ body {
 }
 
 #page-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin: 5% auto;
+    margin: 3% auto;
     border-bottom: 1px solid grey;
 }
 
-/* .games-category-slider-container {
-    background-color: rgb(57, 57, 134);
-    border-radius: 10px;
+.game-category-container {
+    width: 90%;
+    position: relative;
+    margin: 3% 5%;
+}
+
+.category-page {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 5%;
-    height: 140px;
+    background-color: cornsilk;
+}
+
+.game-category-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game-category-item-name {
+    color: black;
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: lightgrey;
+    
+}
+
+.prev:hover, .next:hover {
+    color: black;
+}
+
+.slide-controls {
+    height: 30px;
+    display: flex;
     align-items: center;
-    overflow-x: hidden;
+    justify-content: center;
 }
 
-.games-category-item {
-    margin: auto;
+.dots {
+    display: inline;
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
 }
 
-.games-category-item-img {
-    width: 90px;
-    height: 90px;
-}
-
-.games-category-item-name {
-    color: white;
-} */
-
-.slick-container {
-    border-radius: 20px;
+.dot {
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     background-color: black;
-    margin: 0 5%;
+    margin: 0 2px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .items-count-and-sorting {
     height: 24px;
     margin: 20px 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-
-.games-category-item-img {
-    width: 80px;
-}
-
-.games-category-item-name {
-    color: white;
 }
 
 .product-items-container {
     margin: 5%;
     padding: 3% 0;
     display: grid;
-    grid-template-columns: repeat(4, 1.5fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     place-items: center;
     gap: 20px;
-    background-color: ghostwhite;
 }
 
 .item-img {
@@ -88,6 +125,19 @@ body {
 
 .product-info {
     color:black;
-    background-color: ghostwhite;
+    text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+
+    .product-items-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .product-items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
