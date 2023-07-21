@@ -38,33 +38,32 @@
             <div class="join_email">
                 <h3 class="h3_email">이메일 주소</h3>
                 <input type="email" class="email_button" placeholder="예) honggildong@gmail.com"/>
-                <div id="errorEmail"></div>
+                <div class="errorEmail"></div>
             </div>
             <div class="join_password">
                 <h3 class="h3_password">비밀번호</h3>
                 <input type="password" class="password_button"/>
-                <div id="errorPw"></div>
             </div>
             <div class="join_password">
                 <h3 class="h3_password">비밀번호 확인</h3>
                 <input type="password" class="password_button_check"/>
-                <div id="errorPwCheck"></div>
+                <div class="error"></div>
             </div>
 
             <div class="joinTerms">
                 <div class="joinTerms2">
                     <div>
-                        <input type="checkbox" id="agreeCheck1" disabled="disabled"/>
+                        <input class="input-essential" type="checkbox" id="agreeCheck1" disabled="disabled"/>
                         <span>이용약관 동의</span>
                         <span><a id ="agree" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agree1">보기</a></span>
                     </div>
                     <div>
-                        <input type="checkbox" id="agreeCheck2" disabled="disabled"/>
+                        <input class="input-essential" type="checkbox" id="agreeCheck2" disabled="disabled"/>
                         <span>개인정보수집·이용 동의</span>
                         <span><a id ="agree" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agree2">보기</a></span>
                     </div>
                     <div>
-                        <input type="checkbox"/>
+                        <input class="input-essential" type="checkbox" id="agreeCheck4"/>
                         <span>만 14세 이상입니다.</span>
                     </div>
                     <div>
@@ -75,9 +74,12 @@
                 </div>
             </div>
             <div class="join_par">
-                <div class="join" id="joinBtn">
+                <button type="button" class="join" id="joinBtn" disabled>
+                    회원가입
+                </button>
+                <!-- <div class="join" id="joinBtn" >
                 회원가입
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -743,7 +745,7 @@
                     다만, 수집 및 이용을 거부하신 정보와 연계된 서비스(회원 가입 및 프로필 관리, 매입/매출 거래처 등록, ID/비밀번호 찾기)는 동의 전까지 일부 또는 전체를 이용하실 수 없습니다.
                 </div>
                 <div class="modal-footer">
-                <button type="button" disabled="disabled" id="modalBodyId2Btn"  class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: black; width: 100%;">확인</button>
+                <button type="button" id="modalBodyId2Btn"  class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: black; width: 100%;">확인</button>
                 </div>
             </div>
             </div>

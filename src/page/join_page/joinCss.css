@@ -179,8 +179,17 @@ input[type=checkbox]{
 .invalid{
     border-color: red;
 }
-#error{
+
+/* 패스워드, 이메일 맞는지 틀린지 */
+.errorPwCheck{
     color: red;
+    font-size: 7px;
+    font-weight: bold;
+}
+.correctPwCheck{
+    color: rgb(8, 211, 8);
+    font-size: 7px;
+    font-weight: bold;
 }
 
 @media screen and (min-width : 770px){
