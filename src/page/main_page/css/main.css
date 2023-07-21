@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     margin: 10px;
+    font-family: 'Pretendard-Regular';
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .header {
@@ -10,12 +23,39 @@ body {
     padding: 0 80px;
 }
 
+.container {
+    padding: 0;
+}
+
 .banner-carousel {
     margin: 0 5%;
 }
+
 .banner-carousel-image {
     max-width: 100%;
     height: auto;
+}
+
+@media screen and (max-width : 768px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    /* .goods-list {
+        grid-template-columns: repeat(auto-fill, 100%);
+    } */
+
+    .goods-list-games {
+        height: 64px;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .goods-list-item {}
 }
 
 @media (max-width: 576px) {
@@ -43,16 +83,9 @@ body {
 .goods-list {
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill,23.7%);
+    grid-template-columns: repeat(auto-fill, 23.7%);
     grid-gap: 0;
     justify-content: space-between;
-}
-
-@media (max-width: 991px) {
-    .goods-list {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 10px;
-    }
 }
 
 .goods-list-item {
@@ -63,26 +96,37 @@ body {
 }
 
 .goods-list-games {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    margin-bottom: 5%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    min-width: 215px;
+}
+
+.goods-list-game {
+    height: 64px;
+    margin-right: 10px;
 }
 
 .goods-list-thumb {
+    flex: 0 0 64px;
     top: 0;
     left: 0;
     width: 64px;
     min-width: 64px;
-    height: 64px;
+    height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 6px;
 }
 
-
 .goods-list-game-name {
+    flex: 1;
     display: block;
-    padding: 0 44px 0 76px;
+    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -99,6 +143,7 @@ body {
     width: 100%;
     justify-content: space-between;
     min-height: 131px;
+    margin-top: 5%;
 }
 
 .games-product-item {
@@ -112,7 +157,6 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    border-radius: 6px;
     overflow: hidden;
 }
 
@@ -124,7 +168,8 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    margin: auto;
+    margin: auto;    
+    border-radius: 6px;
 }
 
 .popular-goods {
@@ -150,10 +195,13 @@ body {
 
 .goods-list-top {
     margin: 0 -85.71428571428571rem 16px;
+    white-space: nowrap;
+    animation: leftMoveLoop 30s infinite linear;
 }
 
 .goods-wrapper-top {
-    animation: leftMoveLoop 9s infinite linear;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .goods-list-bottom {
@@ -161,26 +209,26 @@ body {
 }
 
 .goods-wrapper-bottom {
-    animation: rightMoveLoop 90s infinite linear;
+    animation: rightMoveLoop 30s infinite linear;
 }
 
 @keyframes leftMoveLoop {
     0% {
-        transform: translateX(0);
+        transform: translateX(100rem);
     }
 
     100% {
-        transform: translateX(-450rem);
+        transform: translateX(calc(-100% - 200px));
     }
 }
 
 @keyframes rightMoveLoop {
     0% {
-        transform: translateX(-450rem);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(100rem);
     }
 }
 
@@ -216,4 +264,27 @@ body {
     .popular-goods .goods-list {
         width: 300%;
     }
+}
+
+@media screen and (max-width: 992px) {
+    .goods-list {
+        overflow-x: auto;
+        display: flex;
+    }
+
+    .goods-list-item {
+        width: 100%;
+        /* display: flex; */
+        align-items: center;
+        margin: 10px;
+    }
+
+    .goods-list-games {
+        flex: 0 0 64px;
+    }
+
+    .goods-list-game-name {
+        padding: 0 10px;
+    }
+
 }
