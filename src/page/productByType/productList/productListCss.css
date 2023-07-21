@@ -45,6 +45,7 @@ a {
     padding-left:0;
     margin-left:0;
     display: grid;
+
     grid-template-columns: repeat(4,minmax(0,1fr));
     grid-column-gap: 8px;
     column-gap: 8px;
@@ -59,8 +60,11 @@ a {
 /* 그림 아래 있는 txt */
 .littleBorderButton {
     text-align: center;
+    justify-items: center;
+    align-items: center;
     margin-top: 10pt;
     margin-bottom: 10pt;
+
 }
 /* 뭔가 하려다가 아래에 컨테이너를 하나 더 넣었음 */
 .typeGoodsGroup {
@@ -199,19 +203,27 @@ body{
     margin-left: 0 ;
     margin-right: 0;
 }
+.typeButtonGroup > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
 .typeButtonGroup > li > div {
     border-radius: 50%;
     width: 90px;
     height: 90px;
 }
+
+
 .typeGoodsList{
     grid-template-columns: repeat(2,minmax(0,1fr));
 }
 .littleBorderButton {
     width: 90px;
-    text-align: center;
     margin-top: 5pt;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .Goods > a > img {
