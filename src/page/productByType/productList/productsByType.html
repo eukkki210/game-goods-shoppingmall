@@ -65,7 +65,7 @@
         <div class="container">
 
             <div>
-                <div id="carouselExample" class="carousel slide">
+                <div id="carouselExample" class="carousel slide" >
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../typeBanner/shop1.jpg" class="d-block w-100" alt="...">
@@ -92,19 +92,19 @@
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
                     <li  onclick="borderBtnClicked('Doll')">
                         <div class="buttonClass">
-                            <img id = "doll_main" src="">
+                            <img id="doll_main" src="../../../img/doll/doll_main.png">
                         </div>
                         <p class="littleBorderButton">인형</p>
                     </li>
                     <li  onclick="borderBtnClicked('Airpot')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="airpot_main" src="../../../img/pot/airpot_main.png">
                         </div>
                         <p class="littleBorderButton">에어팟</p>
                     </li>
                     <li  onclick="borderBtnClicked('Clothes')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="cloth_main" src="../../../img/cloth/cloth_main.png">
                         </div>
                         <p class="littleBorderButton">의류</p>
                     </li>
@@ -116,11 +116,8 @@
                     </li>
                     <li  onclick="borderBtnClicked('Phonecase')">
                         <div class="buttonClass">
-                            <img src="">
-                            <!-- li > .buttonClass {
-    background-image: url("");
-} -->
-                        </div>
+                            <img id="phonecase_main" src="../../../img/phonecase/case_main.jpg">
+                         </div>
                         <p class="littleBorderButton">모바일 ACC</p>
                     </li>
                     <li  onclick="borderBtnClicked('Accessory')">
@@ -131,13 +128,13 @@
                     </li>
                     <li  onclick="borderBtnClicked('Pad')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="pad_main" src="../../../img/pad/pad_main.jpg">
                         </div>
                         <p class="littleBorderButton">마우스 패드</p>
                     </li>
                     <li  onclick="borderBtnClicked('Goods')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="other_main" src="../../../img/other/other_main.jpg">
                         </div>
                         <p class="littleBorderButton">기타 굿즈</p>
                     </li>
@@ -434,13 +431,13 @@
             <!--취소하면, 좋아요 목록에 추가된 상태로 원래 페이지로 나가야하고, -->
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
             <!-- 확인이라면, 쿠키에 추가하고 다른 페이지로 나가야한다. -->
-            <button type="button" class="btn btn-primary">확인</button>
+            <button id="favoriteModalOK" type="button" class="btn btn-primary">확인</button>
             </div>
         </div>
         </div>
     </div>
     <!-- Footer mt-5 bg-light text-center -->
-    <footer class="footer" >
+    <footer class="footer container" >
         <div class="footerDiv">
             <div>
             <ul class="footer_ul" style="display: flex;" >
@@ -504,21 +501,30 @@
 
 
       <script>
+        $(".Goods > i:last-child").attr("data-bs-target","#staticBackdrop")
+        $(".Goods > i:last-child").attr("data-bs-toggle","modal")
         // /* 좋아요 버튼(하트)에 모달 링크 달기 */
-        // $(".Goods > i:last-child").
+        // 배열에 없으면 modal 뺴야함
+        //
 
         // 더보기 버튼 클릭 
         let a = localStorage.getItem("favoriteArray") 
-        let b = a !=null ? a["type"] : [[1,0,1,0 ,0,0,0,1 ,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
+        let b = a !=null ? a["type"] : [[0,0,1,0 ,0,0,0,0 ,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
         let parentRecommend=$(".typeGoodsList.recommend > .Goods > i")
 
         for(let i=0; i<parentRecommend.length;i++){
             console.log(`i: ${i}`)
             if(b[0][i]==1){
                 console.log((parentRecommend[i]))
+                console.log("hello")
                 $(parentRecommend[i]).removeClass("fa-regular")
                 $(parentRecommend[i]).addClass("fa-solid")
                 $(parentRecommend[i]).addClass("red")
+                $(parentRecommend[i]).attr("data-bs-target","none")
+                $(parentRecommend[i]).attr("data-bs-toggle","none")
+
+            }else{
+
             }
            
         }
@@ -537,6 +543,11 @@
         //         }
         //     }
         // }
+
+        $("#favoriteModalOK").click(()=>{
+            // 경로 변경 
+            location.href= "../../my_page/save.html"
+        })
         function initFavorite(){
             let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
             let favoriteArray= favoriteArrays["type"]

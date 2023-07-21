@@ -7,9 +7,11 @@
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     margin-left: 5% ;
     margin-right: 5%;
+    padding: 0;
+
 }
 
 /* hover되었을 떄 클래스들 pointer 변경 */
@@ -85,7 +87,9 @@ a {
     row-gap: 28px;
     
 } 
-
+#carouselExample{
+    margin-top: 2%;
+}
 /* 굿즈에 반응형 */
 .Goods {
     position: relative;
@@ -96,6 +100,7 @@ a {
 }
 /* buttonClass의 이미지 */
 .buttonClass > img {
+    border-radius: 5%;
     width: 100%;
     height: auto;
 }
@@ -118,6 +123,7 @@ a {
     text-align: center;
 }
 .moreBtn {
+    border-radius: 5%;
     background-color: ghostwhite;
     padding: 0 15pt;
     border: none;
@@ -223,6 +229,37 @@ body{
 #acc_main {
     border-radius: 50%;
     content: url(../../../img/accessory/2.png);
+}
+#cloth_main{
+    border-radius: 50%;
+    content: url(../../../img/cloth/1.png);
+
+}
+#doll_main{
+    border-radius: 50%;
+    content: url(../../../img/doll/1.png);
+
+}
+#airpot_main{
+    border-radius: 50%;
+    content: url(../../../img/pot/1.png);
+
+}
+
+#pad_main{
+    border-radius: 50%;
+    content: url(../../../img/pad/1.png);
+
+}
+#phonecase_main{
+    border-radius: 50%;
+    content: url(../../../img/phonecase/1.png);
+
+}
+#other_main{
+    border-radius: 50%;
+    content: url(../../../img/other/1.png);
+
 }
 }
 
