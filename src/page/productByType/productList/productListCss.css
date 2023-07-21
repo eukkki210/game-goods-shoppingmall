@@ -1,3 +1,11 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .container {
     width: 100vw;
     margin-left: 5% ;
@@ -24,7 +32,6 @@ a {
 /* 버튼 클래스들 전부 해당속성 적용 */
 .buttonClass {
     border-radius: 0%;
-    background-color: ghostwhite;
     color: rgba(0, 0, 0, 0.7); 
     line-height: 40pt;
     margin-right: 0;
@@ -87,6 +94,11 @@ a {
 .Goods > a > img {
     max-width: 100%;
 }
+/* buttonClass의 이미지 */
+.buttonClass > img {
+    width: 100%;
+    height: auto;
+}
 /* 좋아요 버튼(장바구니)에 z-idx, absolute적용 */
 .Goods > i {
     position: absolute;
@@ -106,6 +118,7 @@ a {
     text-align: center;
 }
 .moreBtn {
+    background-color: ghostwhite;
     padding: 0 15pt;
     border: none;
 }
@@ -170,6 +183,10 @@ dl > .dt_title{
     height: 250px;
 }
 }
+body{
+    font-family: "Pretendard-Regular" ;
+}
+
 @media screen and (max-width : 568px) {
 .container {
     max-width: 100%;
@@ -195,5 +212,18 @@ dl > .dt_title{
     width: 200px;
     height: 200px;
 }
+
+/* footer 가리기? */
+/* 이미지 반응형 */
+/*statue*/
+#statue_main {
+    border-radius: 50%;
+    content: url(../../../img/statue/1.png);
 }
+#acc_main {
+    border-radius: 50%;
+    content: url(../../../img/accessory/2.png);
+}
+}
+
 
