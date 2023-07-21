@@ -17,15 +17,48 @@
     <!-- css 링크-->
     <link rel="stylesheet" href="./productListCss.css">
     <!-- backend가 없는 상태로, 클릭이 되면 하트가 눌려있는게 저장이 되야한다. -->
+
+    
     <style>
        
     </style>
 </head>
 <body>
-    <header>
-        <div>1header</div>
-        <div>2header</div>
-        <br>
+    <header class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- 좌측 메뉴 -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">게임</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">상품</a>
+                        </li>
+                    </ul>
+                    <!-- 우측 메뉴 -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">장바구니</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">마이페이지</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">로그인</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -59,7 +92,7 @@
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
                     <li  onclick="borderBtnClicked('Doll')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id = "doll_main" src="">
                         </div>
                         <p class="littleBorderButton">인형</p>
                     </li>
@@ -77,19 +110,22 @@
                     </li>
                     <li  onclick="borderBtnClicked('Statue')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="statue_main" src="../../../img/statue/statue_main.jpg">
                         </div>
                         <p class="littleBorderButton">스태츄</p>
                     </li>
                     <li  onclick="borderBtnClicked('Phonecase')">
                         <div class="buttonClass">
                             <img src="">
+                            <!-- li > .buttonClass {
+    background-image: url("");
+} -->
                         </div>
                         <p class="littleBorderButton">모바일 ACC</p>
                     </li>
                     <li  onclick="borderBtnClicked('Accessory')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="acc_main" src="../../../img/accessory/acc_main.jpg">
                         </div>
                         <p class="littleBorderButton">악세서리</p>
                     </li>
