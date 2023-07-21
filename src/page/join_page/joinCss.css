@@ -4,11 +4,11 @@
     font-weight: 400;
     font-style: normal;
 }
+
 *{
     font-family: 'Pretendard-Regular';
 }
 .head{
-    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
     height: 40px;
@@ -17,7 +17,7 @@
 .head_image > img{
     width: 90px;
 }
-.login_banner{
+.join_banner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,36 +32,38 @@
 .banner_icons > div{
     padding-left: 20px;
 }
-.login_banner > img{
+.join_banner > img{
     width: 250px;
 }
-.login_email{
-    display: flex;
-    flex-direction: column;
-    padding-left: 15%;
-}
-.login_email h3{
-}
-.login_password{
+.join_email, .join_name{
     display: flex;
     flex-direction: column;
     padding-left: 15%;
 }
 
-.login_email input{
+/* input{
+    outline-style: none;
+} */
+.join_password{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.join_email input, .join_name input{
     width: 83%;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     border-color: rgb(218, 217, 217);
 }
 
-.login_password input{
+.join_password input{
     width: 83%;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     border-color: rgb(218, 217, 217);
 }
-.login{
+.join{
     font-weight: bold;
 }
 .h3_email, .h3_password{
@@ -71,13 +73,24 @@
     line-height: 18px;
     padding-top: 10px;
 }
-.login_par{
+.join_par{
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 20px;
 }
-.login{
+.joinTerms{
+    display: flex;
+    padding-left: 15%;
+}
+.joinTerms2 > div {
+    margin-top: 10px;
+}
+.mola{
+    display: flex;
+    justify-content: center;
+}
+.join{
     display: flex;
     width: 70%;
     height: 50px;
@@ -86,15 +99,16 @@
     background-color: white;
     border: 1px solid rgb(218, 217, 217);
     border-radius: 10px;
+    cursor: pointer;
 }
-.login_ul{
+.join_ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     padding-left: 0px;
     padding-top: 20px;
 }
-.login_ul > li{
+.join_ul > li{
     font-size: 14px;
 }
 /* .email_sub::after{
@@ -109,14 +123,14 @@
     margin-left: 7%;
     color: rgb(218, 217, 217);
 } */
-.social_login{
+.social_join{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
 }
-.social_login > button{
+.social_join > button{
     width: 70%;
     height: 50px;
     border-radius: 10px;
@@ -126,7 +140,7 @@
     border: 1px solid rgb(218, 217, 217);
     font-weight: bold;
 }
-.social_login > button > img{
+.social_join > button > img{
     display: flex;
     position: absolute;
     width: 25px;
@@ -134,15 +148,50 @@
     border-top: 0px;
 
 }
+input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+input[type=checkbox]{
+    accent-color: black;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+/* 모달 */
+#agree{
+    background-color: white;
+    border: 0px;
+    color: black;
+    margin: 0px;
+    font-weight: bold;
+    padding : 0px 0px 3px 0px;
+    text-decoration: underline;
+   
+}
+#exampleModalLabel{
+    font-weight: bold;
+}
+.modal-body{
+    max-height: 400px;
+    overflow-x:hidden; overflow-y:auto;
+}
+.invalid{
+    border-color: red;
+}
+#error{
+    color: red;
+}
+
 @media screen and (min-width : 770px){
-    .login_container{
+    .join_container{
         display: flex;
         flex-direction: column;
         max-width: 500px;
         margin: 0 auto;
 
     }
-    .login_ul > li{
+    .join_ul > li{
         font-size: 12px;
     }
 }
