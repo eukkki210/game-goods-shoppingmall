@@ -9,21 +9,55 @@
     <link rel="stylesheet" href="loginPage_css.css">
 </head>
 <body>
-
-    <!-- 헤더부분 -->
-    <div class="head">
-        <div class="head_image"><img src="../image/kream_logo.jpg"/></div>
+        <!-- Header -->
+        <header class="container">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- 메뉴 -->
+                        <!-- <ul class="navbar-nav"></ul> -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../productsByGamePage/productsByGame.html">게임</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../productByType/productList/productsByType.html">상품</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../my_page/save.html">장바구니</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">마이페이지</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../products/loginPage.html">로그인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!-- 옛날 헤더부분 -->
+    <!-- <div class="head">
+        <div class="head_image"><img src="../../../image/kream_logo.jpg"/></div>
 
         <div class="banner_icons">
         <div><i class="bi bi-search"></i></div>
         <div><i class="bi bi-justify"></i></div>
         </div>
-    </div>
+    </div> -->
     <div class="login_container_par">
     <div class="login_container">
         <div>
             <div class="login_banner">
-                <img src="../image/kream.png"/>
+                <img src="../../../image/kream.png"/>
             </div>
         </div>
         <div class="login_email">
@@ -41,22 +75,24 @@
         </div>
         <div>
             <ul class="login_ul">
-                <li class="email_sub">이메일 가입</li>
-                <li class="email_find">이메일 찾기</li>
+                <li class="email_sub">
+                    <a href="../join_page/join.html">회원가입</a>
+                </li>
+                <li class="email_find">아이디 찾기</li>
                 <li>비밀번호 찾기</li>
             </ul>
         </div>
         <div class="social_login">
             <button type="button" class="naver_login">
-                <img src="../image/naver.ico">
+                <img src="../../../image/naver.ico">
                 <span>네이버 로그인</span>
             </button>
             <button type="button" class="google_login">
-                <img src="../image/google_logo.png">
+                <img src="../../../image/google_logo.png">
                 <span>구글 로그인</span>
             </button>
             <button type="button" class="kakao_login">
-                <img src="../image/KakaoTalk_logo.svg.webp">
+                <img src="../../../image/KakaoTalk_logo.svg.webp">
                 <span>카카오 로그인</span>
             </button>   
         </div>

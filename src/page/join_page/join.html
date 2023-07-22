@@ -17,15 +17,49 @@
 
 </head>
 <body>
-    
-    <!-- 헤더부분 -->
-    <div class="head">
+    <!-- Header -->
+    <header class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- 메뉴 -->
+                    <!-- <ul class="navbar-nav"></ul> -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../productsByGamePage/productsByGame.html">게임</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../productByType/productList/productsByType.html">상품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../my_page/save.html">장바구니</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">마이페이지</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../products/loginPage.html">로그인</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 옛날헤더부분 -->
+    <!-- <div class="head">
         <div class="head_image"><img src="../../../image/kream_logo.jpg"/></div>
         <div class="banner_icons">
             <div><i class="bi bi-search"></i></div>
             <div><i class="bi bi-justify"></i></div>
         </div>
-    </div>
+    </div> -->
     <div class="join_container_par">
         <div class="join_container">
             <div class="join_banner">
@@ -96,6 +130,7 @@
                 </div>
                 <div class="modal-body" id="modalBodyId1">
                 <!-- 모달 텍스트 자리 -->
+            
                 서비스 이용 약관
 
  
@@ -780,3 +815,4 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
+

@@ -80,4 +80,5 @@ console.log(today);
 // document.getElementById("getNextDay").innerHTML = nextDay;
 $('input[class=getDay]').attr('value', today);
 $('input[class=getNextDay]').attr('value', nextDay);
+// $(".getDay").attr('value', today);
 // $("getNextDay").html = nextDay;
