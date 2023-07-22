@@ -5,13 +5,19 @@
     font-weight: 400;
     font-style: normal;
 }
+.header{
+    width: auto;
+    height: 72px;
+    margin: auto 32px;
+    padding: 0 80px;
+}
 
 .container {
-    width: 100%;
-    margin-left: 5% ;
-    margin-right: 5%;
-    padding: 0;
-
+    /* margin-left: 5% ;
+    margin-right: 5%; */
+}
+.body{
+    margin: 0;
 }
 
 /* hover되었을 떄 클래스들 pointer 변경 */
@@ -144,11 +150,11 @@ a {
  /*제일 하단(footer)*/
 
  .footer{
-    max-width: 1280px;
+    max-width: auto;
     margin: auto;
 }
 .footerDiv{
-    max-width: 1280px;
+    max-width: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -161,7 +167,7 @@ a {
 }   
 dl > .dt_title{
     padding-left: 10px;
-    max-width: 700px;
+    max-width: auto;
     float: left;
     line-height: 20px;
     font-size: 13px;
@@ -180,8 +186,9 @@ dl > .dt_title{
 
 @media screen and (max-width : 768px) {
 .container {
+    padding: 10px;
     margin-left: 0 ;
-    margin-right: 0;
+    margin-right:0;
     max-width: 100%;
 }
 .typeGoodsList{
@@ -199,6 +206,7 @@ body{
 
 @media screen and (max-width : 568px) {
 .container {
+    padding: 10px;
     max-width: 100%;
     margin-left: 0 ;
     margin-right: 0;
