@@ -27,7 +27,6 @@ $("#button_plus").on("click", function(){
     //금액(id:price) 값 바뀌게 하는애
     $("#price").attr('value',comma);
     console.log($("#price").val());
-    
 })
 
 //마이너스 누르면 금액이랑 수량 바뀌기
@@ -46,4 +45,39 @@ $("#button_negative").on("click", function(){
     }
 })
 
+var colorValue;
+let sizeValue;
+let colorSize;
+//색상 클릭시 값 받아와서 옵션에 출력
+$(".optionColor").on("click", function(){
+   var colorValue = $(this).val();
+   $(".options1").attr("value", colorValue);
+    console.log(colorValue);
+})
+//사이즈 클릭시 값 받아와서 옵션에 출력
+$(".box").on("click",function(){
 
+   let sizeValue = $(this).text();
+   $(".options2").attr("value", sizeValue);
+    console.log(sizeValue);
+})
+
+//날짜 불러오기
+let now = new Date();
+let month = now.getMonth();     //월 + 1 하기
+let date = now.getDate();  
+
+
+let newDay = new Date(now);     // newday선언
+newDay.setDate(now.getDate()+4);    // 오늘부터 4일 뒤 날짜
+let newMonth = newDay.getMonth();
+let newDate = newDay.getDate();
+
+let today = (month+1)+"/"+ date;    //오늘 날짜
+let nextDay = (newMonth+1) + "/" + newDate; //+4일 날짜
+console.log(today);
+// document.getElementById("getDay").innerText = today;
+// document.getElementById("getNextDay").innerHTML = nextDay;
+$('input[class=getDay]').attr('value', today);
+$('input[class=getNextDay]').attr('value', nextDay);
+// $("getNextDay").html = nextDay;
