@@ -1,5 +1,5 @@
 header{
-    background-color: yellowgreen;
+    background-color: white;
 }
 .containers{
     display: flex;
@@ -60,4 +60,10 @@ header{
     /* margin-left: auto; */
     margin-right: auto;
     max-width: 1280px;
+}
+
+/* 아래서부터는 장바구니 */
+
+.wish_products{
+    list-style: none;
 }
