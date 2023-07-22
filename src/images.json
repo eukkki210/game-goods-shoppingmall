@@ -1,0 +1,1714 @@
+[
+  {
+    "id": 1,
+    "goodsName": "LoL 챔피언 잠옷 티버 열쇠고리 키링 무작위 리그 오브 레전드 롤 굿즈",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/accessory/3febc3d0bb2120e738c4d30f0c802e28.jpg"
+  },
+  {
+    "id": 2,
+    "goodsName": "LoL 설맞이 축제 잠옷 티버 열쇠고리 (무작위)",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/accessory/d3b5be3846815ebd99ca9e582600082e.jpg"
+  },
+  {
+    "id": 3,
+    "goodsName": "LoL 불의 축제 마스크 컬렉션 야스오 진 탈론 리그 오브 레전드 롤 굿즈",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 79000,
+    "src": "game-items-shoppingmall/src/img/accessory/616493d13ebd428eb8488479e088754f.jpg"
+  },
+  {
+    "id": 4,
+    "goodsName": "LoL K/DA 배지 세트(한정판)",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 36000,
+    "src": "game-items-shoppingmall/src/img/accessory/ced863fe6b05acf4ff93cc978156f0a8.png"
+  },
+  {
+    "id": 5,
+    "goodsName": "[LoL] 영혼의 꽃 배지세트 1,2",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 24000,
+    "src": "game-items-shoppingmall/src/img/accessory/6fc017f982e12571f195834584c5a30f.png"
+  },
+  {
+    "id": 6,
+    "goodsName": "LoL TFT 꼬마 전설이 열쇠고리 키링 무작위 1종 리그 오브 레전드 롤 굿즈",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/accessory/113fbdd2b02f878b8dc33c1d0d4a3bed.png"
+  },
+  {
+    "id": 7,
+    "goodsName": "[LoL] TFT 우르프 황금 뒤집개 열쇠고리",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/accessory/675f5432c244bc283260fb110c1f88a8.png"
+  },
+  {
+    "id": 8,
+    "goodsName": "'RISE AGAIN' 에코백",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/accessory/8fd4d4b16765e92efa2aed18c54dc55e.jpg"
+  },
+  {
+    "id": 9,
+    "goodsName": "Race to the Top 에코백",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/accessory/ab1a6e7d0fa8d8ec24cff5b2735e5004.jpg"
+  },
+  {
+    "id": 10,
+    "goodsName": "페이커 뱃지",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 1000,
+    "src": "game-items-shoppingmall/src/img/accessory/ab1a6e7d0fa8d8ec24cff5b2735e5005.jpg"
+  },
+  {
+    "id": 11,
+    "goodsName": "Dream Together 뱃지&팔찌 (레드)",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/accessory/e944fd09afa95681e6b04d4e19d68f3e.jpg"
+  },
+  {
+    "id": 12,
+    "goodsName": "Dream Together 뱃지&팔찌 (블랙)",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/accessory/f71cbc9e10b4e6e46fa9de8f66fd53df.jpg"
+  },
+  {
+    "id": 13,
+    "goodsName": "Dream Together 키홀더",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/accessory/126c13b1ee526219bbe1feeee4946028.jpg"
+  },
+  {
+    "id": 14,
+    "goodsName": "[kt Rolster] 로고 뱃지",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 1000,
+    "src": "game-items-shoppingmall/src/img/accessory/dfa28b5176474edfeab9ba1fafbb86d3.jpg"
+  },
+  {
+    "id": 15,
+    "goodsName": "LoL 냐옹카이 야옹이 배지 열쇠고리 키링 2종택1 리그 오브 레전드 롤 굿즈",
+    "type": "acc",
+    "game": "리그오브레전드",
+    "price": 10000,
+    "src": "game-items-shoppingmall/src/img/accessory/7210ec88a5791a9f42478f32a663ac1f.jpg"
+  },
+  {
+    "id": 16,
+    "goodsName": "배틀그라운드 로고 고무 와펜",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 3200,
+    "src": "game-items-shoppingmall/src/img/accessory/28_shop1_791818.png"
+  },
+  {
+    "id": 17,
+    "goodsName": "배틀그라운드 벨크로 패치 4종",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 1900,
+    "src": "game-items-shoppingmall/src/img/accessory/41d6533576dcf563e2c227f2bd882056.jpg"
+  },
+  {
+    "id": 18,
+    "goodsName": "배틀그라운드 3D 키링 3종",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 5500,
+    "src": "game-items-shoppingmall/src/img/accessory/99577047c66539c1fa7ed22b57ac572b.jpg"
+  },
+  {
+    "id": 19,
+    "goodsName": "오버워치 가니메데스 열쇠고리",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 7920,
+    "src": "game-items-shoppingmall/src/img/accessory/8d3b0083a240e442001b311a5e32ffba.jpg"
+  },
+  {
+    "id": 20,
+    "goodsName": "오버워치 D.VA (디바) 열쇠고리",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 7920,
+    "src": "game-items-shoppingmall/src/img/accessory/3663367912f1c043328d4f468fc56cb2.jpg"
+  },
+  {
+    "id": 21,
+    "goodsName": "PUBG 배틀그라운드 그래픽 아크릴 키링 2종",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 6000,
+    "src": "game-items-shoppingmall/src/img/accessory/cb16638c877168815729d020a594c333.jpg"
+  },
+  {
+    "id": 22,
+    "goodsName": "배틀그라운드 벨크로 파우치 백",
+    "type": "acc",
+    "game": "배틀그라운드",
+    "price": 9000,
+    "src": "game-items-shoppingmall/src/img/accessory/5dabdeff27221f65d70f3d55c9aa7ef1.jpg"
+  },
+  {
+    "id": 23,
+    "goodsName": "[라테일] 15주년 VIP 패키지(게임 쿠폰 포함)",
+    "type": "acc",
+    "game": "라테일",
+    "price": 59000,
+    "src": "game-items-shoppingmall/src/img/accessory/84be16b92f7695b2046c81dfd2bd28da.jpg"
+  },
+  {
+    "id": 24,
+    "goodsName": "[라테일] 왕마리, 라요니 뱃지 세트(게임 쿠폰 포함)",
+    "type": "acc",
+    "game": "라테일",
+    "price": 9000,
+    "src": "game-items-shoppingmall/src/img/accessory/bd26789e1ac62c5ecd0ef8c376a0979f.jpg"
+  },
+  {
+    "id": 25,
+    "goodsName": "[라테일] 캐릭터 에코백(게임 쿠폰 포함)",
+    "type": "acc",
+    "game": "라테일",
+    "price": 19900,
+    "src": "game-items-shoppingmall/src/img/accessory/0766f18d9e382a110f1472a5e97f564f.jpg"
+  },
+  {
+    "id": 26,
+    "goodsName": "[라테일] 캐릭터 파우치(게임 쿠폰 포함)",
+    "type": "acc",
+    "game": "라테일",
+    "price": 19900,
+    "src": "game-items-shoppingmall/src/img/accessory/89f43e7aa1834f317cc3cbcb7cf75ff6.jpg"
+  },
+  {
+    "id": 27,
+    "goodsName": "꿀잼 모자 / 리그 오브 레전드 LoL 굿즈",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/clothing/e98d7a89aca86d405ab561b36023dcbd.jpg"
+  },
+  {
+    "id": 28,
+    "goodsName": "LoL 꿀잼 티모 잠옷 리그 오브 레전드 롤 굿즈",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 89000,
+    "src": "game-items-shoppingmall/src/img/clothing/51efa0a740d7b8fb74919c6159d73ec0.png"
+  },
+  {
+    "id": 29,
+    "goodsName": "LoL 티모 모자 리그 오브 레전드 롤 굿즈",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 29000,
+    "src": "game-items-shoppingmall/src/img/clothing/b4e8dd4e6d8b3f852897cbb10a0f4e89.png"
+  },
+  {
+    "id": 30,
+    "goodsName": "티버 모자 / 리그 오브 레전드 LoL 굿즈",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/clothing/d4f9f3adb9d92d8b9885241c552b3b36.jpg"
+  },
+  {
+    "id": 31,
+    "goodsName": "LoL 레드 미니언 슬리퍼 리그 오브 레전드 롤 굿즈",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 24000,
+    "src": "game-items-shoppingmall/src/img/clothing/b583231fc5665899d1e7d8c7ec0b57e2.png"
+  },
+  {
+    "id": 32,
+    "goodsName": "페이커 티셔츠 화이트",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/clothing/30_shop1_633858.png"
+  },
+  {
+    "id": 33,
+    "goodsName": "페이커 티셔츠 블랙",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/clothing/29_shop1_207958.png"
+  },
+  {
+    "id": 34,
+    "goodsName": "페이커 스냅백 블랙",
+    "type": "cloth",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/clothing/f050c9ac13bd736a6160ee9ef147a2af.png"
+  },
+  {
+    "id": 35,
+    "goodsName": "PUBG 배틀그라운드 BUGGY 그래픽 반팔 티셔츠",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 21600,
+    "src": "game-items-shoppingmall/src/img/clothing/4beddd930ff4afab09e15b7cd1127eff.jpg"
+  },
+  {
+    "id": 36,
+    "goodsName": "PUBG 배틀그라운드 인게임 그래픽 티셔츠 블랙",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 19900,
+    "src": "game-items-shoppingmall/src/img/clothing/f5862195f1c9396e5a68641d5a65f291.jpg"
+  },
+  {
+    "id": 37,
+    "goodsName": "PUBG 배틀그라운드 인게임 그래픽 티셔츠 그레이",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 19900,
+    "src": "game-items-shoppingmall/src/img/clothing/82cca4cf23feb3998e953665e8de5323.png"
+  },
+  {
+    "id": 38,
+    "goodsName": "PUBG 배틀그라운드 봄버자켓",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 59900,
+    "src": "game-items-shoppingmall/src/img/clothing/1b28c9f213a8411b3a82d913c6817998.jpg"
+  },
+  {
+    "id": 39,
+    "goodsName": "배틀그라운드 2019 그래픽 티셔츠 3종",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/clothing/1cceeae4861f9b14f82b9341a1deeb90.jpg"
+  },
+  {
+    "id": 40,
+    "goodsName": "PUBG 로고 후드집업",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 55300,
+    "src": "game-items-shoppingmall/src/img/clothing/0847316ca8041d9beeae68a039954c27.jpg"
+  },
+  {
+    "id": 41,
+    "goodsName": "배틀그라운드 로고 후드티",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 44000,
+    "src": "game-items-shoppingmall/src/img/clothing/354f7905b52bc3bd9d355b4e7baa8f22.jpg"
+  },
+  {
+    "id": 42,
+    "goodsName": "배틀그라운드 로고 맨투맨",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/clothing/9f82509f690f85913671f0fba8d19027.jpg"
+  },
+  {
+    "id": 43,
+    "goodsName": "배틀그라운드 롱패딩 (블랙/화이트)",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/clothing/2fd6cd01f4b6991b26b766b956306abe.jpg"
+  },
+  {
+    "id": 44,
+    "goodsName": "배틀그라운드 그래픽 티셔츠 (4종)",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/clothing/e11ed47529618e55c383305d5deaadae.jpg"
+  },
+  {
+    "id": 45,
+    "goodsName": "배틀그라운드 LV3 헬멧 슬리퍼",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 8000,
+    "src": "game-items-shoppingmall/src/img/clothing/cecc0534256d7f4bb1c89d33f707202f.jpg"
+  },
+  {
+    "id": 46,
+    "goodsName": "배틀그라운드 로고 스냅백",
+    "type": "cloth",
+    "game": "배틀그라운드",
+    "price": 17000,
+    "src": "game-items-shoppingmall/src/img/clothing/a75fc95448c331d0c99453051b9e348d.jpg"
+  },
+  {
+    "id": 47,
+    "goodsName": "RAGNAROK 라그나로크 포링 티셔츠",
+    "type": "cloth",
+    "game": "라그라노크",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/clothing/e6c47aff14a96f6654293e29687a6487.jpg"
+  },
+  {
+    "id": 48,
+    "goodsName": "RAGNAROK 라그나로크 데비루치 티셔츠",
+    "type": "cloth",
+    "game": "라그라노크",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/clothing/c896a2cd4095b7fea454eddc8d62a994.jpg"
+  },
+  {
+    "id": 49,
+    "goodsName": "[라테일] 토마리 자수 티셔츠(게임 쿠폰 포함)",
+    "type": "cloth",
+    "game": "라테일",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/clothing/40c55fec7f7eb90305a575f18cec5951.jpg"
+  },
+  {
+    "id": 50,
+    "goodsName": "별 수호자 포로 인형 열쇠고리 (무작위)",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/dolls/a9c3b5662b9e71194640ac97cd027851.png"
+  },
+  {
+    "id": 51,
+    "goodsName": "[LoL] 전투사관학교 유미 쿠션 롤 / 리그 오브 레전드",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/dolls/dd52000c3323737f472ef364f4f513fa.png"
+  },
+  {
+    "id": 52,
+    "goodsName": "LoL 설맞이 축제 티버 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/dolls/4f97e56489ef632fde35b557537493cd.png"
+  },
+  {
+    "id": 53,
+    "goodsName": "LoL 얼음불꽃 티버 인형 / 리그 오브 레전드",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/dolls/1f6f5d37dcf5c68114251b3c64535b0c.png"
+  },
+  {
+    "id": 54,
+    "goodsName": "LoL 장로 드래곤 컬렉션 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/dolls/18ac3b01a147cf02bad1885b8e1d6a04.jpg"
+  },
+  {
+    "id": 55,
+    "goodsName": "LoL 그웬 인형",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/dolls/933558afdfd61ee1bdbf1a0f5ced5a12.png"
+  },
+  {
+    "id": 56,
+    "goodsName": "LoL 유미 컬렉션 인형 / 리그 오브 레전드",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/dolls/98bada73e5cc6b113dcda6d6def4fb5b.png"
+  },
+  {
+    "id": 57,
+    "goodsName": "LoL 웰시 코르키 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/dolls/b215abf59f498e15a3f3f0edc77f0ede.png"
+  },
+  {
+    "id": 58,
+    "goodsName": "LoL 우주비행사 티모 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/dolls/96e45956a1b14ad968ea6d51ff328d4b.jpg"
+  },
+  {
+    "id": 59,
+    "goodsName": "LoL KDA ALL OUT 티버 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/dolls/2ec34cac03db8f654328b34b85eca388.jpg"
+  },
+  {
+    "id": 60,
+    "goodsName": "LoL 펭구 깃털기사 컬렉션 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/dolls/74cae9b21c446be1bc1819593931a17b.jpg"
+  },
+  {
+    "id": 61,
+    "goodsName": "별 수호자 이나 컬렉션 인형",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/dolls/a0961b2828bdf197f5e9393553dbf6c4.jpg"
+  },
+  {
+    "id": 62,
+    "goodsName": "별 수호자 두두 컬렉션 인형",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/dolls/ec0298325b01bae6fc5b7ccb851d79e9.jpg"
+  },
+  {
+    "id": 63,
+    "goodsName": "별 수호자 꿀렁이 컬렉션 인형",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/dolls/72d763945c2607150ee5c614b99a0607.jpg"
+  },
+  {
+    "id": 64,
+    "goodsName": "별 수호자 포로 인형 열쇠고리 (무작위)",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/dolls/a9c3b5662b9e71194640ac97cd027851.png"
+  },
+  {
+    "id": 65,
+    "goodsName": "LoL 2020 월드 챔피언십 티버 인형 리그 오브 레전드 롤 굿즈",
+    "type": "doll",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/dolls/57c98d96613d80f38b6e92c8aa93a8c8.png"
+  },
+  {
+    "id": 66,
+    "goodsName": "월드오브워크래프트 그림자미호 인형 정품[정식라이센스]",
+    "type": "doll",
+    "game": "월드오브워크래프트",
+    "price": 31200,
+    "src": "game-items-shoppingmall/src/img/dolls/9e59bcabbdc2f768a38a9a523b694928.jpg"
+  },
+  {
+    "id": 67,
+    "goodsName": "피프 봉제인형",
+    "type": "doll",
+    "game": "월드오브워크래프트",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/dolls/35f08325367b5e9323cd4a7c7e9c8993.jpg"
+  },
+  {
+    "id": 68,
+    "goodsName": "포켓몬스터 인 어 드림 라프라스 인형 M",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/0ffbbb53033c2bd43cc1cf30ee8dc218.jpg"
+  },
+  {
+    "id": 69,
+    "goodsName": "포켓몬스터 인 어 드림 잠만보 인형 M",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/c55aebe14178f6008e7033ffca356398.jpg"
+  },
+  {
+    "id": 70,
+    "goodsName": "포켓몬스터 인 어 드림 피카츄 인형 M",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/2285d601f28f8ad7e823ca31c5de8bbf.jpg"
+  },
+  {
+    "id": 71,
+    "goodsName": "포켓몬스터 인 어 드림 삐 인형 M",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/b5a64bda1fb587d3ccbfea46662f947b.jpg"
+  },
+  {
+    "id": 72,
+    "goodsName": "포켓몬스터 리자몽 인형 30cm",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/512f0be4f1765f1068307ff4ad209b80.jpg"
+  },
+  {
+    "id": 73,
+    "goodsName": "포켓몬스터 잠만보 인형 25cm",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/dolls/c52d6eb205cd81fa655b86210cae3eaf.jpg"
+  },
+  {
+    "id": 74,
+    "goodsName": "포켓몬스터 몬스터볼 인형 20cm",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 18000,
+    "src": "game-items-shoppingmall/src/img/dolls/7066c84edd7f4f8d6077d970f4079216.jpg"
+  },
+  {
+    "id": 75,
+    "goodsName": "포켓몬스터 메타몽 인형 30cm (퍼플)",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 15000,
+    "src": "game-items-shoppingmall/src/img/dolls/ff0e8befd3e03389b67d19014d154c97.jpg"
+  },
+  {
+    "id": 76,
+    "goodsName": "포켓몬스터 인 어 드림 푸린 인형 M",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/70b53665706595445cecca19ddb6319c.jpg"
+  },
+  {
+    "id": 77,
+    "goodsName": "포켓몬스터 뮤츠 인형 30cm",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/dolls/6bd1367267c87f7abe5a536f9d17f831.jpg"
+  },
+  {
+    "id": 78,
+    "goodsName": "포켓몬스터 변신메타몽시리즈 피카츄 인형 30cm",
+    "type": "doll",
+    "game": "포켓몬스터",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/dolls/2c06f1fc72def2250cbce6795c73d570.jpg"
+  },
+  {
+    "id": 79,
+    "goodsName": "[원신] 빈백/쇼파 바람 슬라임 중형 [배송 안내를 꼭 확인해 주세요!]",
+    "type": "doll",
+    "game": "원신",
+    "price": 210000,
+    "src": "game-items-shoppingmall/src/img/dolls/c8e2dcf91b7536ebe17897ead332abc2.jpg"
+  },
+  {
+    "id": 80,
+    "goodsName": "마인크래프트 플러쉬 인형고리 모음 키체인 / 열쇠고리 -방문수령가능 -",
+    "type": "doll",
+    "game": "마인크래프트",
+    "price": 13900,
+    "src": "game-items-shoppingmall/src/img/dolls/c1eb5dc249bfbd494b9ddb3af6997954.jpg"
+  },
+  {
+    "id": 81,
+    "goodsName": "마인크래프트 인형 모음 - 방문수령가능 -",
+    "type": "doll",
+    "game": "마인크래프트",
+    "price": 24900,
+    "src": "game-items-shoppingmall/src/img/dolls/ec5544ffbb12d3bec3121c39e2b6183f.jpg"
+  },
+  {
+    "id": 82,
+    "goodsName": "별 수호자 에어팟 / 에어팟 프로 / 에어팟 3세대 투명 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 24800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/4951a0ce84e4d583041e5827f51c2a2a.png"
+  },
+  {
+    "id": 83,
+    "goodsName": "별 수호자 에어팟 / 에어팟 프로 / 에어팟 3세대 하드 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 24800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/b25a5163f11b706df013aeab0ef9cc3d.gif"
+  },
+  {
+    "id": 84,
+    "goodsName": "LoL 리그 오브 레전드 로고 에어팟 프로 가죽 케이스 롤 굿즈",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 128000,
+    "src": "game-items-shoppingmall/src/img/earphonecase/e22cb726ff741957b471eb059573bdfd.jpg"
+  },
+  {
+    "id": 85,
+    "goodsName": "LoL 리그 오브 레전드 로고 에어팟 가죽 케이스 롤 굿즈",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 128000,
+    "src": "game-items-shoppingmall/src/img/earphonecase/df9989378532a2bfcb55e8cb47a43ea6.jpg"
+  },
+  {
+    "id": 86,
+    "goodsName": "LoL KDA ALL OUT 에어팟 프로 홀로그램 가죽 케이스 리그 오브 레전드 롤 굿즈",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 128000,
+    "src": "game-items-shoppingmall/src/img/earphonecase/b2939c80e0d04fc288f61259b4c21add.jpg"
+  },
+  {
+    "id": 87,
+    "goodsName": "LoL KDA ALL OUT 에어팟 홀로그램 가죽 케이스 리그 오브 레전드 롤 굿즈",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 128000,
+    "src": "game-items-shoppingmall/src/img/earphonecase/2293dd16cb513175959eb9f6d7ff3c61.jpg"
+  },
+  {
+    "id": 88,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 에어팟 프로 케이스 롤",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/fe76f11f59267537c9e4968f07064734.jpg"
+  },
+  {
+    "id": 89,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 에어팟 케이스 롤",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/82ab7c28fb451ae8faee6c3e508da48e.jpg"
+  },
+  {
+    "id": 90,
+    "goodsName": "LoL 리그오브레전드 아무무 갤럭시 버즈/라이브/프로 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/8c5006c9759d523db130751e2b043216.jpg"
+  },
+  {
+    "id": 91,
+    "goodsName": "LoL 리그오브레전드 룰루 갤럭시 버즈/라이브/프로 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/ca5ef04d6873524bdc3f9ab5250b6ca2.jpg"
+  },
+  {
+    "id": 92,
+    "goodsName": "LoL 리그오브레전드 나르 갤럭시 버즈/라이브/프로 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/206b2f4d16edb4b8e01a740bee8db578.jpg"
+  },
+  {
+    "id": 93,
+    "goodsName": "LoL 리그오브레전드 포로 갤럭시 버즈/라이브/프로 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/d25e4e03c844e22114af7b7035264e55.jpg"
+  },
+  {
+    "id": 94,
+    "goodsName": "LoL 리그오브레전드 티모 갤럭시 버즈/라이브/프로 케이스",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/b16869e34044a0e263b797b5402fb564.jpg"
+  },
+  {
+    "id": 95,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 버즈라이브 케이스 롤",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/6f66fcd12a5370da8bb6ab3b9efe33f7.jpg"
+  },
+  {
+    "id": 96,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 버즈라이브/프로 케이스 롤",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/6f66fcd12a5370da8bb6ab3b9efe33f7.jpg"
+  },
+  {
+    "id": 97,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 버즈 케이스 롤",
+    "type": "earcase",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/27a06075999474eddec45634d0c18249.jpg"
+  },
+  {
+    "id": 98,
+    "goodsName": "PUBG 배틀그라운드 BUGGY 에어팟 3세대 케이스",
+    "type": "earcase",
+    "game": "배틀그라운드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/8cc3b16549992d73e4ad53dc5ff9147b.jpg"
+  },
+  {
+    "id": 99,
+    "goodsName": "PUBG 배틀그라운드 BUGGY 에어팟 프로 케이스",
+    "type": "earcase",
+    "game": "배틀그라운드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/71cd2bdd5186ed20f3d1fbb981c00175.jpg"
+  },
+  {
+    "id": 100,
+    "goodsName": "PUBG 배틀그라운드 BUGGY 에어팟 케이스",
+    "type": "earcase",
+    "game": "배틀그라운드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/dd1138199c267986ae5a426418052ab7.jpg"
+  },
+  {
+    "id": 101,
+    "goodsName": "[라테일] 투명 에어팟&갤럭시 버즈 케이스(게임 쿠폰 포함)",
+    "type": "earcase",
+    "game": "라테일",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/earphonecase/c2879c0e4453e9904f849bc2d3cdf32f.gif"
+  },
+  {
+    "id": 102,
+    "goodsName": "별 수호자 하드 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/3c6ede15cff5218a991919ca65270f34.png"
+  },
+  {
+    "id": 103,
+    "goodsName": "별 수호자 젤리 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/1521e3ee2977259a43f9d18732b090a0.png"
+  },
+  {
+    "id": 104,
+    "goodsName": "별 수호자 카드 슬라이드 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 22800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/ca58ca70c2bac70b4be85f014b1b94b2.png"
+  },
+  {
+    "id": 105,
+    "goodsName": "LoL 리그오브레전드 아무무 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/ff90672ed07ee1b9348a0f43b0b6342a.jpg"
+  },
+  {
+    "id": 106,
+    "goodsName": "LoL 리그오브레전드 룰루 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/1f79bf16e7bd684d0df2371807e6f71f.jpg"
+  },
+  {
+    "id": 107,
+    "goodsName": "LoL 리그오브레전드 나르 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/23e845ba9c2a9af560fba8d9d62daaae.jpg"
+  },
+  {
+    "id": 108,
+    "goodsName": "LoL 리그오브레전드 포로 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/58c79c357b485a11b53e41f2630b770a.jpg"
+  },
+  {
+    "id": 109,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 타이포그래피 아이폰 카드슬라이드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/79102250d5056ce462e82d083894f01c.webp"
+  },
+  {
+    "id": 110,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 타이포그래피 아이폰 하드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/bc982366ac290963fb87c9b95d9e4e69.jpg"
+  },
+  {
+    "id": 111,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 스페셜 아리 아이폰 카드슬라이드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/4f6bfcb1b1cf2a490d8a300e59a57d83.webp"
+  },
+  {
+    "id": 112,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 스페셜 아리 아이폰 하드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/3262e6b742532f7e02a657158e97b567.jpg"
+  },
+  {
+    "id": 113,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 시그니처 아이폰 카드슬라이드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/56a251dd1cf77f04bf78862d73957cb1.webp"
+  },
+  {
+    "id": 114,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 시그니처 아이폰 하드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/8282d800e76c0918536baf0ac5e39dd0.jpg"
+  },
+  {
+    "id": 115,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT BADDEST 아트 아이폰 카드슬라이드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/7d1649c54e3a276204e56a63fd8265e9.webp"
+  },
+  {
+    "id": 116,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT BADDEST 아트 아이폰 하드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/db2cf4d23c126565928efba2e6c7a4a9.jpg"
+  },
+  {
+    "id": 117,
+    "goodsName": "리그 오브 레전드 KDA ALL OUT 스플래시 아트 갤럭시 스마트폰 카드슬라이드 케이스 롤",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/9eb205054964ec74318c3dd8d5188613.webp"
+  },
+  {
+    "id": 118,
+    "goodsName": "리그 오브 레전드 KDA 사각일러스트 갤럭시 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/0aeae4b55c5b14b1025a390c64eb9d55.jpg"
+  },
+  {
+    "id": 119,
+    "goodsName": "리그 오브 레전드 KDA 사각일러스트 갤럭시 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/b8a65e9045b8b5d8c77f79e47ccb1def.jpg"
+  },
+  {
+    "id": 120,
+    "goodsName": "리그 오브 레전드 KDA 아이콘 갤럭시 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/cef7e63956141d3bba87608c28ddc5f8.jpg"
+  },
+  {
+    "id": 121,
+    "goodsName": "리그 오브 레전드 KDA 일러스트 갤럭시 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/22d66a543bf5899f839cfabf8af9ab2d.jpg"
+  },
+  {
+    "id": 122,
+    "goodsName": "리그 오브 레전드 KDA 일러스트 아이폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/d1ee40d31c1410c96a179de814bb83bb.jpg"
+  },
+  {
+    "id": 123,
+    "goodsName": "리그 오브 레전드 KDA 아이콘 아이폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/3028819618dfcb29d4e306fa7fea52aa.jpg"
+  },
+  {
+    "id": 124,
+    "goodsName": "리그 오브 레전드 KDA 사각일러스트 아이폰 케이스",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/d5d88318293d01de1b69e14eb34f4bbe.jpg"
+  },
+  {
+    "id": 125,
+    "goodsName": "리그 오브 레전드 KDA 스마트톡",
+    "type": "mobacc",
+    "game": "리그오브레전드",
+    "price": 12800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/4674018aa333109276a4b95ba9653b3c.jpg"
+  },
+  {
+    "id": 126,
+    "goodsName": "PUBG 배틀그라운드 BUGGY 아크릴 스마트톡",
+    "type": "mobacc",
+    "game": "배틀그라운드",
+    "price": 10500,
+    "src": "game-items-shoppingmall/src/img/mobileacc/2d8d773bc542c0205921a1f2baadbb99.jpg"
+  },
+  {
+    "id": 127,
+    "goodsName": "배틀그라운드 PUBG YELLOW 하드 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "배틀그라운드",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/deb4e804c6bbb5fbdd32589ddef2d981.jpg"
+  },
+  {
+    "id": 128,
+    "goodsName": "배틀그라운드 PUBG YELLOW 카드 슬라이드 스마트폰 케이스",
+    "type": "mobacc",
+    "game": "배틀그라운드",
+    "price": 19800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/9b17e114bff3533c6eb4231748b7216a.webp"
+  },
+  {
+    "id": 129,
+    "goodsName": "[라테일] 젤리 스마트폰 케이스(게임 쿠폰 포함)",
+    "type": "mobacc",
+    "game": "라테일",
+    "price": 14800,
+    "src": "game-items-shoppingmall/src/img/mobileacc/efd84ad3c15c3b9928d0958124bda367.gif"
+  },
+  {
+    "id": 130,
+    "goodsName": "한복 아리 마우스패드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/mousepad/4271d7cbbb6025d06513acc43e0378e3.jpg"
+  },
+  {
+    "id": 131,
+    "goodsName": "LoL 영혼의 꽃 아리 XL 마우스패드 리그 오브 레전드 롤 굿즈",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/mousepad/01e5e125d8decfe963701ab58026ad48.png"
+  },
+  {
+    "id": 132,
+    "goodsName": "LCK 10주년 기념 XL 마우스패드(한정판)",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/mousepad/c6957118f9e67ef5a7fc96c445584cf2.jpg"
+  },
+  {
+    "id": 133,
+    "goodsName": "별 수호자 시즌1 XL 마우스패드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/mousepad/24b564fb8cb0ade27bc7339a78f8d500.jpg"
+  },
+  {
+    "id": 134,
+    "goodsName": "별 수호자 카이사와 아칼리 XL 마우스패드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/mousepad/2d3ed455c6099de6f00f41eadc72f2df.jpg"
+  },
+  {
+    "id": 135,
+    "goodsName": "LoL K/DA ALL OUT XL 마우스패드 (아트 에디션) / 리그 오브 레전드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 32000,
+    "src": "game-items-shoppingmall/src/img/mousepad/78276b2caad2abe06955e0a38640c2f1.jpg"
+  },
+  {
+    "id": 136,
+    "goodsName": "[LoL]TFT 꼬마 전설이 마우스패드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/mousepad/576bf39292b708ca1b687530cadf5f42.png"
+  },
+  {
+    "id": 137,
+    "goodsName": "SMEB 마우스패드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/mousepad/37_shop1_788663.png"
+  },
+  {
+    "id": 138,
+    "goodsName": "DEFT 마우스패드",
+    "type": "pad",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/mousepad/38_shop1_814778.png"
+  },
+  {
+    "id": 139,
+    "goodsName": "PUBG 배틀그라운드 BUGGY 장마우스패드",
+    "type": "pad",
+    "game": "배틀그라운드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/mousepad/ec1d9ff45eda533aace39bea14c4ff74.jpg"
+  },
+  {
+    "id": 140,
+    "goodsName": "[라테일] 캐릭터 장마우스패드(게임 쿠폰 포함)",
+    "type": "pad",
+    "game": "라테일",
+    "price": 25000,
+    "src": "game-items-shoppingmall/src/img/mousepad/dfa8e8002067d8136b74327fb4fe8e52.jpg"
+  },
+  {
+    "id": 141,
+    "goodsName": "레이저 골리아투스 마우스패드 원신 에디션 / 페이몬 goliathus (리딤코드 포함)",
+    "type": "pad",
+    "game": "원신",
+    "price": 27000,
+    "src": "game-items-shoppingmall/src/img/mousepad/2fef197e28d70bac686170bf758d0015.jpg"
+  },
+  {
+    "id": 142,
+    "goodsName": "세라핀 UNLOCKED 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/c3c4d677c4ca9d9adb35fc7503f858b0.jpg"
+  },
+  {
+    "id": 143,
+    "goodsName": "세트 UNLOCKED 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/69d284dcf25bdda6875d75baefa98268.jpg"
+  },
+  {
+    "id": 144,
+    "goodsName": "영혼의 꽃 릴리아 피규어 (특별판)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/statue/11c74d4faddddea35793aeadbe077831.jpg"
+  },
+  {
+    "id": 145,
+    "goodsName": "챔피언십 르블랑 Unlocked 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 109000,
+    "src": "game-items-shoppingmall/src/img/statue/70f6f7d85e6fb98e10ea6c125b35e7b2.jpg"
+  },
+  {
+    "id": 146,
+    "goodsName": "바이 UNLOCKED 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/a4ca9c57b6850078ba8d3592f9c0dd7c.png"
+  },
+  {
+    "id": 147,
+    "goodsName": "별 수호자 룰루 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/statue/1437c833c76445fcecad6e90598e5957.jpg"
+  },
+  {
+    "id": 148,
+    "goodsName": "럭스 UNLOCKED 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/2aaf2097102899d7fefb513f176583f4.jpg"
+  },
+  {
+    "id": 149,
+    "goodsName": "포로 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/statue/bcca373a97e45fe80044070d5275d20a.jpg"
+  },
+  {
+    "id": 150,
+    "goodsName": "스노우보더 포로 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/statue/afac5acfc996807f086bb7dd3693e38b.png"
+  },
+  {
+    "id": 151,
+    "goodsName": "발렌타인데이 포로 피규어(특별판)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/statue/aa989233f118e971aadf28d1ef478d1a.jpg"
+  },
+  {
+    "id": 152,
+    "goodsName": "LoL 베인 UNLOCKED 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/b1a6dd297db31b35c6623d0f7d8ee411.jpg"
+  },
+  {
+    "id": 153,
+    "goodsName": "LoL 라칸 UNLOCKED 스태츄 / 리그 오브 레전드",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/05dfdc746a4c5f3ba514d6095b9c636f.jpg"
+  },
+  {
+    "id": 154,
+    "goodsName": "LoL 미스 포츈 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/0e7d69fd162c4a125ea456ac28556592.jpg"
+  },
+  {
+    "id": 155,
+    "goodsName": "LoL 대장군 자르반 IV 피규어 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/statue/3a3d261b41c9f4cb418399d4fb7b3a2c.jpg"
+  },
+  {
+    "id": 156,
+    "goodsName": "LoL 협곡전설 미니 피규어 세트 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 52000,
+    "src": "game-items-shoppingmall/src/img/statue/e6ed8e45f349b4ed3ae74e8d5a81583a.png"
+  },
+  {
+    "id": 157,
+    "goodsName": "LoL 오디세이 미니 피규어 세트 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 52000,
+    "src": "game-items-shoppingmall/src/img/statue/beea47d4656570a4ddd5ad677be66190.png"
+  },
+  {
+    "id": 158,
+    "goodsName": "LoL 수영장 파티 미니 피규어 세트 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 52000,
+    "src": "game-items-shoppingmall/src/img/statue/9ce2644af0d11c3ed79632bb54c0abb8.png"
+  },
+  {
+    "id": 159,
+    "goodsName": "LoL 아케이드 카이사 피규어(특별판)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/statue/7e66236ea57e8c026dc7b8a0a30e3906.jpg"
+  },
+  {
+    "id": 160,
+    "goodsName": "LoL 영혼의 꽃 리븐 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/statue/94b8e4f2a09b42affa02e8e6b99586c4.png"
+  },
+  {
+    "id": 161,
+    "goodsName": "LoL 불멸의 영웅 이렐리아와 탈론 듀오 피규어(시리즈 4)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 69000,
+    "src": "game-items-shoppingmall/src/img/statue/5a7f273f2fc345543fc78b93009b510a.png"
+  },
+  {
+    "id": 162,
+    "goodsName": "LoL K/DA ALL OUT 세라핀 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 38000,
+    "src": "game-items-shoppingmall/src/img/statue/9725333d98b56ecd07c1e0469a95a6cd.jpg"
+  },
+  {
+    "id": 163,
+    "goodsName": "LoL 애쉬 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/8e58fe10fc70317888a5c1f43c6de815.jpg"
+  },
+  {
+    "id": 164,
+    "goodsName": "LoL 징크스 Unlocked 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/32125367452507ceb7fe3e82a1c8d09b.png"
+  },
+  {
+    "id": 165,
+    "goodsName": "LoL 빛의 인도자 리븐 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 109000,
+    "src": "game-items-shoppingmall/src/img/statue/61e4a741f04e295815cfef36440eb143.png"
+  },
+  {
+    "id": 166,
+    "goodsName": "LoL 프로젝트 이렐리아 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 109000,
+    "src": "game-items-shoppingmall/src/img/statue/98ef4891146b4a9f04cb8ef9c385f14d.jpg"
+  },
+  {
+    "id": 167,
+    "goodsName": "LoL 아리 Unlocked 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/94a8a065b2fd1c6acc443a681cb9de55.png"
+  },
+  {
+    "id": 168,
+    "goodsName": "LoL K/DA 아칼리 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 109000,
+    "src": "game-items-shoppingmall/src/img/statue/6ea00ab46b8e8fe7f6fae16bd986519d.png"
+  },
+  {
+    "id": 169,
+    "goodsName": "우주 그루브 블리츠와 크랭크 XL 피규어 (특별판)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/statue/37877d7c03d7ed7b452a23d67644697c.jpg"
+  },
+  {
+    "id": 170,
+    "goodsName": "오른 XL 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/statue/0b8ff1ed591b253381792b8d519e3f84.jpg"
+  },
+  {
+    "id": 171,
+    "goodsName": "불꽃놀이 티모 피규어 (한정판)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/statue/93dd5bdaf8721454c9dc9639f9818f77.jpg"
+  },
+  {
+    "id": 172,
+    "goodsName": "케이틀린 UNLOCKED 스태츄",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/b0c9cf0486a611680bfad73ca992658c.jpg"
+  },
+  {
+    "id": 173,
+    "goodsName": "LoL 불의 축제 아트록스 피규어 특별판 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 45000,
+    "src": "game-items-shoppingmall/src/img/statue/fdebba298b1447088043a6ad429c8413.jpg"
+  },
+  {
+    "id": 174,
+    "goodsName": "자야 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/b9c845720aaf74f256eae7cdf5ba47f4.jpg"
+  },
+  {
+    "id": 175,
+    "goodsName": "LoL 자야와 라칸 듀오 피규어 에디션 시리즈 3 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 59000,
+    "src": "game-items-shoppingmall/src/img/statue/d5e36f1d679033b0b0a7ee3c626b9dd9.png"
+  },
+  {
+    "id": 176,
+    "goodsName": "LoL K/DA 아리 피규어 (시리즈 3) / 리그 오브 레전드",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/statue/d4e22a3b85acb0e2a23a8b0ed8936d49.png"
+  },
+  {
+    "id": 177,
+    "goodsName": "LoL 모르가나 피규어",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/statue/254cea50a03d10145e1c395376f8d8ff.png"
+  },
+  {
+    "id": 178,
+    "goodsName": "LoL 레드 미니언 돌격대 피규어 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 35000,
+    "src": "game-items-shoppingmall/src/img/statue/6d7cc48b1bb9bfc8dceeaf49c9b520c7.png"
+  },
+  {
+    "id": 179,
+    "goodsName": "LoL 카타리나 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/a57a5f67b97207cd0b064903f153be44.jpg"
+  },
+  {
+    "id": 180,
+    "goodsName": "LoL 진 UNLOCKED 스태츄 리그 오브 레전드 롤 굿즈",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 99000,
+    "src": "game-items-shoppingmall/src/img/statue/e3660ef8a50084c72d2a4c249debfd5c.jpg"
+  },
+  {
+    "id": 181,
+    "goodsName": "요들 컬렉터블 피규어 6SET (무작위)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 140000,
+    "src": "game-items-shoppingmall/src/img/statue/f146bfdfd2dfdc3c10142ce9471cf2b3.jpg"
+  },
+  {
+    "id": 182,
+    "goodsName": "요들 컬렉터블 피규어 (무작위)",
+    "type": "statue",
+    "game": "리그오브레전드",
+    "price": 28000,
+    "src": "game-items-shoppingmall/src/img/statue/b92a0e301dbc8ba8c5c16a4866ca4589.jpg"
+  },
+  {
+    "id": 183,
+    "goodsName": "공식 정품 WOW 스랄 스태츄 / 대족장 스랄 월드오브워크래프트 와우",
+    "type": "statue",
+    "game": "월드오브워크래프트",
+    "price": 718400,
+    "src": "game-items-shoppingmall/src/img/statue/db183e53bb46e8f543647b4fba2a52e5.jpg"
+  },
+  {
+    "id": 184,
+    "goodsName": "[오버워치] 넨도로이드 949 (정크렛)",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 33000,
+    "src": "game-items-shoppingmall/src/img/statue/09063bb9c41ce353b198f701333bbd78.jpg"
+  },
+  {
+    "id": 185,
+    "goodsName": "오버워치 둠피스트 스태츄",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 278000,
+    "src": "game-items-shoppingmall/src/img/statue/eccd7d09cb0d8997f5a41c20d5896f3c.jpg"
+  },
+  {
+    "id": 186,
+    "goodsName": "Cute But Deadly 페퍼민트 솜브라 정식라이센스",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 7200,
+    "src": "game-items-shoppingmall/src/img/statue/0b1f855cf6b3af44cfdf4e2798e2161c.jpg"
+  },
+  {
+    "id": 187,
+    "goodsName": "Cute But Deadly 프로스트 자리야 정식라이센스",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 7200,
+    "src": "game-items-shoppingmall/src/img/statue/1bdeff121eae00c0f045384938b8c0ae.jpg"
+  },
+  {
+    "id": 188,
+    "goodsName": "Cute But Deadly 디바 메카 피규어 정식라이센스",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 25600,
+    "src": "game-items-shoppingmall/src/img/statue/ba9c4ff65264a342495e926f49f90d97.jpg"
+  },
+  {
+    "id": 189,
+    "goodsName": "Cute But Deadly 나노 콜라 디바 메카 정식라이센스",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 28720,
+    "src": "game-items-shoppingmall/src/img/statue/b598a2c0014f9063ab27c6157ba141b2.jpg"
+  },
+  {
+    "id": 190,
+    "goodsName": "CUTE BUT DEADLY 뱀파이어 시메트라 소형피규어/정품",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 7200,
+    "src": "game-items-shoppingmall/src/img/statue/e19ceaed684eb0aa1e966eb640937257.jpg"
+  },
+  {
+    "id": 191,
+    "goodsName": "위도우메이커 스테츄",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 198000,
+    "src": "game-items-shoppingmall/src/img/statue/e0f727e118c047c6cdeec140d21ad811.jpg"
+  },
+  {
+    "id": 192,
+    "goodsName": "한조 스테츄",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 239200,
+    "src": "game-items-shoppingmall/src/img/statue/57b9a1cd73e07a872d12da93d0acc93c.jpg"
+  },
+  {
+    "id": 193,
+    "goodsName": "메르시 스테츄",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 191200,
+    "src": "game-items-shoppingmall/src/img/statue/d56b2cecacf39f34d5e550e6ed541f99.jpg"
+  },
+  {
+    "id": 194,
+    "goodsName": "오버워치 메이 스태츄",
+    "type": "statue",
+    "game": "오버워치",
+    "price": 278400,
+    "src": "game-items-shoppingmall/src/img/statue/576baf2138af9fa494d0eb0e8b9bed09.jpg"
+  },
+  {
+    "id": 195,
+    "goodsName": "스타크래프트 아르타니스 스태츄 정품 정식라이센스",
+    "type": "statue",
+    "game": "스타크래프트",
+    "price": 88000,
+    "src": "game-items-shoppingmall/src/img/statue/5b5e3ce7efb38f9ddf86dc4af1614813.jpg"
+  },
+  {
+    "id": 196,
+    "goodsName": "마인크래프트 어드벤쳐 피규어 모음 / 열쇠고리 -방문수령가능 -",
+    "type": "statue",
+    "game": "마인크래프트",
+    "price": 15900,
+    "src": "game-items-shoppingmall/src/img/statue/e0b13d08faedd1ecde2dfc54427cf728.jpg"
+  },
+  {
+    "id": 197,
+    "goodsName": "별 수호자 캐릭터 쿠션",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/etc/d27d3eda76e9937154fe9bd434a8f9c5.jpg"
+  },
+  {
+    "id": 198,
+    "goodsName": "[LoL] 전투사관학교 유미 쿠션 롤 / 리그 오브 레전드",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 42000,
+    "src": "game-items-shoppingmall/src/img/etc/dd52000c3323737f472ef364f4f513fa.png"
+  },
+  {
+    "id": 199,
+    "goodsName": "별 수호자 노트",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 4500,
+    "src": "game-items-shoppingmall/src/img/etc/ba8921420210a241f7e73ab8dda5fd81 (1).jpg"
+  },
+  {
+    "id": 200,
+    "goodsName": "LoL K/DA THE BADDEST 노트 / 리그 오브 레전드",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 4500,
+    "src": "game-items-shoppingmall/src/img/etc/f1c7de1c4b9f2d4bb671f09a0a29c893.png"
+  },
+  {
+    "id": 201,
+    "goodsName": "[LoL] TFT 우르프 황금 뒤집개 열쇠고리",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 19000,
+    "src": "game-items-shoppingmall/src/img/etc/675f5432c244bc283260fb110c1f88a8.png"
+  },
+  {
+    "id": 202,
+    "goodsName": "별 수호자 아크릴 스탠드",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 9000,
+    "src": "game-items-shoppingmall/src/img/etc/d0aab267777ad28ce10eaae889254cf4.jpg"
+  },
+  {
+    "id": 203,
+    "goodsName": "LoL 리그 오브 레전드 영혼의 꽃 아리 PC 케이스",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 399000,
+    "src": "game-items-shoppingmall/src/img/etc/18fbaedb9226673f189d7481c4d84552.jpg"
+  },
+  {
+    "id": 204,
+    "goodsName": "Race to the Top 응원타올",
+    "type": "etc",
+    "game": "리그오브레전드",
+    "price": 9900,
+    "src": "game-items-shoppingmall/src/img/etc/3cc25747ce9a26d98949befa4f05ac3a.jpg"
+  },
+  {
+    "id": 205,
+    "goodsName": "배틀그라운드 반투명 코팅 스티커",
+    "type": "etc",
+    "game": "배틀그라운드",
+    "price": 1000,
+    "src": "game-items-shoppingmall/src/img/etc/cf17b6bdc2ba90629c1632d802319e8e.jpg"
+  },
+  {
+    "id": 206,
+    "goodsName": "배틀그라운드 스퀴시 폼볼 3종",
+    "type": "etc",
+    "game": "배틀그라운드",
+    "price": 3000,
+    "src": "game-items-shoppingmall/src/img/etc/143d0b8bfe88bb9c31affbbe48214c31.jpg"
+  },
+  {
+    "id": 207,
+    "goodsName": "배틀그라운드 파밍 오션 비치타월",
+    "type": "etc",
+    "game": "배틀그라운드",
+    "price": 16000,
+    "src": "game-items-shoppingmall/src/img/etc/e3f51a0516551e6c9a143bb822d5a810.jpg"
+  },
+  {
+    "id": 208,
+    "goodsName": "배틀그라운드 에너지드링크 글라스 컵",
+    "type": "etc",
+    "game": "배틀그라운드",
+    "price": 14400,
+    "src": "game-items-shoppingmall/src/img/etc/b1a87f95f21d25066a16c3d692668f15.jpg"
+  },
+  {
+    "id": 209,
+    "goodsName": "배틀그라운드 5mm탄 점착 메모지",
+    "type": "etc",
+    "game": "배틀그라운드",
+    "price": 2000,
+    "src": "game-items-shoppingmall/src/img/etc/97c9460d92c3bdd704d69439a01ba57a.jpg"
+  },
+  {
+    "id": 210,
+    "goodsName": "배틀그라운드 게이밍 의자 special edition2 [new]",
+    "type": "etc",
+    "game": "배틀그라운드",
+    "price": 199000,
+    "src": "game-items-shoppingmall/src/img/etc/7dd2ce5aa02d56287089d11a936c1b8c.png"
+  },
+  {
+    "id": 211,
+    "goodsName": "호드 플레잉 카드 정품 정식 라이센스",
+    "type": "etc",
+    "game": "월드오브워크래프트",
+    "price": 8000,
+    "src": "game-items-shoppingmall/src/img/etc/139951c50361a0bbb5bafb273b3a49e4.jpg"
+  },
+  {
+    "id": 212,
+    "goodsName": "얼라이언스 플레잉 카드 정품 정식 라이센스",
+    "type": "etc",
+    "game": "월드오브워크래프트",
+    "price": 8000,
+    "src": "game-items-shoppingmall/src/img/etc/2de2b6a6380cea4a486b04aedf86ea87.jpg"
+  },
+  {
+    "id": 213,
+    "goodsName": "오버워치 디바 D.VA 머그컵",
+    "type": "etc",
+    "game": "오버워치",
+    "price": 15920,
+    "src": "game-items-shoppingmall/src/img/etc/bf52176ac04e1df23202d2e985d70a8d.jpg"
+  },
+  {
+    "id": "",
+    "goodsName": "",
+    "type": "",
+    "game": "",
+    "price": "",
+    "src": ""
+  }
+]

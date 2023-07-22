@@ -13,38 +13,36 @@
 }
 
 main {
-    height: 2500px;
     font-family: 'Pretendard-Regular';
 }
 
-.header-footer-container {
-    height: 130px;
-    text-align: center;
-    line-height: 130px;
-    border: 1px solid grey;
+.container {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
 }
 
+/* Carousel */
 .banner-carousel {
-    margin: 0 5%;
-}
-.banner-carousel-image {
-    max-width: 100%;
-    height: auto;
+    margin-top: 2%;
 }
 
+/* SHOP 문구 */
 #page-title {
     font-size: 1.8rem;
     text-align: center;
-    margin: 3% auto;
-    border-bottom: 1px solid grey;
+    margin: 2% auto 2%;
 }
 
+/* Category 슬라이더 */
 .game-category-slider {
     width: 100%;
     height: 150px;
-    margin-bottom: 200px;
+    margin: 5% auto 0;
+    display: flex;
+    justify-content: center;
 }
-
 .game-category-card {
     color: white;
     padding: 20px 0;
@@ -52,60 +50,54 @@ main {
     border-radius: 20px;
     margin: 0 30px;
 }
-
 .prevArrow , .nextArrow {
     font-size: 20px;
     color: lightgrey;
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 120%;
+    top: 74%;
     padding: 0;
     text-align: center;
+    left: 50%;
 }
-
 .prevArrow {
-    left: 45%;
+    transform: translateX(calc(-50% - 50px));
 }
-
 .nextArrow {
-    right: 45%;
+    transform: translateX(calc(-50% + 50px));
 }
-
 .prevArrow:hover, .nextArrow:hover {
     color: black;
 }
-
 .slick-dots {
-	display: flex;
 	justify-content: center;
 	margin: 0;
 	padding: 1rem 0;
     list-style: none;
-    position: absolute;
+    /* position: absolute; */
+    left: 49%;
+    display: flex;
 }
-
 .slick-dots li {
     margin: 0 10px;
+    display: inline-block;
 }
-
 .slick-dots li button {
-    display: block;
     width: 1rem;
     height: 1rem;
     padding: 0;
-    
     border: none;
     border-radius: 100%;
     background-color: lightgrey;
-    
-    text-indent: -9999px;
+    font-size: 0;
 }
 
 li.slick-active button {
     background-color: black;
 }
 
+/* Item 개수 와 상품 정렬 dropdown */
 .items-count-and-sorting {
     height: 24px;
     margin: 20px auto;
@@ -113,33 +105,23 @@ li.slick-active button {
     align-items: center;
     justify-content: space-between;
 }
-
 .btn.items-sorting {
     background-color: gainsboro;
     color: black;
     border: none;
 }
-
 ul.dropdown-menu {
     padding: 0;
     border: 1px solid lightslategray;
 }
-
 li.dropdown-item:nth-child(2) {
     border-top: 1px solid lightslategray;
     border-bottom: 1px solid lightslategray;
 }
 
-
-
-
-
-
-
-
+/* 상품 진열 */
 .product-items-container {
-    margin: 5%;
-    padding: 3% 0;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -157,8 +139,25 @@ li.dropdown-item:nth-child(2) {
     text-align: center;
 }
 
+.item-container a{
+    position: relative;
+}
+
+.fa-heart {
+    position: absolute;
+    bottom: 130%;
+    left: 80%;
+    color: black;
+}
+
+
+
 @media screen and (max-width: 768px) {
 
+    .contianer {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .product-items-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -170,3 +169,43 @@ li.dropdown-item:nth-child(2) {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/* Footer */
+
+.footer{
+    max-width: 1280px;
+    margin: auto;
+}
+.footerDiv{
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_ul > li{
+    padding-right: 16px;
+}
+.blank{
+    margin-right: 17px;
+    box-sizing: border-box;
+}   
+dl > .dt_title{
+    padding-left: 10px;
+    max-width: 700px;
+    float: left;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(34,34,34,.5);
+}
+.div_sns{
+    padding-right: 5%;
+}
+.footer_ul
+{
+      list-style:none;
+      padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}   

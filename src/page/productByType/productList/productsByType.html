@@ -28,7 +28,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Home</a>
+                <a class="navbar-brand" href="../../main_page/index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
                     <!-- 좌측 메뉴 -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">게임</a>
+                            <a class="nav-link" href="../../productsByGamePage/productsByGame.html">게임</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">상품</a>
@@ -47,13 +47,13 @@
                     <!-- 우측 메뉴 -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">장바구니</a>
+                            <a class="nav-link" href="../../my_page/save.html">장바구니</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">마이페이지</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">로그인</a>
+                            <a class="nav-link" href="../../join_page/join.html">로그인</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +65,7 @@
         <div class="container">
 
             <div>
-                <div id="carouselExample" class="carousel slide">
+                <div id="carouselExample" class="carousel slide" >
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../typeBanner/shop1.jpg" class="d-block w-100" alt="...">
@@ -92,19 +92,19 @@
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
                     <li  onclick="borderBtnClicked('Doll')">
                         <div class="buttonClass">
-                            <img id = "doll_main" src="">
+                            <img id="doll_main" src="../../../img/doll/doll_main.png">
                         </div>
                         <p class="littleBorderButton">인형</p>
                     </li>
                     <li  onclick="borderBtnClicked('Airpot')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="airpot_main" src="../../../img/pot/airpot_main.png">
                         </div>
                         <p class="littleBorderButton">에어팟</p>
                     </li>
                     <li  onclick="borderBtnClicked('Clothes')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="cloth_main" src="../../../img/cloth/cloth_main.png">
                         </div>
                         <p class="littleBorderButton">의류</p>
                     </li>
@@ -116,11 +116,8 @@
                     </li>
                     <li  onclick="borderBtnClicked('Phonecase')">
                         <div class="buttonClass">
-                            <img src="">
-                            <!-- li > .buttonClass {
-    background-image: url("");
-} -->
-                        </div>
+                            <img id="phonecase_main" src="../../../img/phonecase/case_main.jpg">
+                         </div>
                         <p class="littleBorderButton">모바일 ACC</p>
                     </li>
                     <li  onclick="borderBtnClicked('Accessory')">
@@ -131,13 +128,13 @@
                     </li>
                     <li  onclick="borderBtnClicked('Pad')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="pad_main" src="../../../img/pad/pad_main.jpg">
                         </div>
                         <p class="littleBorderButton">마우스 패드</p>
                     </li>
                     <li  onclick="borderBtnClicked('Goods')">
                         <div class="buttonClass">
-                            <img src="">
+                            <img id="other_main" src="../../../img/other/other_main.jpg">
                         </div>
                         <p class="littleBorderButton">기타 굿즈</p>
                     </li>
@@ -237,7 +234,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,8);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -247,7 +244,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,9);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -257,7 +254,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,10);"  ></i>
                     </div>
 
                 </div>
@@ -282,7 +279,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,11);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -292,7 +289,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,12);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -302,7 +299,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,13);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -312,7 +309,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,14);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -322,7 +319,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -332,7 +329,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,16);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -342,7 +339,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,17);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -352,7 +349,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,18);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -362,7 +359,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,19);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -372,7 +369,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,20);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -382,7 +379,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,21);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
@@ -392,7 +389,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,22);"  ></i>
                     </div>
                 </div>
                 <br>
@@ -434,13 +431,13 @@
             <!--취소하면, 좋아요 목록에 추가된 상태로 원래 페이지로 나가야하고, -->
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
             <!-- 확인이라면, 쿠키에 추가하고 다른 페이지로 나가야한다. -->
-            <button type="button" class="btn btn-primary">확인</button>
+            <button id="favoriteModalOK" type="button" class="btn btn-primary">확인</button>
             </div>
         </div>
         </div>
     </div>
     <!-- Footer mt-5 bg-light text-center -->
-    <footer class="footer" >
+    <footer class="footer container" >
         <div class="footerDiv">
             <div>
             <ul class="footer_ul" style="display: flex;" >
@@ -504,39 +501,36 @@
 
 
       <script>
+        $(".Goods > i:last-child").attr("data-bs-target","#staticBackdrop")
+        $(".Goods > i:last-child").attr("data-bs-toggle","modal")
         // /* 좋아요 버튼(하트)에 모달 링크 달기 */
-        // $(".Goods > i:last-child").
+        // 배열에 없으면 modal 뺴야함
+        //
 
         // 더보기 버튼 클릭 
-        let a = localStorage.getItem("favoriteArray") 
-        let b = a !=null ? a["type"] : [[1,0,1,0 ,0,0,0,1 ,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0]]
+        let a = localStorage.getItem("favoriteTypeArray") 
+        let b = a !=null ? JSON.parse(a) : [0,0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         let parentRecommend=$(".typeGoodsList.recommend > .Goods > i")
 
         for(let i=0; i<parentRecommend.length;i++){
-            console.log(`i: ${i}`)
-            if(b[0][i]==1){
+            console.log(`${i}: ${b[i]}`)
+            if(b[i]==1){
                 console.log((parentRecommend[i]))
                 $(parentRecommend[i]).removeClass("fa-regular")
                 $(parentRecommend[i]).addClass("fa-solid")
                 $(parentRecommend[i]).addClass("red")
+                $(parentRecommend[i]).attr("data-bs-target","none")
+                $(parentRecommend[i]).attr("data-bs-toggle","none")
+
+            }else{
+
             }
            
         }
-        // 
-        // let i =0;
-        // for(let favors of b){
-        //     let parent=$("typeGoodsList > .Goods > i")
-        //     console.log(parent)
-        //     for(let k in favors){
-        //         if(favors[k]==1){
-        //             $(sourceBtn).removeClass("fa-regular")
-        //             $(sourceBtn).addClass("fa-solid")
-        //             $(sourceBtn).addClass("red")
-        //         }else {
-        //             console.log("donothing")
-        //         }
-        //     }
-        // }
+        $("#favoriteModalOK").click(()=>{
+            // 경로 변경 
+            location.href= "../../my_page/save.html"
+        })
         function initFavorite(){
             let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
             let favoriteArray= favoriteArrays["type"]
@@ -558,11 +552,16 @@
             // location.href= "https://www.naver.com"
         }
         function favoriteBtn(favoritegoods,sourceBtn,idx){
+            // 로그
             console.log($(sourceBtn))
+            let myfavoriteGoods= localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
             if ( $(sourceBtn).hasClass("fa-regular")){
                 $(sourceBtn).removeClass("fa-regular")
                 $(sourceBtn).addClass("fa-solid")
                 $(sourceBtn).addClass("red")
+
+                $(sourceBtn).attr("data-bs-target","none")
+                $(sourceBtn).attr("data-bs-toggle","none")
 
                 // 형제들에서, 위치,굳즈이름,게임이름,가격,Type을 가져온다.
                 // 하트 추가시 추가
@@ -575,7 +574,7 @@
                 const parentPrice =  $(parentArray[3]).text();
                 const goodsType = "인형"
 
-                let myfavoriteGoods= localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
+
                 let data = new Object()
                 console.log(myfavoriteGoods)
                 if(myfavoriteGoods != null){
@@ -594,13 +593,26 @@
                 localStorage.setItem("바구니", JSON.stringify(myfavoriteGoods));
                 console.log(localStorage.getItem("바구니"))
                 //b에 값 넣어서 색 값 저장해야함
+                b[idx]=1
+                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
 
             }else if($(sourceBtn).hasClass("fa-solid")){
                 $(sourceBtn).removeClass("fa-solid")
                 $(sourceBtn).removeClass("red")
                 $(sourceBtn).addClass("fa-regular")
+                $(sourceBtn).attr("data-bs-target","#staticBackdrop")
+                $(sourceBtn).attr("data-bs-toggle","modal")
                 //b에서 값 빼야함
                 // json에서 없애서 다시 넣어야한다. 끔찍하군.
+                b[idx]=0
+                for(let j in myfavoriteGoods){
+                    if(myfavoriteGoods[j].goodsName === favoritegoods){
+                        myfavoriteGoods.splice(j, favoritegoods)
+                        j--;
+                    }
+                }
+                localStorage.removeItem("favoriteTypeArray")
+                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
             }
 
 
