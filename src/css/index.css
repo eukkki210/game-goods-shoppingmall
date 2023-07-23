@@ -5,8 +5,6 @@
     font-style: normal;
 }
 
-
-
 body {
     margin: 10px;
     font-family: 'Pretendard-Regular';
@@ -182,6 +180,11 @@ span.goods-img-bg-wrap::after {
     animation: leftMoveLoop 90s infinite linear;
 }
 
+.popular-goods-wrapper-top:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
 .popular-goods-items {
     display: flex;
     width: auto;
@@ -196,7 +199,7 @@ span.goods-img-bg-wrap::after {
     flex-shrink: 0;
 }
 
-.popular-goods-item img{
+.popular-goods-item img {
     width: 100%;
 }
 
@@ -206,6 +209,11 @@ span.goods-img-bg-wrap::after {
 
 .popular-goods-wrapper-bottom {
     animation: rightMoveLoop 90s infinite linear;
+}
+
+.popular-goods-wrapper-bottom:hover {
+    animation-play-state: paused;
+    cursor: pointer;
 }
 
 @keyframes leftMoveLoop {
@@ -272,23 +280,55 @@ span.goods-img-bg-wrap::after {
     }
 
     .popular-goods-list-top {
-        display: grid;
-        /* grid-template-rows: repeat(auto-fill, 23.7%); */
+        margin: 0 0 16px;
     }
 
     .popular-goods-wrapper-top {
         animation: none;
+        overflow-x: scroll;
+    }
+
+    .popular-goods-wrapper-top::-webkit-scrollbar {
+        display: none;
+    }
+
+    .popular-goods-list-bottom {
+        margin: 0 0 16px;
     }
 
     .popular-goods-wrapper-bottom {
         animation: none;
+        overflow-x: scroll;
     }
+
+    .popular-goods-wrapper-bottom::-webkit-scrollbar {
+        display: none;
+    }
+
 
     .popular-goods-item {
         width: 7rem;
         height: 7rem;
     }
+}
 
+@media screen and (max-width : 768px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .goods-list-games {
+        height: 64px;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .popular-goods-item img {
+        width: 100%;
+    }
 }
 
 /* Footer */
@@ -333,30 +373,4 @@ dl>.dt_title {
 
 a {
     text-decoration: none;
-}
-
-@media screen and (max-width : 768px) {
-    .container {
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 100%;
-    }
-
-    .goods-list-games {
-        height: 64px;
-        margin: 5%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .popular-goods-item img {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
