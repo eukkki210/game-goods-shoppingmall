@@ -1,6 +1,15 @@
 header{
     background-color: white;
 }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: "Pretendard-Regular" ;
+}
 .containers{
     display: flex;
     margin-left: 5%;
@@ -65,5 +74,31 @@ header{
 /* 아래서부터는 장바구니 */
 
 .wish_products{
+    
+    margin-top: 70px;
+    position: absolute;
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
+.product_box{
+    display: flex;
+}
+.img_box {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+}
+.text_box{
+    margin-left: 20px;
+    /* display: flex;
+    flex-direction: row; */
+}
+.btn_box{
+    position: absolute;
+}
+.btn_box>button{
+    width:200px;
+    border-radius: 10%;
+}
+.right {margin-left: 1000px;}
