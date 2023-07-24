@@ -26,34 +26,32 @@
 <body>
     <header class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../../main_page/index.html">Home</a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- 좌측 메뉴 -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productsByGame.html">게임</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">상품</a>
-                        </li>
-                    </ul>
-                    <!-- 우측 메뉴 -->
+                    <!-- 메뉴 -->
+                    <!-- <ul class="navbar-nav"></ul> -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="./save.html">장바구니</a>
+                            <a class="nav-link" href="productsByGame.html">게임</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">마이페이지</a>
+                            <a class="nav-link" href="productsByType.html">상품</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./join.html">로그인</a>
+                            <a class="nav-link" href="save.html">장바구니</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="save.html">마이페이지</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loginPage.html">로그인</a>
                         </li>
                     </ul>
                 </div>
@@ -147,7 +145,7 @@
                 <h2>리그 오브 레전드 상품</h2>
                 <div class="typeGoodsList recommend">
                     <div class="Goods">
-                        <a href="../../products/1.html">
+                        <a href="./1.html">
                             <img src="./img/accessory/3febc3d0bb2120e738c4d30f0c802e28.jpg">
                             <div>LoL 챔피언 잠옷 티버 열쇠고리 키링 무작위 리그 오브 레전드 롤 굿즈</div>
                             <div>리그 오브 레전드</div>
@@ -157,7 +155,7 @@
                         <i class="fa-regular fa-heart" onclick="favoriteBtn('1',this,0);" ></i>
                     </div>
                     <div class="Goods">
-                        <a href="">
+                        <a href="#">
                             <img src="./img/accessory/d3b5be3846815ebd99ca9e582600082e.jpg">
                             <div>LoL 설맞이 축제 잠옷 티버 열쇠고리 (무작위)</div>
                             <div>리그 오브 레전드</div>
@@ -400,9 +398,9 @@
         </div>
     </footer>
 
-
-
+    <script type="text/javascript" src="./js/typelist.js"></script>
       <script>
+
         $(".Goods > i:last-child").attr("data-bs-target","#staticBackdrop")
         $(".Goods > i:last-child").attr("data-bs-toggle","modal")
         // /* 좋아요 버튼(하트)에 모달 링크 달기 */
