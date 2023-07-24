@@ -6,6 +6,7 @@
     font-style: normal;
 }
 .header{
+
     width: auto;
     height: 72px;
     margin: auto 32px;
@@ -13,6 +14,7 @@
 }
 
 .container {
+    background-color: white;
     /* margin-left: 5% ;
     margin-right: 5%; */
 }
@@ -106,7 +108,7 @@ a {
 }
 /* 이미지에 크기 */
 .Goods > a > img {
-    max-width: 100%;
+    width: 100%;
 }
 /* buttonClass의 이미지 */
 .buttonClass > img {
@@ -123,7 +125,7 @@ a {
     z-index: 1;
 }
 .Goods > a > div{
-    padding-left: 16pt;
+    padding-left: 1pt;
     color: black;
 }
 .Goods div:nth-child(2){
@@ -244,41 +246,41 @@ body{
 /*statue*/
 #statue_main {
     border-radius: 50%;
-    content: url(../../../img/statue/1.png);
+    content: url(../img/statue/1.png);
 }
 #acc_main {
     border-radius: 50%;
-    content: url(../../../img/accessory/2.png);
+    content: url(../img/accessory/2.png);
 }
 #cloth_main{
     border-radius: 50%;
-    content: url(../../../img/cloth/1.png);
+    content: url(../img/cloth/1.png);
 
 }
 #doll_main{
     border-radius: 50%;
-    content: url(../../../img/doll/1.png);
+    content: url(../img/doll/1.png);
 
 }
 #airpot_main{
     border-radius: 50%;
-    content: url(../../../img/pot/1.png);
+    content: url(../img/pot/1.png);
 
 }
 
 #pad_main{
     border-radius: 50%;
-    content: url(../../../img/pad/1.png);
+    content: url(../img/pad/1.png);
 
 }
 #phonecase_main{
     border-radius: 50%;
-    content: url(../../../img/phonecase/1.png);
+    content: url(../img/phonecase/1.png);
 
 }
 #other_main{
     border-radius: 50%;
-    content: url(../../../img/other/1.png);
+    content: url(../img/other/1.png);
 
 }
 }

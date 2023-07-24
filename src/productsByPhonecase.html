@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- css 링크-->
-    <link rel="stylesheet" href="./productListCss.css">
+    <link rel="stylesheet" href="./css/productListCss.css">
     <!-- backend가 없는 상태로, 클릭이 되면 하트가 눌려있는게 저장이 되야한다. -->
 
     
@@ -28,7 +28,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../../main_page/index.html">Home</a>
+                <a class="navbar-brand" href="./index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,29 +38,28 @@
                     <!-- 좌측 메뉴 -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../productsByGamePage/productsByGame.html">게임</a>
+                            <a class="nav-link" href="./productsByGame.html">게임</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">상품</a>
+                            <a class="nav-link" href="./productsByType.html">상품</a>
                         </li>
                     </ul>
                     <!-- 우측 메뉴 -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../my_page/save.html">장바구니</a>
+                            <a class="nav-link" href="./save.html">장바구니</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">마이페이지</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../join_page/join.html">로그인</a>
+                            <a class="nav-link" href="./join.html">로그인</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <div class="container">
 
@@ -68,10 +67,10 @@
                 <div id="carouselExample" class="carousel slide" >
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../typeBanner/shop1.jpg" class="d-block w-100" alt="...">
+                            <img src="./typeBanner/shop1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="../typeBanner/shop2.jpg" class="d-block w-100" alt="...">
+                            <img src="./typeBanner/shop2.jpg" class="d-block w-100" alt="...">
                             <!-- <button type="button">버튼 체크</button> -->
                         </div>
                     </div>
@@ -92,49 +91,49 @@
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
                     <li  onclick="borderBtnClicked('Doll')">
                         <div class="buttonClass">
-                            <img id="doll_main" src="../../../img/doll/doll_main.png">
+                            <img id="doll_main" src="./img/doll/doll_main.png">
                         </div>
                         <p class="littleBorderButton">인형</p>
                     </li>
                     <li  onclick="borderBtnClicked('Airpot')">
                         <div class="buttonClass">
-                            <img id="airpot_main" src="../../../img/pot/airpot_main.png">
+                            <img id="airpot_main" src="./img/pot/airpot_main.png">
                         </div>
                         <p class="littleBorderButton">에어팟</p>
                     </li>
                     <li  onclick="borderBtnClicked('Clothes')">
                         <div class="buttonClass">
-                            <img id="cloth_main" src="../../../img/cloth/cloth_main.png">
+                            <img id="cloth_main" src="./img/cloth/cloth_main.png">
                         </div>
                         <p class="littleBorderButton">의류</p>
                     </li>
                     <li  onclick="borderBtnClicked('Statue')">
                         <div class="buttonClass">
-                            <img id="statue_main" src="../../../img/statue/statue_main.jpg">
+                            <img id="statue_main" src="./img/statue/statue_main.jpg">
                         </div>
                         <p class="littleBorderButton">스태츄</p>
                     </li>
                     <li  onclick="borderBtnClicked('Phonecase')">
                         <div class="buttonClass">
-                            <img id="phonecase_main" src="../../../img/phonecase/case_main.jpg">
+                            <img id="phonecase_main" src="./img/phonecase/case_main.jpg">
                          </div>
                         <p class="littleBorderButton">모바일 ACC</p>
                     </li>
                     <li  onclick="borderBtnClicked('Accessory')">
                         <div class="buttonClass">
-                            <img id="acc_main" src="../../../img/accessory/acc_main.jpg">
+                            <img id="acc_main" src="./img/accessory/acc_main.jpg">
                         </div>
                         <p class="littleBorderButton">악세서리</p>
                     </li>
                     <li  onclick="borderBtnClicked('Pad')">
                         <div class="buttonClass">
-                            <img id="pad_main" src="../../../img/pad/pad_main.jpg">
+                            <img id="pad_main" src="./img/pad/pad_main.jpg">
                         </div>
                         <p class="littleBorderButton">마우스 패드</p>
                     </li>
                     <li  onclick="borderBtnClicked('Goods')">
                         <div class="buttonClass">
-                            <img id="other_main" src="../../../img/other/other_main.jpg">
+                            <img id="other_main" src="./img/other/other_main.jpg">
                         </div>
                         <p class="littleBorderButton">기타 굿즈</p>
                     </li>
@@ -148,7 +147,7 @@
                 <div class="typeGoodsList recommend">
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -158,7 +157,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -168,7 +167,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -178,7 +177,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -188,7 +187,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -198,7 +197,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -208,7 +207,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -218,7 +217,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -228,7 +227,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -238,7 +237,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -248,7 +247,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -273,7 +272,7 @@
                 <div class="typeGoodsList popular">
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -283,7 +282,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -293,7 +292,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -303,7 +302,7 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
@@ -313,83 +312,13 @@
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
+                            <img src="./img/doll/포로.png">
                             <div>포로</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
                         <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,16);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,17);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,18);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,19);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,20);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,21);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,22);"  ></i>
                     </div>
                 </div>
                 <br>
@@ -500,128 +429,156 @@
 
 
 
-      <script>
+    
+    <script>
+        // localStorage.clear()
         $(".Goods > i:last-child").attr("data-bs-target","#staticBackdrop")
-        $(".Goods > i:last-child").attr("data-bs-toggle","modal")
-        // /* 좋아요 버튼(하트)에 모달 링크 달기 */
-        // 배열에 없으면 modal 뺴야함
-        //
-
-        // 더보기 버튼 클릭 
-        let a = localStorage.getItem("favoriteTypeArray") 
-        let b = a !=null ? JSON.parse(a) : [0,0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        let parentRecommend=$(".typeGoodsList.recommend > .Goods > i")
-
-        for(let i=0; i<parentRecommend.length;i++){
-            console.log(`${i}: ${b[i]}`)
-            if(b[i]==1){
-                console.log((parentRecommend[i]))
-                $(parentRecommend[i]).removeClass("fa-regular")
-                $(parentRecommend[i]).addClass("fa-solid")
-                $(parentRecommend[i]).addClass("red")
-                $(parentRecommend[i]).attr("data-bs-target","none")
-                $(parentRecommend[i]).attr("data-bs-toggle","none")
-
-            }else{
-
-            }
-           
-        }
-        $("#favoriteModalOK").click(()=>{
-            // 경로 변경 
-            location.href= "../../my_page/save.html"
-        })
-        function initFavorite(){
-            let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
-            let favoriteArray= favoriteArrays["type"]
-            // 0 기본값 1하트
-        }
-
-        function moreBtnClicked(stringattr){
-            console.log(stringattr)
-            let hideItems = $(`.typeGoodsList.${stringattr} > div:nth-child(n+5)`)
-            let btn = $(`.moreBtn.${stringattr}`)
-            hideItems.attr("style","display : block ")
-            btn.attr("style","display : none ")
-        }
-        let category = ["doll","airpot","clothes","statue","phonecase","pad","charge","goods"]
-        function borderBtnClicked(goodsStr){
-            console.log(goodsStr)
-            // 음.. border가 클릭이 되면 어떤 폴더에서 굿즈들을 잔뜩 가져오고, 그만큼 요소들을 생성하고 없애야한다.
-            location.href = `./productsBy${goodsStr}.html`
-            // location.href= "https://www.naver.com"
-        }
-        function favoriteBtn(favoritegoods,sourceBtn,idx){
-            // 로그
-            console.log($(sourceBtn))
-            let myfavoriteGoods= localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
-            if ( $(sourceBtn).hasClass("fa-regular")){
-                $(sourceBtn).removeClass("fa-regular")
-                $(sourceBtn).addClass("fa-solid")
-                $(sourceBtn).addClass("red")
-
-                $(sourceBtn).attr("data-bs-target","none")
-                $(sourceBtn).attr("data-bs-toggle","none")
-
-                // 형제들에서, 위치,굳즈이름,게임이름,가격,Type을 가져온다.
-                // 하트 추가시 추가
-                let parentArray= $( sourceBtn).prev().children() ;
-
-                const parentSrc = $(parentArray[0]).attr("src");
-                const goodsID = favoritegoods;
-                const parentGoodsName =  $(parentArray[1]).text();
-                const parentGameName =  $(parentArray[2]).text();
-                const parentPrice =  $(parentArray[3]).text();
-                const goodsType = "인형"
-
-
-                let data = new Object()
-                console.log(myfavoriteGoods)
-                if(myfavoriteGoods != null){
-                    data.number= myfavoriteGoods.length;
-                }else{
-                    data.number= 0;
-                }
-                data.src=parentSrc
-                data.goodsName=parentGoodsName
-                data.gameName=parentGameName
-                data.price=parentPrice
-                data.goodsType=goodsType
-
-                myfavoriteGoods.push(data)
-
-                localStorage.setItem("바구니", JSON.stringify(myfavoriteGoods));
-                console.log(localStorage.getItem("바구니"))
-                //b에 값 넣어서 색 값 저장해야함
-                b[idx]=1
-                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
-
-            }else if($(sourceBtn).hasClass("fa-solid")){
-                $(sourceBtn).removeClass("fa-solid")
-                $(sourceBtn).removeClass("red")
-                $(sourceBtn).addClass("fa-regular")
-                $(sourceBtn).attr("data-bs-target","#staticBackdrop")
-                $(sourceBtn).attr("data-bs-toggle","modal")
-                //b에서 값 빼야함
-                // json에서 없애서 다시 넣어야한다. 끔찍하군.
-                b[idx]=0
-                for(let j in myfavoriteGoods){
-                    if(myfavoriteGoods[j].goodsName === favoritegoods){
-                        myfavoriteGoods.splice(j, favoritegoods)
-                        j--;
-                    }
-                }
-                localStorage.removeItem("favoriteTypeArray")
-                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
-            }
-
-
-        }
-
-    </script>
-    <!-- 부트스트랩 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+         $(".Goods > i:last-child").attr("data-bs-toggle","modal")
+         // /* 좋아요 버튼(하트)에 모달 링크 달기 */
+         // 배열에 없으면 modal 뺴야함
+         //
+         let objJson;
+         async function load() {
+         // 파일 읽어 오기
+         const data = await fetch('./images.json');
+         // JSON으로 해석
+         objJson = await data.json();
+         // 텍스트 출력
+         let products=$(".typeGoodsList > .Goods")
  
-
-    </body>
-</html>
+         for(let i=0; i<products.length;i++){
+             let fileLocation = "./img/mobileacc/"+objJson[i+101]["src"].split("/").slice(-1)[0]
+             let nameGoods=objJson[i+101]['goodsName']
+             let gametype=objJson[i+101]['game']
+             let prices = objJson[i+101]['price']+"원"
+             console.log(fileLocation)
+             $(products[i]).children("*").children("img").attr("src",fileLocation)
+             $(products[i]).children("*").children("div:nth-child(2)").text(nameGoods)
+             $(products[i]).children("*").children("div:nth-child(3)").text(gametype)
+             $(products[i]).children("*").children("div:nth-child(4)").text(prices)
+ 
+         }
+         // 더보기 버튼 클릭     
+         let a = localStorage.getItem("favoritePhonecaseArray") 
+ 
+         let b = a !=null ? JSON.parse(a) : [0,0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+         let parentRecommend=$(".typeGoodsList > .Goods > i")
+ 
+         for(let i=0; i<parentRecommend.length;i++){
+             console.log(`${i}: ${b[i]}`)
+             if(b[i]==1){
+ 
+                 $(parentRecommend[i]).removeClass("fa-regular")
+                 $(parentRecommend[i]).addClass("fa-solid")
+                 $(parentRecommend[i]).addClass("red")
+                 $(parentRecommend[i]).attr("data-bs-target","none")
+                 $(parentRecommend[i]).attr("data-bs-toggle","none")
+ 
+             }else{
+                 console.log((parentRecommend[i]))
+                 
+             }
+             }
+         }
+ 
+         load();
+ 
+ 
+         $("#favoriteModalOK").click(()=>{
+             // 경로 변경 
+             location.href= "./save.html"
+         })
+         function initFavorite(){
+             let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
+             let favoriteArray= favoriteArrays["type"]
+             // 0 기본값 1하트
+         }
+ 
+         function moreBtnClicked(stringattr){
+             console.log(stringattr)
+             let hideItems = $(`.typeGoodsList.${stringattr} > div:nth-child(n+5)`)
+             let btn = $(`.moreBtn.${stringattr}`)
+             hideItems.attr("style","display : block ")
+             btn.attr("style","display : none ")
+         }
+         let category = ["doll","airpot","clothes","statue","phonecase","pad","charge","goods"]
+         function borderBtnClicked(goodsStr){
+             console.log(goodsStr)
+             // 음.. border가 클릭이 되면 어떤 폴더에서 굿즈들을 잔뜩 가져오고, 그만큼 요소들을 생성하고 없애야한다.
+             location.href = `./productsBy${goodsStr}.html`
+             // location.href= "https://www.naver.com"
+         }
+         function favoriteBtn(favoritegoods,sourceBtn,idx){
+             // 로그
+             console.log($(sourceBtn))
+             let myfavoriteGoods= localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
+             if ( $(sourceBtn).hasClass("fa-regular")){
+                 $(sourceBtn).removeClass("fa-regular")
+                 $(sourceBtn).addClass("fa-solid")
+                 $(sourceBtn).addClass("red")
+ 
+                 $(sourceBtn).attr("data-bs-target","none")
+                 $(sourceBtn).attr("data-bs-toggle","none")
+ 
+                 // 형제들에서, 위치,굳즈이름,게임이름,가격,Type을 가져온다.
+                 // 하트 추가시 추가
+                 let parentArray= $( sourceBtn).prev().children() ;
+ 
+                 const parentSrc = $(parentArray[0]).attr("src");
+                 const goodsID = favoritegoods;
+                 const parentGoodsName =  $(parentArray[1]).text();
+                 const parentGameName =  $(parentArray[2]).text();
+                 const parentPrice =  $(parentArray[3]).text();
+                 const goodsType = "인형"
+ 
+ 
+                 let data = new Object()
+                 console.log(myfavoriteGoods)
+                 if(myfavoriteGoods != null){
+                     data.number= myfavoriteGoods.length;
+                 }else{
+                     data.number= 0;
+                 }
+                 data.src=parentSrc
+                 data.goodsName=parentGoodsName
+                 data.gameName=parentGameName
+                 data.price=parentPrice
+                 data.goodsType=goodsType
+ 
+                 myfavoriteGoods.push(data)
+ 
+                 localStorage.setItem("바구니", JSON.stringify(myfavoriteGoods));
+                 console.log(localStorage.getItem("바구니"))
+                 //b에 값 넣어서 색 값 저장해야함
+                 b[idx]=1
+                 localStorage.setItem("favoritePhoneCaseArray",JSON.stringify(b))
+ 
+             }else if($(sourceBtn).hasClass("fa-solid")){
+                 $(sourceBtn).removeClass("fa-solid")
+                 $(sourceBtn).removeClass("red")
+                 $(sourceBtn).addClass("fa-regular")
+                 $(sourceBtn).attr("data-bs-target","#staticBackdrop")
+                 $(sourceBtn).attr("data-bs-toggle","modal")
+                 //b에서 값 빼야함
+                 // json에서 없애서 다시 넣어야한다. 끔찍하군.
+                 b[idx]=0
+                 for(let j in myfavoriteGoods){
+                     if(myfavoriteGoods[j].goodsName === favoritegoods){
+                         myfavoriteGoods.splice(j, favoritegoods)
+                         j--;
+                     }
+                 }
+                 localStorage.removeItem("favoritePhoneCaseArray")
+                 localStorage.setItem("favoritePhoneCaseArray",JSON.stringify(b))
+             }
+ 
+ 
+         }
+ 
+     </script>
+     <!-- 부트스트랩 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+ 
+     </body>
+ </html>
