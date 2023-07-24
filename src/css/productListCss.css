@@ -51,9 +51,14 @@
     /* margin-left: 5% ;
     margin-right: 5%; */
 }
-.body{
-    margin: 0;
+
+body {
+    margin: 10px;
+    font-family: 'Pretendard-Regular';
+    background-color: #ffffff;
+    color: #000000;
 }
+
 
 /* hover되었을 떄 클래스들 pointer 변경 */
 .Goods > span:hover {

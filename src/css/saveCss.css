@@ -112,6 +112,39 @@ body{
 }
 .right {margin-left: 80%;}
 
+.footer{
+    max-width: auto;
+    margin: auto;
+}
+.footerDiv{
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_ul > li{
+    padding-right: 16px;
+}
+.blank{
+    margin-right: 17px;
+    box-sizing: border-box;
+}   
+dl > .dt_title{
+    padding-left: 10px;
+    max-width: auto;
+    float: left;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(34,34,34,.5);
+}
+.div_sns{
+    padding-right: 5%;
+}
+.footer_ul
+{
+      list-style:none;
+      padding-left: 10px;
+}
+
 
 
 @media screen and (max-width : 1300px) {
