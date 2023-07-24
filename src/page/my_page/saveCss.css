@@ -112,6 +112,48 @@ body{
 }
 .right {margin-left: 80%;}
 
+
+
+@media screen and (max-width : 1300px) {
+    .btn_box> button{
+        width:100px;
+    }
+    .desc{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width : 1000px) {
+    .subNav{
+        display: none;
+    }
+    .wish_products{
+        padding-left: 0;
+    }
+    .informs{
+        display: none;
+    }
+    .price{
+        display: none;
+    }
+    .desc{
+        display: none;
+    }
+    .btn_box{
+        top: 30px;
+    }
+    .btn_box> button{
+        width:70px;
+    }
+    .prices{
+        display: block;
+    }
+
+}
+
+
+
 @media screen and (max-width : 768px) {
     .subNav{
         display: none;
