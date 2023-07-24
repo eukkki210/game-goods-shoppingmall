@@ -189,91 +189,6 @@ i, a{
 */
 
     /* 탭 2번 css */
-.tabmenu{ 
-    max-width:600px; 
-    margin: 0 auto; 
-    position:relative; 
-}
-.tabmenu ul{
-  position: relative;
-}
-.tabmenu ul li{
-    display:block;
-    width: 33.33%; 
-    float:left;
-    text-align:center; 
-    background :#f9f9f9;
-    line-height:40px;
-}
-.tabmenu label{
-    display:block;
-    width:100%; 
-    height:40px;
-    line-height:40px;
-}
-.tabmenu input{
-    display:none;
-}
-.tabCon{
-    display:none; 
-    width: 100%;
-    text-align:left; 
-    padding: 20px;
-    position:absolute; 
-    left:0; top:40px; 
-    box-sizing: border-box; 
-    border : 5px solid #f9f9f9;
-}
-.tabmenu input:checked ~ label{
-    background:#ccc;
-}
-.tabmenu input:checked ~ .tabCon{
-    display:block;
-}
-
-
-    /* 탭 2번 css */
-.tabmenu_2{ 
-    max-width:600px; 
-    margin: 0 auto; 
-    position:relative; 
-}
-.tabmenu_2 ul{
-    position: relative;
-}
-.tabmenu_2 ul li{
-    display:  inline-block;
-    width: 33.33%; 
-    float:left;
-    text-align:center; 
-    background :#f9f9f9;
-    line-height:40px;
-}
-.tabmenu_2 label{
-    display:block;
-    width:100%; 
-    height:40px;
-    line-height:40px;
-}
-.tabmenu_2 input{
-    display:none;
-}
-.tabCon_2{
-    display:none; 
-    width: 100%;
-    text-align:left; 
-    padding: 20px;
-    position:absolute; 
-    left:0; top:40px; 
-    box-sizing: border-box; 
-    border : 5px solid #f9f9f9;
-}
-.tabmenu_2 input:checked ~ label{
-    background:#ccc;
-}
-.tabmenu_2 input:checked ~ .tabCon_2{
-    display:block;
-}
 
 /* display :none */
 .disp{
@@ -376,7 +291,7 @@ details{
 /* 체크 늘리는거 */
 .rela1{
     position: absolute;
-    bottom: 300px;
+    bottom: 210px;
     right: 5%;
     left: auto;
     top: auto;
@@ -448,6 +363,9 @@ details{
     }
     .choose{
         justify-content: flex-start;
+    }
+    .option1{
+        padding-left: 0px;
     }
 
 /*media 끝*/
