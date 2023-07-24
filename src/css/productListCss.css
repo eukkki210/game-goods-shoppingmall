@@ -6,19 +6,59 @@
     font-style: normal;
 }
 .header{
+
     width: auto;
     height: 72px;
     margin: auto 32px;
     padding: 0 80px;
 }
 
+#toggle {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    background-color: white;
+    border: transparent;
+    border-radius: 30px;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999;
+}
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.floating-button i {
+    color: #000;
+}
+
+
 .container {
+    background-color: white;
     /* margin-left: 5% ;
     margin-right: 5%; */
 }
-.body{
-    margin: 0;
+
+body {
+    margin: 10px;
+    font-family: 'Pretendard-Regular';
+    background-color: #ffffff;
+    color: #000000;
 }
+
 
 /* hover되었을 떄 클래스들 pointer 변경 */
 .Goods > span:hover {
@@ -106,7 +146,7 @@ a {
 }
 /* 이미지에 크기 */
 .Goods > a > img {
-    max-width: 100%;
+    width: 100%;
 }
 /* buttonClass의 이미지 */
 .buttonClass > img {
@@ -123,7 +163,7 @@ a {
     z-index: 1;
 }
 .Goods > a > div{
-    padding-left: 16pt;
+    padding-left: 1pt;
     color: black;
 }
 .Goods div:nth-child(2){
@@ -244,41 +284,41 @@ body{
 /*statue*/
 #statue_main {
     border-radius: 50%;
-    content: url(../../../img/statue/1.png);
+    content: url(../img/statue/1.png);
 }
 #acc_main {
     border-radius: 50%;
-    content: url(../../../img/accessory/2.png);
+    content: url(../img/accessory/2.png);
 }
 #cloth_main{
     border-radius: 50%;
-    content: url(../../../img/cloth/1.png);
+    content: url(../img/cloth/1.png);
 
 }
 #doll_main{
     border-radius: 50%;
-    content: url(../../../img/doll/1.png);
+    content: url(../img/doll/1.png);
 
 }
 #airpot_main{
     border-radius: 50%;
-    content: url(../../../img/pot/1.png);
+    content: url(../img/pot/1.png);
 
 }
 
 #pad_main{
     border-radius: 50%;
-    content: url(../../../img/pad/1.png);
+    content: url(../img/pad/1.png);
 
 }
 #phonecase_main{
     border-radius: 50%;
-    content: url(../../../img/phonecase/1.png);
+    content: url(../img/phonecase/1.png);
 
 }
 #other_main{
     border-radius: 50%;
-    content: url(../../../img/other/1.png);
+    content: url(../img/other/1.png);
 
 }
 }

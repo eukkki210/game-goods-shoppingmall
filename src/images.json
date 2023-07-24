@@ -165,7 +165,7 @@
     "type": "acc",
     "game": "배틀그라운드",
     "price": 6000,
-    "src": "game-items-shoppingmall/src/img/accessory/4311b0b1e560322d81b92e8dc51da60b.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 22,
@@ -397,7 +397,7 @@
     "type": "doll",
     "game": "리그오브레전드",
     "price": 19000,
-    "src": "game-items-shoppingmall/src/img/dolls/a9c3b5662b9e71194640ac97cd027851.png"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 51,
@@ -405,7 +405,7 @@
     "type": "doll",
     "game": "리그오브레전드",
     "price": 42000,
-    "src": "game-items-shoppingmall/src/img/dolls/30ddecdef9ee4e70cc89415d1e77958e.png"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 52,
@@ -773,7 +773,7 @@
     "type": "earcase",
     "game": "리그오브레전드",
     "price": 14800,
-    "src": "game-items-shoppingmall/src/img/earphonecase/27a06075999474eddec45634d0c18249.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 98,
@@ -981,7 +981,7 @@
     "type": "mobacc",
     "game": "리그오브레전드",
     "price": 14800,
-    "src": "game-items-shoppingmall/src/img/mobileacc/3028819618dfcb29d4e306fa7fea52aa.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 124,
@@ -1525,7 +1525,7 @@
     "type": "statue",
     "game": "오버워치",
     "price": 198000,
-    "src": "game-items-shoppingmall/src/img/statue/2b8dc280314e42936bef685bcd86078b.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 192,
@@ -1533,7 +1533,7 @@
     "type": "statue",
     "game": "오버워치",
     "price": 239200,
-    "src": "game-items-shoppingmall/src/img/statue/ddc6e7b52c7cadc471b92d2587673305.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 193,
@@ -1541,7 +1541,7 @@
     "type": "statue",
     "game": "오버워치",
     "price": 191200,
-    "src": "game-items-shoppingmall/src/img/statue/76bd8769eea2d1bb6d7e6da736d026dd.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 194,
@@ -1669,7 +1669,7 @@
     "type": "etc",
     "game": "배틀그라운드",
     "price": 2000,
-    "src": "game-items-shoppingmall/src/img/etc/97c9460d92c3bdd704d69439a01ba57a.jpg"
+    "src": "game-items-shoppingmall/src/img/imgNotReady.png"
   },
   {
     "id": 210,
