@@ -123,7 +123,7 @@ a {
     z-index: 1;
 }
 .Goods > a > div{
-    padding-left: 1pt;
+    padding-left: 16pt;
     color: black;
 }
 .Goods div:nth-child(2){
