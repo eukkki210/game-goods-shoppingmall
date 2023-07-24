@@ -93,20 +93,21 @@
         </div>
 
         <!-- Shop Title -->
-        <div id="shop"></div>
-        <div class="text-center fs-1">SHOP</div>
+        <div id="shop">
+            <div>SHOP</div>
+        </div>
         <hr />
         </div>
 
         <!-- Game Category -->
-        <div class="game-category-slider">
+        <div class="game-category-container">
 
             <div class="game-category-wrapper">
 
                 <div class="game-category">
                     <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
                         <div class="game-category-img">
-                            <img src="./gameLogo/leagueOfLegends.png" alt="" class="">
+                            <img src="./img/gameLogo/leagueOfLegends.png" alt="" class="img-fluid">
                         </div>
                         <div class="game-category-name">리그오브레전드</div>
                     </a>
@@ -115,7 +116,7 @@
                 <div class="game-category">
                     <a href="./pubg.html" class="game-category-link" target="_blank">
                         <div class="game-category-img">
-                            <img src="./gameLogo/pubg.png" alt="" class="">
+                            <img src="./img/gameLogo/pubg.png" alt="" class="img-fluid">
                         </div>
                         <div class="game-category-name">배틀그라운드</div>
                     </a>
@@ -124,7 +125,7 @@
                 <div class="game-category">
                     <a href="./pokemon.html" class="game-category-link" target="_blank">
                         <div class="game-category-img">
-                            <img src="./gameLogo/pokemon.png" alt="" class="">
+                            <img src="./img/gameLogo/pokemon.png" alt="" class="img-fluid">
                         </div>
                         <div class="game-category-name">포켓몬스터</div>
                     </a>
@@ -133,7 +134,7 @@
                 <div class="game-category">
                     <a href="./laTale.html" class="game-category-link" target="_blank">
                         <div class="game-category-img">
-                            <img src="./gameLogo/latale.png" alt="" class="">
+                            <img src="./img/gameLogo/latale.png" alt="" class="img-fluid">
                         </div>
                         <div class="game-category-name">라테일</div>
                     </a>
@@ -142,7 +143,7 @@
                 <div class="game-category">
                     <a href="./overWatch.html" class="game-category-link" target="_blank">
                         <div class="game-category-img">
-                            <img src="./gameLogo/overWatch.png" alt="" class="">
+                            <img src="./img/gameLogo/overWatch.png" alt="" class="img-fluid">
                         </div>
                         <div class="game-category-name">오버워치</div>
                     </a>
@@ -151,7 +152,7 @@
                 <div class="game-category">
                     <a href="./worldOfWarcraft.html" class="game-category-link" target="_blank">
                         <div class="game-category-img">
-                            <img src="./gameLogo/worldOfWarcraft.png" alt="" class="">
+                            <img src="./img/gameLogo/worldOfWarcraft.png" alt="" class="img-fluid">
                         </div>
                         <div class="game-category-name">월드오브워크래프트</div>
                     </a>
@@ -173,22 +174,42 @@
             <div class="items-count">Total Items</div>
             <div class="items-sorting">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle items-sorting" type="button"
+                    <button id="sortBtn" class="btn btn-secondary dropdown-toggle items-sorting" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        인기순
+                        신상품 순
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li class="dropdown-item">신상품순</li>
-                        <li class="dropdown-item">높은 가격순</li>
-                        <li class="dropdown-item">낮은 가격순</li>
+                        <li id="sortNew" class="dropdown-item">신상품 순</li>
+                        <li id="sortHighPrice" class="dropdown-item">높은 가격순</li>
+                        <li id="sortLowPrice" class="dropdown-item">낮은 가격순</li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <script>
+            $('#sortNew').click(function () {
+                $('#sortBtn').empty().text('신상품 순');
+            })
+            $('#sortHighPrice').click(function () {
+                $('#sortBtn').empty().text('높은가격 순');
+            })
+            $('#sortLowPrice').click(function () {
+                $('#sortBtn').empty().text('낮은가격 순');
+            })
+        </script>
+
         <!-- 상품 진열 -->
         <div class="products-wrapper">
-            <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
+            <!-- <a href="#" class="product-item-link" class="product-item-link">
+                <div class="product-item">
+                    <img src="./img/accessory/3febc3d0bb2120e738c4d30f0c802e28.jpg" alt="" class="product-item-img">
+                    <div class="product-item-game">리그오브레전드</div>
+                    <div class="product-item-name">포로인형</div>
+                    <div class="product-item-price">24,000원</div>
+                </div>
+            </a> -->
+            <!-- <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
                 <div class="product-item">
                     <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
                         class="product-item-img">
@@ -322,16 +343,7 @@
                     <div class="product-item-name">포로인형</div>
                     <div class="product-item-price">24,000원</div>
                 </div>
-            </a>
-            <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
+            </a> -->
         </div>
 
         <div class="pagination">
@@ -348,12 +360,62 @@
         </div>
 
         <script>
+            let objJson;
+            async function load() {
+                const data = await fetch('./images.json');
+                objJson = await data.json();
+
+                const leagueOfLegends = objJson.filter(obj => obj.game == `리그오브레전드`);
+
+                const pubg = objJson.filter(obj => obj.game == `배틀그라운드`);
+
+                const pokemon = objJson.filter(obj => obj.game == `포켓몬스터`);
+
+                const laTale = objJson.filter(obj => obj.game == `라테일`);
+
+                const overWatch = objJson.filter(obj => obj.game == `오버워치`);
+
+                const worldOfWarcraft = objJson.filter(obj => obj.game == `월드오브워크래프트`);
+
+                for (let i = 0; i < objJson.length; i++) {
+                    let productInfo = objJson[i];
+                    let productSrc = "./" + objJson[i]['src'].split('/').slice([2]).join('/');
+                    let productGame = objJson[i]['game'];
+                    let productPrice = objJson[i]['price'];
+                    let productName = objJson[i]['goodsName'];
+
+                    $('.products-wrapper').append(`<a href="../products/productClick.html" class="product-item-link" class="product-item-link">
+                            <div class="product-item">
+                                <img src="${productSrc}" alt=""
+                                    class="product-item-img">
+                                <div class="product-item-game">${productGame}</div>
+                                <div class="product-item-name">${productName}</div>
+                                <div class="product-item-price">${productPrice}</div>
+                            </div>
+                        </a>`);
+
+                    // <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
+                    //         <div class="product-item">
+                    //             <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
+                    //                 class="product-item-img">
+                    //             <div class="product-item-game">리그오브레전드</div>
+                    //             <div class="product-item-name">포로인형</div>
+                    //             <div class="product-item-price">24,000원</div>
+                    //         </div>
+                    //     </a>
+
+                }
+                // 21, 50, 51, 97, 123, 191, 192, 193, 209
+            };
+
+            load();
+
         </script>
         <hr />
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footerDiv">
             <div>
                 <ul class="footer_ul" style="display: flex;">
@@ -412,7 +474,7 @@
             </dl>
         </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
