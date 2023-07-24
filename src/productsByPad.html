@@ -343,13 +343,14 @@
     objJson = await data.json();
     // 텍스트 출력
     let products=$(".typeGoodsList > .Goods")
-
+    let arrayAhref = $(".Goods > a")
     for(let i=0; i<products.length;i++){
         let fileLocation = "./img/mousepad/"+objJson[i+129]["src"].split("/").slice(-1)[0]
         let nameGoods=objJson[i+129]['goodsName']
         let gametype=objJson[i+129]['game']
         let prices = objJson[i+129]['price']+"원"
-        console.log(fileLocation)
+        let a =$(arrayAhref[i])
+        $(a).attr("href",`${i+130}.html`)
         $(products[i]).children("*").children("img").attr("src",fileLocation)
         $(products[i]).children("*").children("div:nth-child(2)").text(nameGoods)
         $(products[i]).children("*").children("div:nth-child(3)").text(gametype)
