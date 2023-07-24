@@ -1,151 +1,130 @@
-//회원가입
-/*
-1. 이메일 유효성검사 (틀리면 밑에 빨간색 맞으면 초록색)
-2. 비밀번호 맞는지 확인, 틀리면 밑에 빨간색으로 뜸 맞으면 초록색
-3. 보기 누르고 스크롤 다 내려야지 체크박스 클릭 가능
-4. 이용약관, 개인정보, 만 14세 눌러야 회원가입 버튼 활성화
-5. 
-*/
 
-$("input").on("focus", function(){
-    $(this).css("border-bottom","2px solid black");
-})
-$("input").on("blur", function(){
-    $(this).css("border-bottom", "");
+//버튼 명암 생기는 function
+// hover는 css로 주고 버튼 클릭했을 때 기존에 있던거 지우고 누른거 class 추가
+$(".box").on("click", function(){
+    $(".box").removeClass("active")
+    $(this).addClass("active")
+},)
+
+
+//input 금액 value값 받아오기
+let price = $(".won").text();
+$("#price").attr('value', price);
+
+//숫자만 선택하는 정규식
+price = price.replace(/[^0-9]/g, ""); //price 특수문자랑 문자열 지움
+
+
+//플러스 누르면 금액 값 바뀌는거
+$("#button_plus").on("click", function(){
+    let count_val = $("#counting").val();
+    count_val++;
+    $("#counting").attr('value',count_val);
+    // 
+    price_2 = price * count_val;
+    // tolocalstring -> 0 3개마다 콤마 넣는애
+    let comma = Number(price_2).toLocaleString() + "원";
+    //금액(id:price) 값 바뀌게 하는애
+    $("#price").attr('value',comma);
+    console.log($("#price").val());
 })
 
-// 패스워드 확인
-// let pwValue2 = $(".password_button").val();
-// console.log(pwValue2);
-
-let pwValue;    //비밀번호
-let pwCheckValue;   //비밀번호 확인
-let pwValid = false;    // 맞는 비밀번호
-let emailValid = false; // 맞는 이메일
-let checkValid = false; // 체크박스 다 체크
-$(".password_button").on("change", function(){
-    pwValue = $(".password_button").val();
-})
-$(".password_button_check").on("change", function(){
-    pwCheckValue = $(".password_button_check").val();
-    if(pwValue == pwCheckValue){
-        $(".error")
-        .removeClass("errorPwCheck")
-        .addClass("correctPwCheck")
-        .html("비밀번호가 일치합니다.");
-        pwValid = true;
-    } else{
-        $(".error")
-        .removeClass("correctPwCheck")
-        .addClass("errorPwCheck")
-        .html("비밀번호가 일치하지 않습니다.");
+//마이너스 누르면 금액이랑 수량 바뀌기
+$("#button_negative").on("click", function(){
+    let count_val_2 = $("#counting").val();
+    if(count_val_2>0){
+        count_val_2--;
+        //counting(수량에서 숫자) value값 변경
+        $("#counting").attr('value',count_val_2);
+        price_2 = price* count_val_2;
+        //0 3개 마다 ,콤마 넣기
+        let comma = Number(price_2).toLocaleString() + "원";
+        //금액(id:price) 값 바뀌게 하는애
+        $("#price").attr('value',comma);
+        console.log($("#price").val());
     }
 })
 
-//이메일 유효성검사 (숫자or영어)@(숫자or영어)
-var regex=/([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-$(".email_button").on("change", function(){
-    let email = $(".email_button").val();   //email value값 받아오기
-    if(regex.test(email) == false){
-        $(".errorEmail")
-        .removeClass("correctPwCheck")
-        .addClass("errorPwCheck")
-        .html("이메일 형식이 올바르지 않습니다.");
-    } else{
-        $(".errorEmail")
-        .removeClass("errorPwCheck")
-        .addClass("correctPwCheck")
-        .html("이메일을 옳게 입력하셨습니다.");
-        emailValid = true;
+var colorValue;
+let sizeValue;
+let colorSize;
+//색상 클릭시 값 받아와서 옵션에 출력
+$(".optionColor").on("click", function(){
+   var colorValue = $(this).val();
+   $(".options1").attr("value", colorValue);
+    console.log(colorValue);
+})
+//사이즈 클릭시 값 받아와서 옵션에 출력
+$(".box").on("click",function(){
+
+   let sizeValue = $(this).text();
+   $(".options2").attr("value", sizeValue);
+    console.log(sizeValue);
+})
+
+//날짜 불러오기
+let now = new Date();
+let month = now.getMonth();     //월 + 1 하기
+let date = now.getDate();  
+
+
+let newDay = new Date(now);     // newday선언
+newDay.setDate(now.getDate()+4);    // 오늘부터 4일 뒤 날짜
+let newMonth = newDay.getMonth();
+let newDate = newDay.getDate();
+
+let today = (month+1)+"/"+ date;    //오늘 날짜
+let nextDay = (newMonth+1) + "/" + newDate; //+4일 날짜
+// console.log(today);
+// document.getElementById("getDay").innerText = today;
+// document.getElementById("getNextDay").innerHTML = nextDay;
+$('input[class=getDay]').attr('value', today);
+$('input[class=getNextDay]').attr('value', nextDay);
+// $("getNextDay").html = nextDay;
+
+//스크롤
+let homeT = $(".container").height();
+let scrollT = $("html").height();
+let footerH = $(".footer").height(); // footer 높이
+let realH = scrollT-footerH-homeT;
+let scrollheight;
+// let realH = scrollT - footerH;
+
+
+// sticky 옆에 붙은거 footer랑 안 겹치게 설정
+$(window).on("scroll", function(){
+    let check = $(window).scrollTop() + $(window).height();
+    let check2 = $(document).height();
+    let check3 = check2 -200;
+    // console.log($(".footer").height())
+    // 
+    // if(check >= check3 && check2 == 2674){
+    //     $(".right").addClass("rela1");
+    // } else if(check >= check3 && check2 == 2462){
+    //     $(".right").addClass("rela2");
+    // } else if(check >= check3 && check2 == 2209){   
+    //     $(".right").addClass("rela3");
+    // } else if(check < check3){
+    //     $(".right").removeClass("rela1");
+    //     $(".right").removeClass("rela2");
+    //     $(".right").removeClass("rela3");
+        // 
+    if(check >= check3){
+        $(".right").addClass("rela1");
+    } else if(check < check3){
+        $(".right").removeClass("rela1");
+// console.log("check",$(window).scrollTop() + $(window).height() )
+// console.log('check2',   $(document).height())    // 화면 높이(decoment)
     }
 })
 
-// 스크롤을 내렸을 때 button 활성화
-$("#modalBodyId1").on("scroll", function(){
-    var height = $("#modalBodyId1").scrollTop();
-    var max =  $("#modalBodyId1").css("max-height")
-    var maxValue = max.split('px')      //max-height 값(400px)을 px로 쪼갠다. max-height[0] = 400, max-height[1] = 공백
-    var height3= $("#modalBodyId1")[0].scrollHeight - Number(maxValue[0]);
-    if(height >= height3){
-        $("#modalBodyId1Btn").attr("disabled", false);  //버튼 비활성화 -> 활성화
-    }
-})
-//모달 바깥부분 눌렀을 때 취소되는거
-const myModal1 = document.getElementById('agree1')
-const myModal2 = document.getElementById('agree2')
-const myModal3 = document.getElementById('agree3')
-myModal1.addEventListener('hide.bs.modal', () => {
-    $("#modalBodyId1Btn").attr("disabled", true);
-})
+// console.log("check",$(window).scrollTop() + $(window).height() )
+// console.log('check2',   $(document).height())    // 화면 높이(decoment)
+console.log($("html").height()-$("body").height())
 
-//2번이랑 3번 길어질 때 쓰면 됨
-// myModal2.addEventListener('hide.bs.modal', () => {
-//     $("#modalBodyId1Btn").attr("disabled", true);
-// })
-// myModal3.addEventListener('hide.bs.modal', () => {
-//     $("#modalBodyId1Btn").attr("disabled", true);
-// })
 
-$("#modalBodyId1Btn").on("click", function(){
-    $("#agreeCheck1").attr("disabled", false);  // 체크박스 비활성화 -> 활성화로 바꿈
-    $("#agreeCheck1").attr("checked", true);    // 체크박스 체크 활성화
-    console.log("체크박스활성화");
-})
-//2번 확인버튼, 글자 길이 길어졋을 때 풀고 쓰면 됨
-/*
-$("#modalBodyId2").on("scroll", function(){
-    var height = $("#modalBodyId2").scrollTop();
-    var max =  $("#modalBodyId2").css("max-height")
-    var maxValue = max.split('px')      //max-height 값(400px)을 px로 쪼갠다. max-height[0] = 400, max-height[1] = 공백
-    var height3= $("#modalBodyId2")[0].scrollHeight - Number(maxValue[0]);
 
-    if(height >= height3){
-        $("#modalBodyId2Btn").attr("disabled", false);
-        $("#agreeCheck2").attr("disabled", false);
-        $("#agreeCheck2").attr("checked", true);
-    }
-})
-*/
-
-// 2번 확인버튼 누르면 체크
-$("#modalBodyId2Btn").on("click", function(){
-    $("#agreeCheck2").attr("disabled", false);
-    $("#agreeCheck2").attr("checked", true);
-})
-//3번 확인버튼 누르면 체크
-$("#modalBodyId3Btn").on("click", function(){
-    $("#agreeCheck3").attr("disabled", false);
-    $("#agreeCheck3").attr("checked", true);
-})
-
-//4번 체크되면 if문 돌아가는거
-$("#agreeCheck4").on("click", function(){
-})
-
-//체크박스 확인 if문
-// ischecked 사용방법
-// $(".input-essential").change(function(){
-//     console.log($("#agreeCheck4").is(':checked'))
-//     if($("#agreeCheck1").is(':checked') && $("#agreeCheck2").is(':checked') && $("#agreeCheck4").is(':checked') ){
-//         $("#joinBtn").attr("disabled", false);
-//     }
-// })
-// prop 사용방법
-/*
-$(".input-essential").change(function(){
-    if($("#agreeCheck1").prop("checked", true) && $("#agreeCheck2").prop("checked", true) && $("#agreeCheck4").prop("checked", true) ){
-        $("#joinBtn").attr("disabled", false);
-        checkValid = true;
-    }
-    // $("input").change(function(){
-    //     if(pwValid == true && emailValid == true && checkValid == true){
-    //         $("#joinBtn").attr("disabled", false);
-    //     } else{
-
-    //     }
-    //     console.log("pwvalid"+ pwValid);
-    //     console.log("emailvalid"+ emailValid);
-    //     console.log("pwCheckValue"+ checkValid);
-    // })
-})
-*/
+// 2674 -> 1600
+// 2642 -> 1400
+// 2209 -> 1150
+//2895 -> x
