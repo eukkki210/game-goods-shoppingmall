@@ -23,6 +23,7 @@ body{
 } */
 .left{
     width: 50%;
+
     /* height: 1000px; */
     box-sizing: border-box;
 
@@ -177,15 +178,103 @@ div.divider{
     padding-left: 5px; 
     font-weight: bold;
 }
+
 i, a{
     cursor: pointer;
 }
+
 
 /*
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 탭 1번 추가----------
 */
 
     /* 탭 2번 css */
+.tabmenu{ 
+    max-width:600px; 
+    margin: 0 auto; 
+    position:relative; 
+}
+.tabmenu ul{
+  position: relative;
+}
+.tabmenu ul li{
+    display:block;
+    width: 33.33%; 
+    float:left;
+    text-align:center; 
+    background :#f9f9f9;
+    line-height:40px;
+}
+.tabmenu label{
+    display:block;
+    width:100%; 
+    height:40px;
+    line-height:40px;
+}
+.tabmenu input{
+    display:none;
+}
+.tabCon{
+    display:none; 
+    width: 100%;
+    text-align:left; 
+    padding: 20px;
+    position:absolute; 
+    left:0; top:40px; 
+    box-sizing: border-box; 
+    border : 5px solid #f9f9f9;
+}
+.tabmenu input:checked ~ label{
+    background:#ccc;
+}
+.tabmenu input:checked ~ .tabCon{
+    display:block;
+}
+
+
+    /* 탭 2번 css */
+.tabmenu_2{ 
+    max-width:600px; 
+    margin: 0 auto; 
+    position:relative; 
+}
+.tabmenu_2 ul{
+    position: relative;
+}
+.tabmenu_2 ul li{
+    display:  inline-block;
+    width: 33.33%; 
+    float:left;
+    text-align:center; 
+    background :#f9f9f9;
+    line-height:40px;
+}
+.tabmenu_2 label{
+    display:block;
+    width:100%; 
+    height:40px;
+    line-height:40px;
+}
+.tabmenu_2 input{
+    display:none;
+}
+.tabCon_2{
+    display:none; 
+    width: 100%;
+    text-align:left; 
+    padding: 20px;
+    position:absolute; 
+    left:0; top:40px; 
+    box-sizing: border-box; 
+    border : 5px solid #f9f9f9;
+}
+.tabmenu_2 input:checked ~ label{
+    background:#ccc;
+}
+.tabmenu_2 input:checked ~ .tabCon_2{
+    display:block;
+}
+
 /* display :none */
 .disp{
     display: none;
@@ -218,7 +307,9 @@ i, a{
     margin-right: 17px;
     box-sizing: border-box;
 }   
+
 .divDl > .dt_title{
+
     padding-left: 10px;
     max-width: 700px;
     float: left;
@@ -259,6 +350,7 @@ i, a{
     color: red;
     font-weight: bold;
 }
+
 .sectionHeader{
     display: flex;
     align-items: center;
@@ -321,7 +413,9 @@ details{
         left: auto;
     }
     /* 줄어들면 탭 안보이게 하기 */
+
     .productImg{
+
         display: none;
     }
 
