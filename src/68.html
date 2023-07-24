@@ -263,15 +263,15 @@
         objJson = await data.json();
         // 텍스트 출력
         
-        let splits=objJson[34]["src"].split("/")
+        let splits=objJson[67]["src"].split("/")
         console.log(splits)
         let file_name=splits[4];
         let file_goods_type=splits[3];
  
         let fileLocation = "./img/"+file_goods_type+"/"+file_name
-        let nameGoods=objJson[34]['goodsName']
-        let gametype=objJson[34]['game']
-        let prices = objJson[34]['price']+"원"
+        let nameGoods=objJson[67]['goodsName']
+        let gametype=objJson[67]['game']
+        let prices = objJson[67]['price']+"원"
         $("#pic1").attr("src",fileLocation)
         $("#nameGoods").text(nameGoods)
         $(".won").text(prices)
