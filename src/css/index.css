@@ -8,6 +8,8 @@
 body {
     margin: 10px;
     font-family: 'Pretendard-Regular';
+    background-color: #ffffff;
+    color: #000000;
 }
 
 a {
@@ -168,7 +170,7 @@ span.goods-img-bg-wrap::after {
 }
 
 .popular-goods-list-top {
-    margin: 0 -85.71428571428571rem 16px;
+    margin: 0 -85.71428571428571rem 24px;
 }
 
 .popular-goods-wrapper {
@@ -258,6 +260,39 @@ span.goods-img-bg-wrap::after {
     flex-shrink: 0;
 }
 
+#toggle {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    background-color: white;
+    border: transparent;
+    border-radius: 30px;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.floating-button i {
+    color: #000;
+}
+
 @media screen and (max-width: 992px) {
     .goods-list {
         overflow-x: auto;
@@ -334,12 +369,12 @@ span.goods-img-bg-wrap::after {
 /* Footer */
 
 .footer {
-    max-width: 1280px;
+    max-width: auto;
     margin: auto;
 }
 
 .footerDiv {
-    max-width: 1280px;
+    max-width: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -355,7 +390,7 @@ span.goods-img-bg-wrap::after {
 
 dl>.dt_title {
     padding-left: 10px;
-    max-width: 700px;
+    max-width: auto;
     float: left;
     line-height: 20px;
     font-size: 13px;
@@ -371,6 +406,26 @@ dl>.dt_title {
     padding-left: 10px;
 }
 
-a {
-    text-decoration: none;
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode dl>.dt_title {
+    background-color: transparent;
+    color: rgba(221, 221, 221, .5);
+}
+
+.dark-mode #toggle {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .floating-button i {
+    color: #fff;
 }
