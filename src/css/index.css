@@ -345,6 +345,10 @@ span.goods-img-bg-wrap::after {
         width: 7rem;
         height: 7rem;
     }
+
+    .popular-goods {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -427,5 +431,9 @@ dl>.dt_title {
 }
 
 .dark-mode .floating-button i {
-    color: #fff;
+    color: #ffffff;
+}
+
+.dark-mode .navbar-toggler {
+    background-color: #ffffff;
 }
