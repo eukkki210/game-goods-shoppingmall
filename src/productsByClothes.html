@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- css 링크-->
-    <link rel="stylesheet" href="./productListCss.css">
+    <link rel="stylesheet" href="./css/productListCss.css">
     <!-- backend가 없는 상태로, 클릭이 되면 하트가 눌려있는게 저장이 되야한다. -->
 
     
@@ -26,9 +26,9 @@
 <body>
     <header class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../../main_page/index.html">Home</a>
+                <a class="navbar-brand" href="./index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,22 +38,22 @@
                     <!-- 좌측 메뉴 -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../productsByGamePage/productsByGame.html">게임</a>
+                            <a class="nav-link" href="./productsByGame.html">게임</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">상품</a>
+                            <a class="nav-link" href="./productsByType.html">상품</a>
                         </li>
                     </ul>
                     <!-- 우측 메뉴 -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../my_page/save.html">장바구니</a>
+                            <a class="nav-link" href="./save.html">장바구니</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">마이페이지</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../join_page/join.html">로그인</a>
+                            <a class="nav-link" href="./join.html">로그인</a>
                         </li>
                     </ul>
                 </div>
@@ -68,10 +68,10 @@
                 <div id="carouselExample" class="carousel slide" >
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../typeBanner/shop1.jpg" class="d-block w-100" alt="...">
+                            <img src="./typeBanner/shop1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="../typeBanner/shop2.jpg" class="d-block w-100" alt="...">
+                            <img src="./typeBanner/shop2.jpg" class="d-block w-100" alt="...">
                             <!-- <button type="button">버튼 체크</button> -->
                         </div>
                     </div>
@@ -92,49 +92,49 @@
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
                     <li  onclick="borderBtnClicked('Doll')">
                         <div class="buttonClass">
-                            <img id="doll_main" src="../../../img/doll/doll_main.png">
+                            <img id="doll_main" src="./img/doll/doll_main.png">
                         </div>
                         <p class="littleBorderButton">인형</p>
                     </li>
                     <li  onclick="borderBtnClicked('Airpot')">
                         <div class="buttonClass">
-                            <img id="airpot_main" src="../../../img/pot/airpot_main.png">
+                            <img id="airpot_main" src="./img/pot/airpot_main.png">
                         </div>
                         <p class="littleBorderButton">에어팟</p>
                     </li>
                     <li  onclick="borderBtnClicked('Clothes')">
                         <div class="buttonClass">
-                            <img id="cloth_main" src="../../../img/cloth/cloth_main.png">
+                            <img id="cloth_main" src="./img/cloth/cloth_main.png">
                         </div>
                         <p class="littleBorderButton">의류</p>
                     </li>
                     <li  onclick="borderBtnClicked('Statue')">
                         <div class="buttonClass">
-                            <img id="statue_main" src="../../../img/statue/statue_main.jpg">
+                            <img id="statue_main" src="./img/statue/statue_main.jpg">
                         </div>
                         <p class="littleBorderButton">스태츄</p>
                     </li>
                     <li  onclick="borderBtnClicked('Phonecase')">
                         <div class="buttonClass">
-                            <img id="phonecase_main" src="../../../img/phonecase/case_main.jpg">
+                            <img id="phonecase_main" src="./img/phonecase/case_main.jpg">
                          </div>
                         <p class="littleBorderButton">모바일 ACC</p>
                     </li>
                     <li  onclick="borderBtnClicked('Accessory')">
                         <div class="buttonClass">
-                            <img id="acc_main" src="../../../img/accessory/acc_main.jpg">
+                            <img id="acc_main" src="./img/accessory/acc_main.jpg">
                         </div>
                         <p class="littleBorderButton">악세서리</p>
                     </li>
                     <li  onclick="borderBtnClicked('Pad')">
                         <div class="buttonClass">
-                            <img id="pad_main" src="../../../img/pad/pad_main.jpg">
+                            <img id="pad_main" src="./img/pad/pad_main.jpg">
                         </div>
                         <p class="littleBorderButton">마우스 패드</p>
                     </li>
                     <li  onclick="borderBtnClicked('Goods')">
                         <div class="buttonClass">
-                            <img id="other_main" src="../../../img/other/other_main.jpg">
+                            <img id="other_main" src="./img/other/other_main.jpg">
                         </div>
                         <p class="littleBorderButton">기타 굿즈</p>
                     </li>
@@ -144,121 +144,89 @@
             <hr>
 
             <div class="typeGoodsGroup">
-                <h2>추천 상품</h2>
+                <h2>롤 의상 모음</h2>
                 <div class="typeGoodsList recommend">
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/340232c66ba4a2a67bfbf335b33e7ed7.jpg">
+                            <div>꿀잼 모자 / 리그 오브 레전드 LoL 굿즈</div>
                             <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <div>32,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,0);" ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('27',this,0);" ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/1285e926fc27b0907ea7769aea9b288f.png">
+                            <div>LoL 꿀잼 티모 잠옷 리그 오브 레전드 롤 굿즈</div>
                             <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <div>89,000원</div>
                         </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,1);" ></i>
+           
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('28',this,1);" ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/fa577a1e06c6bf01930decfb58a1bd71.png">
+                            <div>LoL 티모 모자 리그 오브 레전드 롤 굿즈</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
                         </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,2);"  ></i>
+       
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('29',this,2);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/a5afcf84583bf20444871e1b7e1d0704.jpg">
+                            <div>티버 모자</div>
                             <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <div>32,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,3);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('30',this,3);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/38f1d08e50d23e6f35b3c277ba4c7843.png">
+                            <div>LoL 레드 미니언 슬리퍼</div>
                             <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <div>24,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,4);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('31',this,4);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/30_shop1_633858.png">
+                            <div>페이커 티셔츠 화이트</div>
                             <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <div>9900원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,5);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('32',this,5);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/29_shop1_207958.png">
+                            <div>페이커 티셔츠 블랙</div>
                             <div>리그 오브 레전드</div>
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,6);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('33',this,6);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/c63f3620ae8abb812046be6a304a7a2f.png">
+                            <div>페이커 스냅백 블랙</div>
                             <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <div>9900원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,7);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('34',this,7);"  ></i>
                     </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,8);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,9);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,10);"  ></i>
-                    </div>
-
                 </div>
-                
                 <br>
                 <br>
                 <div class="moreBtnContainer">
@@ -273,124 +241,86 @@
                 <div class="typeGoodsList popular">
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
+                            <img src="./img/clothing/01d675da61f1e0b77f89e469d490d3e2.jpg">
+                            <div>BUGGY 그래픽 반팔 티셔츠</div>
+                            <div>배틀그라운드</div>
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,11);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('35',this,8);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <img src="./img/clothing/307334782e8cd04c8594e6811b41125b.jpg">
+                            <div>배틀그라운드 인게임 그래픽 티셔츠 블랙</div>
+                            <div>배틀그라운드</div>
+                            <div>19,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,12);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('36',this,9);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <img src="./img/clothing/992fe08a8a166fedfb5786ab7b1f0037.png">
+                            <div>배틀그라운드 인게임 그래픽 티셔츠 그레이</div>
+                            <div>배틀그라운드</div>
+                            <div>19,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,13);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('37',this,10);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
+                            <img src="./img/clothing/1d540942b192ad2222afe8d23bd33a79.jpg">
+                            <div>배틀그라운드 봄버자켓</div>
+                            <div>배틀그라운드</div>
+                            <div>59,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,14);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('41',this,11);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
+                            <img src="./img/clothing/340232c66ba4a2a67bfbf335b33e7ed7.jpg">
+                            <div>배틀그라운드 로고 후드티</div>
+                            <div>배틀그라운드</div>
+                            <div>44,000원</div>
+                        </a>
+                        <!-- 아이콘 -->
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('42',this,12);"  ></i>
+                    </div>
+                    <div class="Goods">
+                        <a href="">
+                            <img src="./img/clothing/5f0e2854fb724cf88bd7034faa2d5b9f.jpg">
+                            <div>배틀그라운드 로고 맨투맨</div>
                             <div>리그 오브 레전드</div>
+                            <div>42,000원</div>
+                        </a>
+                        <!-- 아이콘 -->
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('49',this,13);"  ></i>
+                    </div>
+                    <div class="Goods">
+                        <a href="">
+                            <img src="./img/clothing/f39eeea48fd04f34282e257fe1d15a1c.jpg">
+                            <div>토마리 자수 티셔츠(게임 쿠폰 포함)</div>
+                            <div>라테일</div>
+                            <div>25,000원</div>
+                        </a>
+                        <!-- 아이콘 -->
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('48',this,14);"  ></i>
+                    </div>
+                    <div class="Goods">
+                        <a href="">
+                            <img src="./img/clothing/952dbfd904e5169044e2ccf755fb7955.jpg">
+                            <div>라그나로크 데비루치 티셔츠</div>
+                            <div>라그나로크
+
+                            </div>
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
                         <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,16);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,17);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,18);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,19);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,20);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,21);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="">
-                            <img src="../../../img/doll/포로.png">
-                            <div>포로</div>
-                            <div>리그 오브 레전드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,22);"  ></i>
-                    </div>
+                    </div> 
                 </div>
                 <br>
                 <br>
@@ -436,7 +366,7 @@
         </div>
         </div>
     </div>
-    <!-- Footer mt-5 bg-light text-center -->
+    <!-- Footer mt-5   text-center -->
     <footer class="footer container" >
         <div class="footerDiv">
             <div>
@@ -508,9 +438,9 @@
         //
 
         // 더보기 버튼 클릭 
-        let a = localStorage.getItem("favoriteTypeArray") 
+        let a = localStorage.getItem("favoriteClothArray") 
         let b = a !=null ? JSON.parse(a) : [0,0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        let parentRecommend=$(".typeGoodsList.recommend > .Goods > i")
+        let parentRecommend=$(".typeGoodsList> .Goods > i")
 
         for(let i=0; i<parentRecommend.length;i++){
             console.log(`${i}: ${b[i]}`)
@@ -529,7 +459,7 @@
         }
         $("#favoriteModalOK").click(()=>{
             // 경로 변경 
-            location.href= "../../my_page/save.html"
+            location.href= "./save.html"
         })
         function initFavorite(){
             let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
@@ -594,7 +524,7 @@
                 console.log(localStorage.getItem("바구니"))
                 //b에 값 넣어서 색 값 저장해야함
                 b[idx]=1
-                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
+                localStorage.setItem("favoriteClothArray",JSON.stringify(b))
 
             }else if($(sourceBtn).hasClass("fa-solid")){
                 $(sourceBtn).removeClass("fa-solid")
@@ -611,8 +541,8 @@
                         j--;
                     }
                 }
-                localStorage.removeItem("favoriteTypeArray")
-                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
+                localStorage.removeItem("favoriteClothArray")
+                localStorage.setItem("favoriteClothArray",JSON.stringify(b))
             }
 
 
