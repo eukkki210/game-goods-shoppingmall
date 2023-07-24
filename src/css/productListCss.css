@@ -1,0 +1,286 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.header{
+    width: auto;
+    height: 72px;
+    margin: auto 32px;
+    padding: 0 80px;
+}
+
+.container {
+    /* margin-left: 5% ;
+    margin-right: 5%; */
+}
+.body{
+    margin: 0;
+}
+
+/* hover되었을 떄 클래스들 pointer 변경 */
+.Goods > span:hover {
+    cursor: pointer;
+}
+.slide:hover{
+    cursor: pointer;
+}
+.typeButtonGroup > li:hover{
+    cursor: pointer;
+}
+.red {
+    color: red;
+}
+/* a에서 font 스타일 바뀌는 거 방지 */
+a {
+    text-decoration: none;
+}   
+/* 버튼 클래스들 전부 해당속성 적용 */
+.buttonClass {
+    border-radius: 0%;
+    color: rgba(0, 0, 0, 0.7); 
+    line-height: 40pt;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* ul리스트, grid적용 4x2 */
+.typeButtonGroup {
+    padding-left:0;
+    margin-left:0;
+    display: grid;
+
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 28px;
+    row-gap: 28px; 
+    /* li앞에 붙는 *제거 */
+    list-style-type: none;
+    margin-bottom: 10pt;
+} 
+
+/* li에 border 적용하기 */
+/* 그림 아래 있는 txt */
+.littleBorderButton {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+
+}
+/* 뭔가 하려다가 아래에 컨테이너를 하나 더 넣었음 */
+.typeGoodsGroup {
+    display: block;
+
+}
+/* 여기에 space-betwewen, flex-start 적용 정렬, wrap 적용 */
+/* .typeGoodsList {
+    margin-left: 10pt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content : space-between;
+    align-items: flex-start;
+} */
+
+.typeGoodsList {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 8px;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 28px;
+    row-gap: 28px;
+    
+} 
+#carouselExample{
+    margin-top: 2%;
+}
+/* 굿즈에 반응형 */
+.Goods {
+    position: relative;
+}
+/* 이미지에 크기 */
+.Goods > a > img {
+    max-width: 100%;
+}
+/* buttonClass의 이미지 */
+.buttonClass > img {
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+}
+/* 좋아요 버튼(장바구니)에 z-idx, absolute적용 */
+.Goods > i {
+    position: absolute;
+    width: 10pt;
+    top: 3pt;
+    right: 10pt;
+    z-index: 1;
+}
+.Goods > a > div{
+    padding-left: 16pt;
+    color: black;
+}
+.Goods div:nth-child(2){
+    font-weight: bold;
+}
+.moreBtnContainer {
+    text-align: center;
+}
+.moreBtn {
+    border-radius: 5%;
+    background-color: ghostwhite;
+    padding: 0 15pt;
+    border: none;
+}
+        /* 크기 조건 max, max-width,/min-height
+    max-width : 오른쪽에 나온숫자 값 이하일 떄 적용하는 그래픽
+    min-width : width가 오른쪽 이상일때 적용하는 그래픽
+*/
+/* 더보기 버튼을 위해서 없앴음. 나중에 봐야하면 display : block */
+.typeGoodsList > div:nth-child(n+5){
+    display  : none;
+}
+
+ /*제일 하단(footer)*/
+
+ .footer{
+    max-width: auto;
+    margin: auto;
+}
+.footerDiv{
+    max-width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_ul > li{
+    padding-right: 16px;
+}
+.blank{
+    margin-right: 17px;
+    box-sizing: border-box;
+}   
+dl > .dt_title{
+    padding-left: 10px;
+    max-width: auto;
+    float: left;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgba(34,34,34,.5);
+}
+.div_sns{
+    padding-right: 5%;
+}
+.footer_ul
+{
+      list-style:none;
+      padding-left: 10px;
+}
+
+/*  */
+
+@media screen and (max-width : 768px) {
+.container {
+    padding: 10px;
+    margin-left: 0 ;
+    margin-right:0;
+    max-width: 100%;
+}
+.typeGoodsList{
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+
+.Goods > a > img {
+    width: 250px;
+    height: 250px;
+}
+}
+body{
+    font-family: "Pretendard-Regular" ;
+}
+
+@media screen and (max-width : 568px) {
+.container {
+    padding: 10px;
+    max-width: 100%;
+    margin-left: 0 ;
+    margin-right: 0;
+}
+.typeButtonGroup > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.typeButtonGroup > li > div {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+
+.typeGoodsList{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.littleBorderButton {
+    width: 90px;
+    margin-top: 5pt;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.Goods > a > img {
+    width: 200px;
+    height: 200px;
+}
+
+/* footer 가리기? */
+/* 이미지 반응형 */
+/*statue*/
+#statue_main {
+    border-radius: 50%;
+    content: url(../../../img/statue/1.png);
+}
+#acc_main {
+    border-radius: 50%;
+    content: url(../../../img/accessory/2.png);
+}
+#cloth_main{
+    border-radius: 50%;
+    content: url(../../../img/cloth/1.png);
+
+}
+#doll_main{
+    border-radius: 50%;
+    content: url(../../../img/doll/1.png);
+
+}
+#airpot_main{
+    border-radius: 50%;
+    content: url(../../../img/pot/1.png);
+
+}
+
+#pad_main{
+    border-radius: 50%;
+    content: url(../../../img/pad/1.png);
+
+}
+#phonecase_main{
+    border-radius: 50%;
+    content: url(../../../img/phonecase/1.png);
+
+}
+#other_main{
+    border-radius: 50%;
+    content: url(../../../img/other/1.png);
+
+}
+}
+
+
