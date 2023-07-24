@@ -1,5 +1,14 @@
 header{
-    background-color: yellowgreen;
+    background-color: white;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: "Pretendard-Regular" ;
 }
 .containers{
     display: flex;
@@ -16,6 +25,9 @@ header{
     letter-spacing: -.15px;
     color: rgba(34,34,34,.5);
     margin-top: 12px;
+}
+.titleLine{
+    width: 100%;
 }
 .subTitle{
     line-height: 22px;
@@ -59,5 +71,113 @@ header{
 .contentArea{
     /* margin-left: auto; */
     margin-right: auto;
+    width: 100%;
     max-width: 1280px;
+}
+
+/* 아래서부터는 장바구니 */
+
+.wish_products{
+    width: 60%;
+    margin-top: 70px;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.product_box{
+    position: relative;
+    display: flex;
+}
+.img_box {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+}
+.text_box{
+    margin-left: 20px;
+    /* display: flex;
+    flex-direction: row; */
+}
+.btn_box{
+    top:20px;
+    position: absolute;
+}
+.btn_box>button{
+    width:175px;
+    border-radius: 10%;
+}
+.prices{
+    display: none;
+}
+.right {margin-left: 80%;}
+
+
+
+@media screen and (max-width : 1300px) {
+    .btn_box> button{
+        width:100px;
+    }
+    .desc{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width : 1000px) {
+    .subNav{
+        display: none;
+    }
+    .wish_products{
+        padding-left: 0;
+    }
+    .informs{
+        display: none;
+    }
+    .price{
+        display: none;
+    }
+    .desc{
+        display: none;
+    }
+    .btn_box{
+        top: 30px;
+    }
+    .btn_box> button{
+        width:70px;
+    }
+    .prices{
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width : 768px) {
+    .subNav{
+        display: none;
+    }
+    .wish_products{
+        padding-left: 0;
+    }
+    .informs{
+        display: none;
+    }
+    .price{
+        display: none;
+    }
+    .desc{
+        display: none;
+    }
+    .btn_box{
+        top: 30px;
+    }
+    .btn_box> button{
+        width:70px;
+    }
+    .prices{
+        display: block;
+    }
+
 }
