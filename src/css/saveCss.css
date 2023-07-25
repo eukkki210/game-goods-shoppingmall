@@ -11,10 +11,12 @@ body{
     font-family: "Pretendard-Regular" ;
 }
 .containers{
+    position: relative;
     display: flex;
     margin-left: 5%;
     /* margin-right: 5%; */
-    padding: 40px 40px 160px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .shoppingUl{
     list-style: none;
@@ -53,12 +55,12 @@ body{
     letter-spacing: -.15px;
 }
 .contentTitle{
-    position: absolute;
+    /* position: absolute; */
     padding-bottom: 16px;
     border-bottom: 3px solid #222;
     display: flex;
     padding: 5px 0 6px;
-    width: 60%;
+    width: 100%;
 }
 .title{
     font-size: 24px;
@@ -78,9 +80,9 @@ body{
 /* 아래서부터는 장바구니 */
 
 .wish_products{
-    width: 60%;
-    margin-top: 70px;
-    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    /*position: absolute; */
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -113,11 +115,9 @@ body{
 .right {margin-left: 80%;}
 
 .footer{
-    bottom: 0;
     left: 5%;
-    position: absolute;
-    max-width: auto;
-    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .footerDiv{
     max-width: auto;
