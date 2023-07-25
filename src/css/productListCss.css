@@ -6,11 +6,17 @@
     font-style: normal;
 }
 .header{
-
+    position: relative;
     width: auto;
     height: 72px;
     margin: auto 32px;
     padding: 0 80px;
+}
+.logo-img{
+    height:28px;
+}
+.dark_mode .logo_img{
+    filter: invert(100%);
 }
 
 #toggle {
@@ -202,6 +208,11 @@ a {
 .footer_ul > li{
     padding-right: 16px;
 }
+.footer_ul > li > a{
+    
+    font-size:13px;
+    
+}
 .blank{
     margin-right: 17px;
     box-sizing: border-box;
@@ -234,12 +245,13 @@ dl > .dt_title{
 }
 
 .typeGoodsList{
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    max-width: 100%;
+    object-fit: fill;
 }
 
 .Goods > a > img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
 }
 .Goods > a > div{
     max-width: 250px;
@@ -248,6 +260,7 @@ dl > .dt_title{
 .Goods > a > div{
     max-width: 250px;
 }
+
 }
 body{
     font-family: "Pretendard-Regular" ;
@@ -277,13 +290,13 @@ body{
 }
 .typeButtonGroup > li > div {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 100%;
 }
-
 
 .typeGoodsList{
     grid-template-columns: repeat(2,minmax(0,1fr));
+    max-width: 100%;
+    object-fit: fill;
 }
 .littleBorderButton {
     width: 90px;
