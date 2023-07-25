@@ -6,17 +6,14 @@ $(".box").on("click", function(){
     $(this).addClass("active")
 },)
 
-
-//input 금액 value값 받아오기
-let price = $(".won").text();
-$("#price").attr('value', price);
-
-//숫자만 선택하는 정규식
-price = price.replace(/[^0-9]/g, ""); //price 특수문자랑 문자열 지움
-
-
 //플러스 누르면 금액 값 바뀌는거
 $("#button_plus").on("click", function(){
+    //input 금액 value값 받아오기
+    let price = $(".won").text();
+    $("#price").attr('value', price);
+    //숫자만 선택하는 정규식
+    price = price.replace(/[^0-9]/g, ""); //price 특수문자랑 문자열 지움
+    console.log(price);
     let count_val = $("#counting").val();
     count_val++;
     $("#counting").attr('value',count_val);
@@ -32,6 +29,9 @@ $("#button_plus").on("click", function(){
 
 //마이너스 누르면 금액이랑 수량 바뀌기
 $("#button_negative").on("click", function(){
+    let price = $(".won").text();
+    price = price.replace(/[^0-9]/g, ""); //price 특수문자랑 문자열 지움
+    console.log(price);
     let count_val_2 = $("#counting").val();
     if(count_val_2>0){
         count_val_2--;
