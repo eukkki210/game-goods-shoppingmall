@@ -234,12 +234,13 @@ dl > .dt_title{
 }
 
 .typeGoodsList{
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    max-width: 100%;
+    object-fit: fill;
 }
 
 .Goods > a > img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
 }
 .Goods > a > div{
     max-width: 250px;
@@ -248,6 +249,7 @@ dl > .dt_title{
 .Goods > a > div{
     max-width: 250px;
 }
+
 }
 body{
     font-family: "Pretendard-Regular" ;
@@ -281,9 +283,10 @@ body{
     height: 90px;
 }
 
-
 .typeGoodsList{
     grid-template-columns: repeat(2,minmax(0,1fr));
+    max-width: 100%;
+    object-fit: fill;
 }
 .littleBorderButton {
     width: 90px;
