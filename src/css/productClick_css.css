@@ -205,13 +205,6 @@ i, a{
     max-width: 1280px;
     margin: auto;
 }
-.logo-img {
-    height: 28px;
-}
-
-.dark-mode .logo-img {
-    filter: invert(100%);
-}
 .footerDiv{
     max-width: 1280px;
     display: flex;
@@ -219,6 +212,9 @@ i, a{
 }
 .footer_ul > li{
     padding-right: 16px;
+}
+.footer_ul > li > a{
+    font-size: 13px;
 }
 .footer_ul
 {
@@ -303,7 +299,9 @@ details{
     left: auto;
     top: auto;
 }
-
+.logo-img{
+    height: 28px;
+}
 @media screen and (max-width:580px){
     .content{
         width: auto;
@@ -335,6 +333,7 @@ details{
         left: auto;
     }
     /* 줄어들면 탭 안보이게 하기 */
+
 
     .productImg{
 
