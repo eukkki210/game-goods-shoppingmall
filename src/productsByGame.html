@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GamePage</title>
+    <title>게임들</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,14 +26,46 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./css/productClick_css.css" />
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/productsByGame.css" />
 </head>
 
 <body>
-    <header>
-        <div class="container-md header">
-            Header
-        </div>
+    <!-- Header -->
+    <header class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- 메뉴 -->
+                    <!-- <ul class="navbar-nav"></ul> -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productsByGame.html">게임</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productsByType.html">상품</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./save.html">장바구니</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./save.html">마이페이지</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./loginPage.html">로그인</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -66,7 +98,7 @@
 
         <!-- Game Page Title -->
         <div class="container-md game-page-title">
-            GAMES
+            게임들
         </div>
 
         <hr class="container-md" />
@@ -85,7 +117,7 @@
             </div>
 
             <div class="game-category">
-                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                <a href="./pubg.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
                         <img src="../src/img/gameLogo/pubg.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">배틀그라운드</div>
@@ -94,7 +126,7 @@
             </div>
 
             <div class="game-category">
-                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                <a href="./pokemon.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
                         <img src="../src/img/gameLogo/pokemon.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">포켓몬스터</div>
@@ -103,7 +135,7 @@
             </div>
 
             <div class="game-category">
-                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                <a href="./laTale.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
                         <img src="../src/img/gameLogo/latale.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">라테일</div>
@@ -112,7 +144,7 @@
             </div>
 
             <div class="game-category">
-                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                <a href="./overWatch.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
                         <img src="../src/img/gameLogo/overWatch.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">오버워치</div>
@@ -121,7 +153,7 @@
             </div>
 
             <div class="game-category">
-                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                <a href="./worldOfWarcraft.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
                         <img src="../src/img/gameLogo/worldOfWarcraft.png" alt=""
                             class="game-category-item-img img-fluid">
@@ -131,7 +163,7 @@
             </div>
 
             <div class="game-category">
-                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                <a href="./otherGames.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
                         <img src="../src/img/gameLogo/mineCraft.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">기타</div>
@@ -331,16 +363,61 @@
 
     </main>
 
+    <footer class="footer">
+        <hr />
+        <div class="footerDiv">
+            <div>
+                <ul class="footer_ul" style="display: flex;">
+                    <li>
+                        <a>회사소개</a>
+                    </li>
+                    <li>
+                        <a>인재채용</a>
+                    </li>
+                    <li><a>회사약관</a></li>
+                    <li><a>개인정보처리약관</a></li>
+                </ul>
+            </div>
+            <div class="div_sns">
+                <i class="bi bi-instagram fs-1"></i>
+                <i class="bi bi-twitter fs-1"></i>
+                <i class="bi bi-youtube fs-1"></i>
 
-
-
-
-
-
-
-
-
-    <footer></footer>
+            </div>
+        </div>
+        <div class="footer_div_dt">
+            <div class="divDl">
+                <div class="dt_title">
+                    크림 주식회사 · 대표 김창욱
+                    <span class="blank"></span>
+                    사업자등록번호 : 570-88-01618
+                    <a></a>
+                    사업자정보확인
+                    <span class="blank"></span>
+                    사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층
+                    <span class="blank"></span>
+                    호스팅 서비스 : 네이버 클라우드 (주)
+                    <span class="blank"></span>
+                    <br><br>
+                    셀러 상품의 경우 (주)마플코퍼레이션은 통신판매중개자로서 통신판매의 당사자가 아니며 상품, 거래정보, 거래에 대하여 책임을 지지 않습니다.
+                    각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
+                    <br><br>
+                    고객센터
+                    <span class="blank"></span>
+                    신고센터
+                    <span class="blank"></span>
+                    셀러신청
+                    <span class="blank"></span>
+                    기업셀러신청
+                    <span class="blank"></span>
+                    개인정보처리방침이용약관
+                    <span class="blank"></span>
+                    마플코퍼레이션
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

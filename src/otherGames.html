@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포켓몬스터</title>
+    <title>기타 게임 상품들</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -98,7 +98,7 @@
 
         <!-- Game Page Title -->
         <div class="container-md game-page-title">
-            포켓몬스터
+            기타 게임 상품들
         </div>
 
         <hr class="container-md" />
@@ -173,12 +173,6 @@
 
         </div> -->
 
-        <!-- Game Banner -->
-        <div class="container-md game-banner">
-            <img src="./img/gameLogo/pokemon.png" alt="pokemon logo" class="game-banner-img img-fluid">
-        </div>
-        <hr class="container-md" />
-
         <!-- 상품 정렬 -->
         <div class="items-count-and-sorting container-md">
             <div class="items-count">Total Items</div>
@@ -232,7 +226,9 @@
 
                 const worldOfWarcraft = objJson.filter(obj => obj.game == `월드오브워크래프트`);
 
-                let sortedFromId = pokemon.sort(function (a, b) {
+                const others = objJson.filter(obj => obj.game !== '리그오브레전드' && obj.game != '배틀그라운드' && obj.game != '포켓몬스터' && obj.game != '라테일' && obj.game != '오버워치' && obj.game != '월드오브워크래프트')
+
+                let sortedFromId = others.sort(function (a, b) {
                     return b['id'] - a['id']
                 })
 
@@ -254,23 +250,9 @@
                                 </div>
                             </div>
                         </a>`);
-
-                    // <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
-                    //         <div class="product-item">
-                    //             <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                    //                 class="product-item-img">
-                    //             <div class="product-item-game">리그오브레전드</div>
-                    //             <div class="product-item-name">포로인형</div>
-                    //             <div class="product-item-price">24,000원</div>
-                    //         </div>
-                    //     </a>
-
                 }
-                // 21, 50, 51, 97, 123, 191, 192, 193, 209
 
-                // 상품 개수 표시
-
-                $('.items-count').text(`Total Items: ${pokemon.length}`);
+                $('.items-count').text(`Total Items: ${others.length}`);
 
                 // 상품 정렬
 
@@ -278,7 +260,7 @@
                     $('#sortBtn').empty().text('신상품 순');
                     $('.products-wrapper').empty();
 
-                    let sortedFromId = pokemon.sort(function (a, b) {
+                    let sortedFromId = others.sort(function (a, b) {
                         return b['id'] - a['id']
                     })
 
@@ -307,7 +289,7 @@
                     $('#sortBtn').empty().text('높은가격 순');
                     $('.products-wrapper').empty();
 
-                    let sortedFromHighPrice = pokemon.sort(function (a, b) {
+                    let sortedFromHighPrice = others.sort(function (a, b) {
                         return b['price'] - a['price']
                     })
 
@@ -336,7 +318,7 @@
                     $('#sortBtn').empty().text('낮은가격 순');
                     $('.products-wrapper').empty();
 
-                    let sortedFromLowPrice = pokemon.sort(function (a, b) {
+                    let sortedFromLowPrice = others.sort(function (a, b) {
                         return a['price'] - b['price']
                     })
 
@@ -366,6 +348,8 @@
         </script>
 
     </main>
+
+
 
 
     <footer class="footer">
