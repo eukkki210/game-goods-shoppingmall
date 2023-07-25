@@ -205,6 +205,13 @@ i, a{
     max-width: 1280px;
     margin: auto;
 }
+.logo-img {
+    height: 28px;
+}
+
+.dark-mode .logo-img {
+    filter: invert(100%);
+}
 .footerDiv{
     max-width: 1280px;
     display: flex;

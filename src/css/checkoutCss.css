@@ -276,3 +276,11 @@ input[type=checkbox]{
     background-color: black;
     color: white;
 }
+
+.logo-img {
+    height: 28px;
+}
+
+.dark-mode .logo-img {
+    filter: invert(100%);
+}

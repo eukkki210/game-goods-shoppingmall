@@ -8,6 +8,12 @@
 *{
     font-family: 'Pretendard-Regular';
 }
+.logo-img {
+    height: 28px;
+}
+.dark-mode .logo-img {
+    filter: invert(100%);
+}
 .head{
     display: flex;
     justify-content: space-between;
