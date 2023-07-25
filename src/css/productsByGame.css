@@ -166,7 +166,9 @@ li.dropdown-item:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
-    .game-page-title,
+    .game-page-title {
+        font-size: 1.5rem;
+    }
     .product-item-game,
     .product-item-name,
     .product-item-price {
@@ -190,5 +192,8 @@ li.dropdown-item:nth-child(2) {
         max-width: 50%;
         object-fit: fill;
         padding: 5%;
+    }
+    .game-category-item {
+        height: 110px;
     }
 }
