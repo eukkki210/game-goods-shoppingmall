@@ -284,3 +284,43 @@ input[type=checkbox]{
 .dark-mode .logo-img {
     filter: invert(100%);
 }
+@media screen and (max-width : 760px){
+    .containers{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .rightBar{
+        position: relative;
+        order: 1;
+
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        /* padding-left: 3%; */
+        position: relative;
+        top: 0px;
+        left: 0%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .leftBar{
+        order: 2;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .rightTitle{
+        text-align: center;
+    }
+    .sectionHeader{
+        font-size: 26px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.31;
+        letter-spacing: -.3px;
+        color: #111;
+        display: block;
+        text-align: center;
+        margin: 20px 0 20px;
+    }
+}
