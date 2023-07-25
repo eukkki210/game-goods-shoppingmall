@@ -130,3 +130,10 @@ console.log($("html").height()-$("body").height())
 // 2642 -> 1400
 // 2209 -> 1150
 //2895 -> x
+
+$("#cart").click(()=>{
+    location.href="./save.html";
+})
+$("#payment").click(()=>{
+    location.href="./checkout.html";
+})

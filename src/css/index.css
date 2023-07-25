@@ -5,6 +5,7 @@
     font-style: normal;
 }
 
+
 body {
     margin: 10px;
     font-family: 'Pretendard-Regular';
@@ -444,4 +445,8 @@ dl>.dt_title {
 
 .dark-mode .navbar-toggler {
     background-color: #ffffff;
+}
+
+.footer_ul > li > a {
+    font-size: 13px;
 }

@@ -37,7 +37,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo-img" src="img/btn/logo_removebg.png" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -109,7 +111,7 @@
             <div class="game-category">
                 <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/leagueOfLegends.png" alt=""
+                        <img src="./img/gameLogo/leagueOfLegends.png" alt=""
                             class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">리그오브레전드</div>
                     </div>
@@ -119,7 +121,7 @@
             <div class="game-category">
                 <a href="./pubg.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/pubg.png" alt="" class="game-category-item-img img-fluid">
+                        <img src="./img/gameLogo/pubg.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">배틀그라운드</div>
                     </div>
                 </a>
@@ -128,7 +130,7 @@
             <div class="game-category">
                 <a href="./pokemon.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/pokemon.png" alt="" class="game-category-item-img img-fluid">
+                        <img src="./img/gameLogo/pokemon.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">포켓몬스터</div>
                     </div>
                 </a>
@@ -137,7 +139,7 @@
             <div class="game-category">
                 <a href="./laTale.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/latale.png" alt="" class="game-category-item-img img-fluid">
+                        <img src="./img/gameLogo/latale.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">라테일</div>
                     </div>
                 </a>
@@ -146,7 +148,7 @@
             <div class="game-category">
                 <a href="./overWatch.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/overWatch.png" alt="" class="game-category-item-img img-fluid">
+                        <img src="./img/gameLogo/overWatch.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">오버워치</div>
                     </div>
                 </a>
@@ -155,7 +157,7 @@
             <div class="game-category">
                 <a href="./worldOfWarcraft.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/worldOfWarcraft.png" alt=""
+                        <img src="./img/gameLogo/worldOfWarcraft.png" alt=""
                             class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">월드오브워크래프트</div>
                     </div>
@@ -165,7 +167,7 @@
             <div class="game-category">
                 <a href="./otherGames.html" class="game-category-link" target="_blank">
                     <div class="game-category-item">
-                        <img src="../src/img/gameLogo/mineCraft.png" alt="" class="game-category-item-img img-fluid">
+                        <img src="./img/gameLogo/mineCraft.png" alt="" class="game-category-item-img img-fluid">
                         <div class="game-category-item-name">기타</div>
                     </div>
                 </a>
@@ -418,11 +420,17 @@
         </div>
         </div>
     </footer>
+    <button id="toggle">다크 모드</button>
+    <div class="floating-button" id="goTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <!-- Dark mode & goTopBtn -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
