@@ -499,7 +499,7 @@
         }
         $("#favoriteModalOK").click(()=>{
             // 경로 변경 
-            "./save.html"
+            location.href= "./save.html"
         })
         function initFavorite(){
             let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
