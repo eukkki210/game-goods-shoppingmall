@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PBG</title>
+    <title>GamePage</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,153 +27,124 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/productsByGame.css" />
-
 </head>
 
 <body>
-    <header class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- 메뉴 -->
-                    <!-- <ul class="navbar-nav"></ul> -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../productsByGamePage/productsByGame.html">게임</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../productByType/productList/productsByType.html">상품</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../my_page/save.html">장바구니</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">마이페이지</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../products/loginPage.html">로그인</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <header>
+        <div class="container-md header">
+            Header
+        </div>
     </header>
-    <main class="container">
+
+    <main>
         <!-- Event Carousel -->
-        <div id="event-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://thesuperplay.com/web/upload/category/shop1_107_top_261294.jpg"
-                        class="d-block w-100" alt="event1">
+        <div class="container-md eventCarousel">
+            <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./media/71fa2843f86fada15a2428c76bbc783e.jpg" class="d-block w-100" alt="event1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/e016be34ad9d43095835232246e1051c.jpg" class="d-block w-100" alt="event2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/ef1534f4ebe4cd267b15c128eb97af85.jpg" class="d-block w-100" alt="event3">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://thesuperplay.com/web/upload/category/shop1_360_top_321158.jpg"
-                        class="d-block w-100" alt="event2">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://thesuperplay.com/web/upload/category/shop1_146_top_530342.jpg"
-                        class="d-block w-100" alt="event3">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#event-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#event-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
-        <!-- Shop Title -->
-        <div id="shop">
-            <div>SHOP</div>
+        <!-- Game Page Title -->
+        <div class="container-md game-page-title">
+            GAMES
         </div>
-        <hr />
-        </div>
+
+        <hr class="container-md" />
 
         <!-- Game Category -->
-        <div class="game-category-container">
+        <div class="game-category-container container-md">
 
-            <div class="game-category-wrapper">
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/leagueOfLegends.png" alt=""
+                            class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">리그오브레전드</div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="game-category">
-                    <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/leagueOfLegends.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">리그오브레전드</div>
-                    </a>
-                </div>
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/pubg.png" alt="" class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">배틀그라운드</div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="game-category">
-                    <a href="./pubg.html" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/pubg.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">배틀그라운드</div>
-                    </a>
-                </div>
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/pokemon.png" alt="" class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">포켓몬스터</div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="game-category">
-                    <a href="./pokemon.html" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/pokemon.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">포켓몬스터</div>
-                    </a>
-                </div>
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/latale.png" alt="" class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">라테일</div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="game-category">
-                    <a href="./laTale.html" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/latale.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">라테일</div>
-                    </a>
-                </div>
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/overWatch.png" alt="" class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">오버워치</div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="game-category">
-                    <a href="./overWatch.html" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/overWatch.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">오버워치</div>
-                    </a>
-                </div>
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/worldOfWarcraft.png" alt=""
+                            class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">월드오브워크래프트</div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="game-category">
-                    <a href="./worldOfWarcraft.html" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/worldOfWarcraft.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">월드오브워크래프트</div>
-                    </a>
-                </div>
-
-                <div class="game-category">
-                    <a href="#" class="game-category-link" target="_blank">
-                        <div class="game-category-img">
-                            <img src="./img/gameLogo/guitar.jpeg" alt="" class="img-fluid">
-                        </div>
-                        <div class="game-category-name">기타</div>
-                    </a>
-                </div>
-
+            <div class="game-category">
+                <a href="./leagueOfLegends.html" class="game-category-link" target="_blank">
+                    <div class="game-category-item">
+                        <img src="../src/img/gameLogo/mineCraft.png" alt="" class="game-category-item-img img-fluid">
+                        <div class="game-category-item-name">기타</div>
+                    </div>
+                </a>
             </div>
 
         </div>
-        <hr />
+
+        <hr class="container-md" />
 
         <!-- 상품 정렬 -->
-        <div class="items-count-and-sorting">
+        <div class="items-count-and-sorting container-md">
             <div class="items-count">Total Items</div>
             <div class="items-sorting">
                 <div class="dropdown">
@@ -191,7 +162,7 @@
         </div>
 
         <!-- 상품 진열 -->
-        <div class="products-wrapper">
+        <div class="products-wrapper container-md">
             <!-- <a href="#" class="product-item-link" class="product-item-link">
                 <div class="product-item">
                     <img src="./img/accessory/3febc3d0bb2120e738c4d30f0c802e28.jpg" alt="" class="product-item-img">
@@ -202,19 +173,6 @@
                     </div>
                 </div>
             </a> -->
-        </div>
-
-        <div class="pagination">
-            <div class="prevArrow"><button type="button"><i class="bi bi-arrow-left"></i></button></div>
-            <ul>
-                <li><a href="" class="page-active">1</a></li>
-                <li><a href="" class="">2</a></li>
-                <li><a href="" class="">3</a></li>
-                <li><a href="" class="">4</a></li>
-                <li><a href="" class="">5</a></li>
-                <li><a href="" class="">6</a></li>
-            </ul>
-            <div class="nextArrow"><button type="button"><i class="bi bi-arrow-right"></i></button></div>
         </div>
 
         <script>
@@ -239,8 +197,8 @@
                 const worldOfWarcraft = objJson.filter(obj => obj.game == `월드오브워크래프트`);
 
                 let sortedFromId = objJson.sort(function (a, b) {
-                        return b['id'] - a['id']
-                    })
+                    return b['id'] - a['id']
+                })
 
                 for (let i = 0; i < sortedFromId.length; i++) {
                     let productInfo = objJson[i];
@@ -370,77 +328,24 @@
             load();
 
         </script>
-        <hr />
 
     </main>
 
-    <!-- <footer class="footer">
-        <div class="footerDiv">
-            <div>
-                <ul class="footer_ul" style="display: flex;">
-                    <li>
-                        <a>회사소개</a>
-                    </li>
-                    <li>
-                        <a>인재채용</a>
-                    </li>
-                    <li><a>회사약관</a></li>
-                    <li><a>개인정보처리약관</a></li>
-                </ul>
-            </div>
-            <div class="div_sns">
-                <a href="https://www.instagram.com/">
-                    <i class="bi bi-instagram fs-1" , style="color: black;"></i>
-                </a>
-                <a href="https://www.twitter.com/">
-                    <i class="bi bi-twitter fs-1" , style="color: black;"></i>
-                </a>
-                <a href="https://www.youtube.com/">
-                    <i class="bi bi-youtube fs-1" , style="color: black;"></i>
-                </a>
 
-            </div>
-        </div>
-        <div class="footer_div_dt">
-            <dl>
-                <dt class="dt_title">
-                    크림 주식회사 · 대표 김창욱
-                    <span class="blank"></span>
-                    사업자등록번호 : 570-88-01618
-                    <a></a>
-                    사업자정보확인
-                    <span class="blank"></span>
-                    사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층
-                    <span class="blank"></span>
-                    호스팅 서비스 : 네이버 클라우드 (주)
-                    <span class="blank"></span>
-                    <br><br>
-                    셀러 상품의 경우 (주)마플코퍼레이션은 통신판매중개자로서 통신판매의 당사자가 아니며 상품, 거래정보, 거래에 대하여 책임을 지지 않습니다.
-                    각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
-                    <br><br>
-                    고객센터
-                    <span class="blank"></span>
-                    신고센터
-                    <span class="blank"></span>
-                    셀러신청
-                    <span class="blank"></span>
-                    기업셀러신청
-                    <span class="blank"></span>
-                    개인정보처리방침이용약관
-                    <span class="blank"></span>
-                    마플코퍼레이션
-                </dt>
-            </dl>
-        </div>
-        </div>
-    </footer> -->
 
-    <!-- Bootstrap JS -->
+
+
+
+
+
+
+
+    <footer></footer>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

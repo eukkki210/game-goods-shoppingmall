@@ -26,40 +26,39 @@
 <body>
     <header class="container">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light  ">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Home</a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- 좌측 메뉴 -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productsByGame.html">게임</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productsByType.html">상품</a>
-                        </li>
-                    </ul>
-                    <!-- 우측 메뉴 -->
+                    <!-- 메뉴 -->
+                    <!-- <ul class="navbar-nav"></ul> -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="./save.html">장바구니</a>
+                            <a class="nav-link" href="productsByGame.html">게임</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">마이페이지</a>
+                            <a class="nav-link" href="productsByType.html">상품</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./join.html">로그인</a>
+                            <a class="nav-link" href="save.html">장바구니</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="save.html">마이페이지</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loginPage.html">로그인</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <main>
         <div class="container">
@@ -343,13 +342,14 @@
     objJson = await data.json();
     // 텍스트 출력
     let products=$(".typeGoodsList > .Goods")
-
+    let arrayAhref = $(".Goods > a")
     for(let i=0; i<products.length;i++){
         let fileLocation = "./img/mousepad/"+objJson[i+129]["src"].split("/").slice(-1)[0]
         let nameGoods=objJson[i+129]['goodsName']
         let gametype=objJson[i+129]['game']
         let prices = objJson[i+129]['price']+"원"
-        console.log(fileLocation)
+        let a =$(arrayAhref[i])
+        $(a).attr("href",`${i+130}.html`)
         $(products[i]).children("*").children("img").attr("src",fileLocation)
         $(products[i]).children("*").children("div:nth-child(2)").text(nameGoods)
         $(products[i]).children("*").children("div:nth-child(3)").text(gametype)

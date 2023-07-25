@@ -40,8 +40,11 @@
     flex-direction: column;
     padding-left: 15%;
 }
-.login_email h3{
+.email_sub > a{
+    color: black;
+    text-decoration: none;
 }
+
 .login_password{
     display: flex;
     flex-direction: column;
@@ -71,6 +74,11 @@
     line-height: 18px;
     padding-top: 10px;
 }
+.modal-footer > button{
+    background-color: #000;
+    color: #fff;
+    
+}
 .login_par{
     display: flex;
     width: 100%;
@@ -86,6 +94,7 @@
     background-color: white;
     border: 1px solid rgb(218, 217, 217);
     border-radius: 10px;
+    cursor: pointer;
 }
 .login_ul{
     list-style: none;
@@ -96,6 +105,7 @@
 }
 .login_ul > li{
     font-size: 14px;
+    cursor: pointer;
 }
 /* .email_sub::after{
     position: absolute;
@@ -134,6 +144,22 @@
     border-top: 0px;
 
 }
+input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+/* 패스워드, 이메일 맞는지 틀린지 */
+.errorPwCheck{
+    color: red;
+    font-size: 7px;
+    font-weight: bold;
+}
+.correctPwCheck{
+    color: rgb(8, 211, 8);
+    font-size: 7px;
+    font-weight: bold;
+}
+
 @media screen and (min-width : 770px){
     .login_container{
         display: flex;

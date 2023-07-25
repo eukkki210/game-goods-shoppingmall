@@ -23,6 +23,11 @@
     align-items: center;
     margin-top: 100px;
 }
+.modal-footer > button{
+    background-color: #000;
+    color: #fff;
+    
+}
 .banner_icons{
     display: flex;
     flex-direction: row;

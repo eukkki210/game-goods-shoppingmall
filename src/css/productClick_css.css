@@ -23,11 +23,12 @@ body{
 } */
 .left{
     width: 50%;
-    height: 1000px;
+
+    /* height: 1000px; */
     box-sizing: border-box;
 
 }
-div.right{
+.right{
     width: 40%;
     height: 600px;
     box-sizing: border-box;
@@ -37,11 +38,13 @@ div.right{
     top: 0px;
     left: 55%;
 }
-div.content{
+.content{
     display: flex;
     width: auto;
     max-width: 1280px;
+    min-width: 450px;
     margin: auto;
+    position: relative;
 }
 .radioOption{
     padding-top: 20px;
@@ -175,95 +178,18 @@ div.divider{
     padding-left: 5px; 
     font-weight: bold;
 }
+
+i, a{
+    cursor: pointer;
+}
+
+
 /*
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 탭 1번 추가----------
 */
 
-.tabmenu{ 
-    max-width:600px; 
-    margin: 0 auto; 
-    position:relative; 
-}
-.tabmenu ul{
-  position: relative;
-}
-.tabmenu ul li{
-    display:block;
-    width: 33.33%; 
-    float:left;
-    text-align:center; 
-    background :#f9f9f9;
-    line-height:40px;
-}
-.tabmenu label{
-    display:block;
-    width:100%; 
-    height:40px;
-    line-height:40px;
-}
-.tabmenu input{
-    display:none;
-}
-.tabCon{
-    display:none; 
-    width: 100%;
-    text-align:left; 
-    padding: 20px;
-    position:absolute; 
-    left:0; top:40px; 
-    box-sizing: border-box; 
-    border : 5px solid #f9f9f9;
-}
-.tabmenu input:checked ~ label{
-    background:#ccc;
-}
-.tabmenu input:checked ~ .tabCon{
-    display:block;
-}
-
-
     /* 탭 2번 css */
-.tabmenu_2{ 
-    max-width:600px; 
-    margin: 0 auto; 
-    position:relative; 
-}
-.tabmenu_2 ul{
-    position: relative;
-}
-.tabmenu_2 ul li{
-    display:  inline-block;
-    width: 33.33%; 
-    float:left;
-    text-align:center; 
-    background :#f9f9f9;
-    line-height:40px;
-}
-.tabmenu_2 label{
-    display:block;
-    width:100%; 
-    height:40px;
-    line-height:40px;
-}
-.tabmenu_2 input{
-    display:none;
-}
-.tabCon_2{
-    display:none; 
-    width: 100%;
-    text-align:left; 
-    padding: 20px;
-    position:absolute; 
-    left:0; top:40px; 
-    box-sizing: border-box; 
-    border : 5px solid #f9f9f9;
-}
-.tabmenu_2 input:checked ~ label{
-    background:#ccc;
-}
-.tabmenu_2 input:checked ~ .tabCon_2{
-    display:block;
-}
+
 /* display :none */
 .disp{
     display: none;
@@ -296,7 +222,9 @@ div.divider{
     margin-right: 17px;
     box-sizing: border-box;
 }   
-dl > .dt_title{
+
+.divDl > .dt_title{
+
     padding-left: 10px;
     max-width: 700px;
     float: left;
@@ -337,6 +265,38 @@ dl > .dt_title{
     color: red;
     font-weight: bold;
 }
+
+.sectionHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 64px 0 20px;
+}
+/* 탭 부분 */
+details{
+    position: relative;
+}
+/* 탭끝 */
+/* 상품정보 */
+.productDetail{
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+/* 체크 늘리는거 */
+.rela1{
+    position: absolute;
+    bottom: 210px;
+    right: 5%;
+    left: auto;
+    top: auto;
+}
+
 @media screen and (max-width:580px){
     .content{
         width: auto;
@@ -368,7 +328,9 @@ dl > .dt_title{
         left: auto;
     }
     /* 줄어들면 탭 안보이게 하기 */
-    .tabmenu{
+
+    .productImg{
+
         display: none;
     }
 
@@ -401,6 +363,9 @@ dl > .dt_title{
     }
     .choose{
         justify-content: flex-start;
+    }
+    .option1{
+        padding-left: 0px;
     }
 
 /*media 끝*/
