@@ -7,6 +7,13 @@
 *{
     font-family: 'Pretendard-Regular';
 }
+.logo-img {
+    height: 28px;
+}
+
+.dark-mode .logo-img {
+    filter: invert(100%);
+}
 .head{
     /* background-color: yellow; */
     display: flex;
