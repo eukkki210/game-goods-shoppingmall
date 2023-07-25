@@ -1,3 +1,11 @@
+/* 모든요소의 box-sizing을 border-box로 지정 */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* font 불러오기 */
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -5,61 +13,71 @@
     font-style: normal;
 }
 
+/* body요소에 font 적용 */
 body {
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard-Regular', sans-serif;
 }
 
-#event-carousel {
-    margin-top: 2%;
-}
-
-#shop {
-    margin-top: 4%;
+/* 임시 header스타일링 */
+.header {
     text-align: center;
-    font-size: 2em;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
 }
 
+/* Event Carousel스타일링 */
+.eventCarousel {
+    margin-top: 2%;
+    padding: 0;
+}
+
+.carousel-inner {
+    border-radius: 30px;
+}
+
+/* Game Page Title스타일링 */
+.game-page-title {
+    text-align: center;
+    font-size: 1.8rem;
+    max-width: 100vw;
+    padding: 0;
+    margin: 4% auto 0;
+}
+
+/* Game Category스타일링 */
 .game-category-container {
-    width: 100%;
-}
-
-.game-category-wrapper {
-    width: 100%;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
 }
-
 .game-category {
-    border-radius: 20px;
-    margin: 0 2%;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    align-content: flex-end;
+    flex-basis: 12%;
 }
-
 .game-category-link {
-    width: 100%;
-    height: 100%;
     text-decoration: none;
-    color: black;
+}
+.game-category-item {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
+    height: 150px;
 }
-
-.game-category-name {
+.game-category-item-img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: fill;
+    padding: 5%;
+}
+.game-category-item-name {
+    text-align: center;
+    color: black;
+    padding: 4% 0;
     font-size: 12px;
 }
-
-.game-category-img img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 10%;
-}
-
 /* 상품 정렬 */
 .items-count-and-sorting {
     height: 24px;
@@ -89,7 +107,8 @@ li.dropdown-item:nth-child(2) {
 .products-wrapper {
     margin-top: 4%;
     display: grid;
-    place-items: center;
+    justify-items: center;
+    align-items: start;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
@@ -100,6 +119,18 @@ li.dropdown-item:nth-child(2) {
     color: black;
     text-align: center;
     border-radius: 20px;
+    margin-bottom: 20%;
+}
+
+.product-item-link:hover {
+    transform: scale(1.1);
+}
+
+.product-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-item-img {
@@ -113,115 +144,28 @@ li.dropdown-item:nth-child(2) {
     margin-bottom: 2%;
 }
 
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.pagination button {
-    border: none;
-    background-color:white;
-}
-
-.pagination a {
-    text-decoration: none;
-    color: black;
-}
-
-.pagination ul {
-    width: 15%;
-    margin: 0 1%;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.pagination li {
-    margin: 0 4%;
-    list-style: none;
-}
-
-.pagination .page-active {
-    text-decoration: underline;
+.product-item-game,
+.product-item-name,
+.product-item-price {
+    font-size: 1rem;
+    word-break: keep-all;
 }
 
 
-/* Game Page */
 
-.game-banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 992px){
+    .game-category-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+    }
 }
-
-.game-banner img {
-    max-width: 100%;
-    max-height: 150px;
-}
-
-/* 반응형 */
 
 @media screen and (max-width: 768px) {
-    #shop {
-        font-size: 1em;
+    .game-page-title,
+    .product-item-game,
+    .product-item-name,
+    .product-item-price {
+        font-size: 0.5rem;
     }
-    .products-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 568px) {
-
-    .products-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* Footer */
-
-.footer {
-    max-width: 1280px;
-    margin: auto;
-}
-
-.footerDiv {
-    max-width: 1280px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_ul>li {
-    padding-right: 16px;
-}
-
-.blank {
-    margin-right: 17px;
-    box-sizing: border-box;
-}
-
-dl>.dt_title {
-    padding-left: 10px;
-    max-width: 700px;
-    float: left;
-    line-height: 20px;
-    font-size: 13px;
-    color: rgba(34, 34, 34, .5);
-}
-
-.div_sns {
-    padding-right: 5%;
-}
-
-.footer_ul {
-    list-style: none;
-    padding-left: 10px;
-}
-
-.footer a {
-    text-decoration: none;
 }

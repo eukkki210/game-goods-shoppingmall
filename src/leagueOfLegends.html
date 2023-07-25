@@ -26,7 +26,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./productsByGame.css" />
+    <link rel="stylesheet" href="./css/productsByGame.css" />
 
 </head>
 
@@ -100,7 +100,7 @@
 
         <!-- Game Banner -->
         <div class="game-banner">
-            <img src="./gameLogo/leagueOfLegends.png" alt="leagueOfLegends" class="img-fluid" />
+            <img src="./img/gameLogo/leagueOfLegends.png" alt="leagueOfLegends" class="img-fluid" />
         </div>
 
         <!-- 상품 정렬 -->
@@ -108,166 +108,91 @@
             <div class="items-count">Total Items</div>
             <div class="items-sorting">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle items-sorting" type="button"
+                    <button id="sortBtn" class="btn btn-secondary dropdown-toggle items-sorting" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        인기순
+                        신상품 순
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li class="dropdown-item">신상품순</li>
-                        <li class="dropdown-item">높은 가격순</li>
-                        <li class="dropdown-item">낮은 가격순</li>
+                        <li id="sortNew" class="dropdown-item">신상품 순</li>
+                        <li id="sortHighPrice" class="dropdown-item">높은 가격순</li>
+                        <li id="sortLowPrice" class="dropdown-item">낮은 가격순</li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <script>
+            $('#sortNew').click(function () {
+                $('#sortBtn').empty().text('신상품 순');
+            })
+            $('#sortHighPrice').click(function () {
+                $('#sortBtn').empty().text('높은가격 순');
+            })
+            $('#sortLowPrice').click(function () {
+                $('#sortBtn').empty().text('낮은가격 순');
+            })
+        </script>
+
         <!-- 상품 진열 -->
         <div class="products-wrapper">
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
-            <a href="" class="product-item-link">
-                <div class="product-item">
-                    <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                        class="product-item-img">
-                    <div class="product-item-game">리그오브레전드</div>
-                    <div class="product-item-name">포로인형</div>
-                    <div class="product-item-price">24,000원</div>
-                </div>
-            </a>
+
         </div>
+
+        <script>
+            let objJson;
+            async function load() {
+                const data = await fetch('./images.json');
+                objJson = await data.json();
+
+                const leagueOfLegends = objJson.filter(obj => obj.game == `리그오브레전드`);
+
+                const pubg = objJson.filter(obj => obj.game == `배틀그라운드`);
+
+                const pokemon = objJson.filter(obj => obj.game == `포켓몬스터`);
+
+                const laTale = objJson.filter(obj => obj.game == `라테일`);
+
+                const overWatch = objJson.filter(obj => obj.game == `오버워치`);
+
+                const worldOfWarcraft = objJson.filter(obj => obj.game == `월드오브워크래프트`);
+
+                for (let i = 0; i < leagueOfLegends.length; i++) {
+                    let productInfo = objJson[i];
+                    let productSrc = "./" + leagueOfLegends[i]['src'].split('/').slice([2]).join('/');
+                    let productGame = leagueOfLegends[i]['game'];
+                    let productPrice = leagueOfLegends[i]['price'];
+                    let productName = leagueOfLegends[i]['goodsName'];
+
+                    $('.products-wrapper').append(`<a href="./1.html" class="product-item-link" class="product-item-link" target="_blank">
+                            <div class="product-item">
+                                <img src="${productSrc}" alt=""
+                                    class="product-item-img">
+                                <div class="product-info">
+                                    <div class="product-item-game">${productGame}</div>
+                                    <div class="product-item-name">${productName}</div>
+                                    <div class="product-item-price">${productPrice}원</div>
+                                </div>
+                            </div>
+                        </a>`);
+
+                    // <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
+                    //         <div class="product-item">
+                    //             <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
+                    //                 class="product-item-img">
+                    //             <div class="product-item-game">리그오브레전드</div>
+                    //             <div class="product-item-name">포로인형</div>
+                    //             <div class="product-item-price">24,000원</div>
+                    //         </div>
+                    //     </a>
+
+                }
+                // 21, 50, 51, 97, 123, 191, 192, 193, 209
+            };
+
+            load();
+
+        </script>
+
         <div class="pagination">
             <div class="prevArrow"><button type="button"><i class="bi bi-arrow-left"></i></button></div>
             <ul>
