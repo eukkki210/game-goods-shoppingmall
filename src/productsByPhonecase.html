@@ -499,7 +499,7 @@
  
          function moreBtnClicked(stringattr){
              console.log(stringattr)
-             let hideItems = $(`.typeGoodsList.${stringattr} > div:nth-child(n+5)`)
+             let hideItems = $(`.typeGoodsList.${stringattr} > div:nth-child( n+5)`)
              let btn = $(`.moreBtn.${stringattr}`)
              hideItems.attr("style","display : block ")
              btn.attr("style","display : none ")
