@@ -446,3 +446,7 @@ dl>.dt_title {
 .dark-mode .navbar-toggler {
     background-color: #ffffff;
 }
+
+.footer_ul > li > a {
+    font-size: 13px;
+}

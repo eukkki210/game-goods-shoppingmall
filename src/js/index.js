@@ -9,9 +9,9 @@ function toggleDarkMode() {
     body.classList.toggle("dark-mode");
     const toggleButton = document.getElementById('toggle');
     if (body.classList.contains('dark-mode')) {
-        toggleButton.textContent = "라이트 모드로 이용하기";
+        toggleButton.textContent = "라이트 모드";
     } else {
-        toggleButton.textContent = "다크 모드로 이용하기";
+        toggleButton.textContent = "다크 모드";
     }
 }
 
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
     if (isDarkMode) {
         document.body.classList.add("dark-mode");
-        document.getElementById('toggle').textContent = "라이트 모드로 이용하기";
+        document.getElementById('toggle').textContent = "라이트 모드";
     } else {
         document.body.classList.remove("dark-mode");
-        document.getElementById('toggle').textContent = "다크 모드로 이용하기";
+        document.getElementById('toggle').textContent = "다크 모드";
     }
 });
