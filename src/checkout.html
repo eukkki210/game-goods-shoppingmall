@@ -69,7 +69,7 @@
                 </div>
                 <div>
                     <label>비밀번호</label>
-                    <input type="text" placeholder="주문 내역을 확인할 비밀번호를 입력해주세요."/>
+                    <input type="password" placeholder="주문 내역을 확인할 비밀번호를 입력해주세요."/>
                 </div>
             </div>
 
@@ -93,8 +93,7 @@
                         <input type="text" id="delHouse"class="postAddress"placeholder="우편번호"/>
                         <button type="button" class="postAddressSearch">우편번호 검색</button>
                     </div>
-                    <input type="text" placeholder="주소" id="address"/>
-                    <input type="text" placeholder="상세 주소를 입력해 주세요."/>
+                    <input type="text" placeholder="주소" id="delHouse2"/>
                 </div>
 
                 <!-- 우편번호  frame -->
@@ -110,15 +109,15 @@
             </div>
             <div class="sectionHeader">결제방법 선택</div>
             <div class="payment">
-                    <button type="button" class="pay addColor">신용카드</button>
-                    <button type="button" class="pay">네이버페이</button>
-                    <button type="button" class="pay">카카오페이</button>
-                    <button type="button" class="pay">토스</button>
-                    <button type="button" class="pay">삼성페이</button>
-                    <button type="button" class="pay">페이코</button>
-                    <button type="button" class="pay">계좌이체</button>
-                    <button type="button" class="pay">ApplePay</button>
-                    <button type="button" class="pay">SSGPay</button>
+                    <button type="button" class="pay addColor" id="shin">신용카드</button>
+                    <button type="button" class="pay" id="naver">네이버페이</button>
+                    <button type="button" class="pay" id="kakao">카카오페이</button>
+                    <button type="button" class="pay" id="toss">토스</button>
+                    <button type="button" class="pay" id="samsung">삼성페이</button>
+                    <button type="button" class="pay" id="payco">페이코</button>
+                    <button type="button" class="pay" id="account">계좌이체</button>
+                    <button type="button" class="pay" id="applepay">ApplePay</button>
+                    <button type="button" class="pay" id="ssgpay">SSGPay</button>
             </div>
             <div class="sectionHeader">결제 및 배송 동의</div>
             <div class="sectionBody">
@@ -155,7 +154,7 @@
                     <span>보기</span>
                 </div>
                 <!-- <button type="button" id="buyBtn" class="buy">결제하기</button> -->
-                <button type="button" id="buyBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button  disabled type="button" id="buyBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     결제하기
                 </button>
             </div>
@@ -179,69 +178,69 @@
                     <div class="preShoppingOrderItem1">
                         <div class="pso_1">
                             <div class="pso_image" >
-                                <img src="./img/earphonecase/2273fa1c8d26701dd42a9dce16573661.gif">
+                                <img src="./img/doll/1.png">
                             </div>
                             <div class="pso_info">
-                                <div class="pso_name">폰케이스</div>
+                                <div class="pso_name">유미 한정판 에디션</div>
                             </div>
                         </div>
                         <div class="pso_2">
                             <div class="pso_quantity">ONE / 1개</div>
-                            <div class="pso_quantity">5,000원</div>
+                            <div class="pso_quantity">30,000원</div>
                         </div>
                         <div class="pso_3">
-                            <div>배송비</div>
-                            <div>3,000원</div>
+                            <!-- <div>배송비</div> -->
+                            <!-- <div>3,000원</div> -->
                         </div>
                     </div>
                     <!-- 2번 아이템 -->
-                    <hr></hr>
+                    <!-- <hr></hr>
                     <div class="cartStoreItem_2">
                         <div>포트나이트</div>
-                    </div>
+                    </div> -->
                     <hr></hr>
                     <div class="preShoppingOrderItem1">
                         <div class="pso_1">
                             <div class="pso_image">
-                                <img src="./img/earphonecase/424da8f2e343f77aeea9a4f9520ae82d.jpg">
+                                <img src="./img/mousepad/38_shop1_814778.png">
                             </div>
                             <div class="pso_info">
-                                <div class="pso_name">배그 이어폰케이스</div>
+                                <div class="pso_name">데프트 마우스 패드</div>
                                 <!-- <div class="pso_price">5,000원</div> -->
                             </div>
                         </div>
                         <div class="pso_2">
                             <div class="pso_quantity">ONE / 1개</div>
-                            <div class="pso_quantity">5,000원</div>
+                            <div class="pso_quantity">26,000원</div>
                         </div>
                         <div class="pso_3">
-                            <div>배송비</div>
-                            <div>3,000원</div>
+                            <!-- <div>배송비</div> -->
+                            <!-- <div>3,000원</div> -->
                         </div>
                     </div>
                     <!-- 3번 아이템 -->
-                    <hr></hr>
+                    <!-- <hr></hr>
                     <div class="cartStoreItem_2">
                         <div>배틀그라운드</div>
-                    </div>
+                    </div> -->
                     <hr></hr>
                     <div class="preShoppingOrderItem1">
                         <div class="pso_1">
                             <div class="pso_image">
-                                <img src="./img/earphonecase/6e7a17513aa7271e2212b76cebd0c9df.png">
+                                <img src="./img/earphonecase/2273fa1c8d26701dd42a9dce16573661.gif">
                             </div>
                             <div class="pso_info">
-                                <div class="pso_name">롤 이어폰케이스</div>
+                                <div class="pso_name">KDA all out 에어팟</div>
                                 <!-- <div class="pso_price">5,000원</div> -->
                             </div>
                         </div>
                         <div class="pso_2">
                             <div class="pso_quantity">ONE / 1개</div>
-                            <div class="pso_quantity">5,000원</div>
+                            <div class="pso_quantity">50,000원</div>
                         </div>
                         <div class="pso_3">
-                            <div>배송비</div>
-                            <div>3,000원</div>
+                            <!-- <div>배송비</div> -->
+                            <!-- <div>3,000원</div> -->
                         </div>
                     </div>
                     <!-- 아이템 끝 -->
@@ -258,16 +257,16 @@
                     </div>
                     <div>
                         <div>총 상품금액</div>
-                        <div>3,000원</div>
+                        <div>106,000원</div>
                     </div>
                     <div>
                         <div>총 배송비</div>
-                        <div>1,000원</div>
+                        <div>3,000원</div>
                     </div>
                     <div>
                         <div>총 주문금액</div>
-                        <div>8,000원</div>
-                        <button type="button" id="checkBtn">버튼 값 확인하기</button>
+                        <div>109,000원</div>
+                        <!-- <button type="button" id="checkBtn">버튼 값 확인하기</button> -->
                     </div>
                 </div>
 
@@ -289,7 +288,6 @@
                     <div class="orderInfo">
                         <div class="1">
                             <!-- <label>이름 : </label> -->
-                            <input type="text" id="mo1" value="">
                         </div>
                         <div class="2">
                             <!-- <label>연락처</label> -->
@@ -316,18 +314,32 @@
                         <div class="7">
                             <!-- <label>배송지</label> -->
                         </div>
+                        <div class="9">
+                            <!-- <label>배송지</label> -->
+                        </div>
                         <div class="8">
                             <!-- <label>배송메모</label> -->
                         </div>
                     </div>
+                    <div class="sectionHeader2">결제 및 주문정보</div>
+                    <div class="orderInfo">
+                        <div class="paycheck"></div>
+                        <div class="">총 수량 : 3개</div>
+                        <div class="">총 상품금액 : 106,000원</div>
+                        <div class="">총 배송비 : 3,000원</div>
+                        <div class="">총 주문금액 : 109,000원</div>
+                    </div>
+
                 <div class="modal-footer">
                 <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button> -->
-                <button type="button" class="btn btn-primary">확인</button>
+                <button type="button" class="btn btn-primary" id="btnCheck">확인</button>
                 </div>
             </div>
             </div>
         </div>
+        </div>
     <!-- 모달끝 -->
+    
     <!-- 자바스크립트 -->
     <script type="text/javascript" src="./js/checkoutJs.js"></script>
     <!-- 부트스트랩 -->
