@@ -16,6 +16,7 @@
 /* body요소에 font 적용 */
 body {
     font-family: 'Pretendard-Regular', sans-serif;
+    font-weight: 400;
 }
 
 /* 임시 header스타일링 */
@@ -152,6 +153,9 @@ li.dropdown-item:nth-child(2) {
     word-break: keep-all;
 }
 
+.footer_ul > li > a{
+    font-size:13px;
+}
 
 
 @media screen and (max-width: 992px){
