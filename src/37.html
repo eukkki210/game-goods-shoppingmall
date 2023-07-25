@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,12 @@
 
 </head>
 <body>
+    <!-- Header -->
     <header class="container">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" ></a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +33,19 @@
                     <!-- <ul class="navbar-nav"></ul> -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="page/productsByGamePage/productsByGame.html">게임</a>
+                            <a class="nav-link" href="productsByGame.html">게임</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page/productByType/productList/productsByType.html">상품</a>
+                            <a class="nav-link" href="productsByType.html">상품</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page/my_page/save.html">장바구니</a>
+                            <a class="nav-link" href="save.html">장바구니</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page/my_page/save.html">마이페이지</a>
+                            <a class="nav-link" href="save.html">마이페이지</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page/products/loginPage.html">로그인</a>
+                            <a class="nav-link" href="loginPage.html">로그인</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +64,7 @@
                 </div>
                 <div class="carousel-inner" >
                   <div class="carousel-item active" >
-                    <img src="../image/nya.jpg" class="d-block w-100" alt="...">
+                    <img id="pic1" src="../image/nya.jpg" class="d-block w-100" alt="...">
                   </div>
                   <!-- <div class="carousel-item">
                     <img src="../image/poro.jpg" class="d-block w-100" alt="...">
@@ -80,24 +81,43 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-                <hr></hr>
             </div>
-            <div class="productDetail">
-                상품상세 정보
-            </div>
-            <!-- 상품사진 밑에 설명 이미지 -->
-            <div>
-                <img src="./img/accessory/badge.jpg" style="width: 100%;" class="productImg">
-            </div>
-            
-        </div><!-- 왼쪽 끝 -->
+            <!-- 상품정보, 구매안내, FAQ 탭 (벌렸을 때) -->
+            <div class="tabmenu">
+                <ul>
+                  <li id="tab1" class="btnCon"> 
+                    <input type="radio" checked name="tabmenu" id="tabmenu1">
+                    <label for="tabmenu1">상품정보</label>
+                    <div class="tabCon" >                     
+                    상품정보~~~~~~~~~~~~~~~~~~~~~
+                    </div>
+                    
+                  </li>
+                  <li id="tab2" class="btnCon">
+                    <input type="radio" name="tabmenu" id="tabmenu2">
+                    <label for="tabmenu2">구매안내</label>
+                    <div class="tabCon" >
+                        구매안내~~~~~~~~~~~~~~~~~~
+                    </div>
+                    
+                  </li>    
+                  <li id="tab3" class="btnCon">
+                    <input type="radio" name="tabmenu" id="tabmenu3">
+                    <label for="tabmenu3">FAQ</label>
+                    <div class="tabCon" >
+                        FAQ~~~~~~~~~~~~~~~~~~~~~~~~
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </div>
 
         <!-- 화면 오른쪽 -->
         <div class="right">
             <div class="stPadding">
-                <span style="border: 1px solid black; width: 100%;">리그오브레전드</span>
-                <div style="padding-top: 20px;">포로인형</div>
-                <div class ="won" style="font-size: 24px; border: 2; font-weight: 600; padding-top: 20px;">28,000원</div>
+                <span style="border: 1px solid black; width: 100%;" id='gametypes'>리그오브레전드</span>
+                <div style="padding-top: 20px;" id="nameGoods">포로인형</div>
+                <div class ="won" style="font-size: 24px; border: 2; font-weight: 600; padding-top: 20px;">19,000원</div>
                 <div style="padding-top: 20px;">색상</div>
             </div>
             <div class="radioOption">
@@ -193,11 +213,35 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 2번 탭 -->
+                <div class="tabmenu_2 out-tabmenu_2 disp">
+                    <ul>
+                    <li id="tab1_2" class="btnCon_2"> 
+                        <input type="radio" checked name="tabmenu_2" id="tabmenu1_2">
+                        <label for="tabmenu1_2">상품asd정보</label>
+                        <div class="tabCon_2" >                     
+                        상품정보~~~~~~~asdasd~~~~~~~~~~~~~~
+                        </div>
+                        
+                    </li>
+                    <li id="tab2_2" class="btnCon_2">
+                        <input type="radio" name="tabmenu_2" id="tabmenu2_2">
+                        <label for="tabmenu2_2">구매안asd내</label>
+                        <div class="tabCon_2" >
+                            구매안내~~~~~~~asdasd~~~~~~~~~~~
+                        </div>
+                        
+                    </li>    
+                    <li id="tab3_2" class="btnCon_2">
+                        <input type="radio" name="tabmenu_2" id="tabmenu3_2">
+                        <label for="tabmenu3_2">FasdasdAQ</label>
+                        <div class="tabCon_2" >
+                            FAQ~~~~~~~~~asdasd
+                    </li>
+                    </ul>
+                </div> <!--2번탭 끝-->
         </div> <!--right 끝-->
-                    <!-- 상품사진 밑에 설명 이미지 -->
-        <div>
-            <img src="./img/accessory/badge.jpg" style="width: 100%;" class="disp">
-        </div>
     </div><!-- div content 끝 -->
 
 
@@ -225,8 +269,8 @@
             </div>
         </div>
             <div class="footer_div_dt">
-            <div class="divDl">
-                <div class="dt_title">
+            <dl>
+                <dt class="dt_title">
                     크림 주식회사 · 대표 김창욱
                     <span class="blank"></span>
                         사업자등록번호 : 570-88-01618
@@ -252,12 +296,43 @@
                     개인정보처리방침이용약관 
                     <span class="blank"></span>
                     마플코퍼레이션 
-                </div>
-            </div>
+                </dt>
+            </dl>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="./js/productClick_js.js"></script>
+    <script>
+        let objJson;
+        async function load() {
+        // 파일 읽어 오기
+        const data = await fetch('./images.json');
+        // JSON으로 해석
+        objJson = await data.json();
+        // 텍스트 출력
+        
+        let splits=objJson[37]["src"].split("/")
+        console.log(splits)
+        let file_name=splits[4];
+        let file_goods_type=splits[3];
+ 
+        let fileLocation = "./img/"+file_goods_type+"/"+file_name
+        let nameGoods=objJson[36]['goodsName']
+        let gametype=objJson[36]['game']
+        let prices = objJson[36]['price']+"원"
+        $("#pic1").attr("src",fileLocation)
+        $("#nameGoods").text(nameGoods)
+        $(".won").text(prices)
+        $("#gametypes").text(gametype)
+        $("#price").val(prices)
+
+        
+        // 더보기 버튼 클릭 
+
+        }
+
+        load();
+    </script>
+    <script type="text/javascript" src="./css/productClick_css.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
