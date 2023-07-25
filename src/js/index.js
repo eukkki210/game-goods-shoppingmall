@@ -20,6 +20,29 @@ function saveDarkModePreference(isDarkMode) {
     localStorage.setItem("darkMode", isDarkMode);
 }
 
+let objJson;
+async function load() {
+        // 파일 읽어 오기
+const data = await fetch('./images.json');
+        // JSON으로 해석
+objJson = await data.json();
+        // 텍스트 출력
+        
+let splits=objJson[0]["src"].split("/")
+console.log(splits)
+let file_name=splits[4];
+let file_goods_type=splits[3];
+ 
+let fileLocation = "./img/"+file_goods_type+"/"+file_name
+let nameGoods=objJson[0]['goodsName']
+let gametype=objJson[0]['game']
+let prices = objJson[0]['price']+"원"
+$("#pic1").attr("src",fileLocation)
+$("#nameGoods").text(nameGoods)
+$(".won").text(prices)
+$("#gametypes").text(gametype)
+$("#price").val(prices)
+
 // 고정 플로팅 버튼 클릭 이벤트 리스너
 document.getElementById('goTopBtn').addEventListener("click", goToTop);
 
