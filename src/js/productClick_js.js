@@ -47,3 +47,86 @@ $("#button_negative").on("click", function(){
 })
 
 
+var colorValue;
+let sizeValue;
+let colorSize;
+//색상 클릭시 값 받아와서 옵션에 출력
+$(".optionColor").on("click", function(){
+   var colorValue = $(this).val();
+   $(".options1").attr("value", colorValue);
+    console.log(colorValue);
+})
+//사이즈 클릭시 값 받아와서 옵션에 출력
+$(".box").on("click",function(){
+
+   let sizeValue = $(this).text();
+   $(".options2").attr("value", sizeValue);
+    console.log(sizeValue);
+})
+
+//날짜 불러오기
+let now = new Date();
+let month = now.getMonth();     //월 + 1 하기
+let date = now.getDate();  
+
+
+let newDay = new Date(now);     // newday선언
+newDay.setDate(now.getDate()+4);    // 오늘부터 4일 뒤 날짜
+let newMonth = newDay.getMonth();
+let newDate = newDay.getDate();
+
+let today = (month+1)+"/"+ date;    //오늘 날짜
+let nextDay = (newMonth+1) + "/" + newDate; //+4일 날짜
+// console.log(today);
+// document.getElementById("getDay").innerText = today;
+// document.getElementById("getNextDay").innerHTML = nextDay;
+$('input[class=getDay]').attr('value', today);
+$('input[class=getNextDay]').attr('value', nextDay);
+// $("getNextDay").html = nextDay;
+
+//스크롤
+let homeT = $(".container").height();
+let scrollT = $("html").height();
+let footerH = $(".footer").height(); // footer 높이
+let realH = scrollT-footerH-homeT;
+let scrollheight;
+// let realH = scrollT - footerH;
+
+
+// sticky 옆에 붙은거 footer랑 안 겹치게 설정
+$(window).on("scroll", function(){
+    let check = $(window).scrollTop() + $(window).height();
+    let check2 = $(document).height();
+    let check3 = check2 -200;
+    // console.log($(".footer").height())
+    // 
+    // if(check >= check3 && check2 == 2674){
+    //     $(".right").addClass("rela1");
+    // } else if(check >= check3 && check2 == 2462){
+    //     $(".right").addClass("rela2");
+    // } else if(check >= check3 && check2 == 2209){   
+    //     $(".right").addClass("rela3");
+    // } else if(check < check3){
+    //     $(".right").removeClass("rela1");
+    //     $(".right").removeClass("rela2");
+    //     $(".right").removeClass("rela3");
+        // 
+    if(check >= check3){
+        $(".right").addClass("rela1");
+    } else if(check < check3){
+        $(".right").removeClass("rela1");
+// console.log("check",$(window).scrollTop() + $(window).height() )
+// console.log('check2',   $(document).height())    // 화면 높이(decoment)
+    }
+})
+
+// console.log("check",$(window).scrollTop() + $(window).height() )
+// console.log('check2',   $(document).height())    // 화면 높이(decoment)
+console.log($("html").height()-$("body").height())
+
+
+
+// 2674 -> 1600
+// 2642 -> 1400
+// 2209 -> 1150
+//2895 -> x
