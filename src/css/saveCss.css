@@ -13,10 +13,8 @@ body{
 .containers{
     position: relative;
     display: flex;
-    margin-left: 5%;
-    /* margin-right: 5%; */
-    padding-left: 40px;
-    padding-right: 40px;
+
+    /* margin-right: 5%; */ 
 }
 .shoppingUl{
     list-style: none;
@@ -115,9 +113,9 @@ body{
 .right {margin-left: 80%;}
 
 .footer{
-    left: 5%;
+    /* left: 5%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%; */
 }
 .footerDiv{
     max-width: auto;

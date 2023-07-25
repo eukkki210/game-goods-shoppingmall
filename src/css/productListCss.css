@@ -163,6 +163,7 @@ a {
     z-index: 1;
 }
 .Goods > a > div{
+    max-width: 275px;
     padding-left: 1pt;
     color: black;
 }
@@ -231,13 +232,21 @@ dl > .dt_title{
     margin-right:0;
     max-width: 100%;
 }
+
 .typeGoodsList{
-    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
 }
 
 .Goods > a > img {
     width: 250px;
     height: 250px;
+}
+.Goods > a > div{
+    max-width: 250px;
+}
+
+.Goods > a > div{
+    max-width: 250px;
 }
 }
 body{
@@ -250,6 +259,15 @@ body{
     max-width: 100%;
     margin-left: 0 ;
     margin-right: 0;
+}
+
+.Goods > a > div{
+    max-width: 200px;
+}
+.Goods > i {
+    top: 3pt;
+    right: 10pt;
+    z-index: 1;
 }
 .typeButtonGroup > li {
     display: flex;
@@ -275,8 +293,7 @@ body{
 }
 
 .Goods > a > img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 /* footer 가리기? */
