@@ -213,159 +213,23 @@
             </a> -->
         </div>
 
-        <script>
+        <!-- 페이지네이션 버튼 -->
+        <hr />
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li id="prevBtn" class="page-item ">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
 
-            // 상품 진열
-
-            let objJson;
-            async function load() {
-                const data = await fetch('./images.json');
-                objJson = await data.json();
-
-                const leagueOfLegends = objJson.filter(obj => obj.game == `리그오브레전드`);
-
-                const pubg = objJson.filter(obj => obj.game == `배틀그라운드`);
-
-                const pokemon = objJson.filter(obj => obj.game == `포켓몬스터`);
-
-                const laTale = objJson.filter(obj => obj.game == `라테일`);
-
-                const overWatch = objJson.filter(obj => obj.game == `오버워치`);
-
-                const worldOfWarcraft = objJson.filter(obj => obj.game == `월드오브워크래프트`);
-
-                let sortedFromId = overWatch.sort(function (a, b) {
-                    return b['id'] - a['id']
-                })
-
-                for (let i = 0; i < sortedFromId.length; i++) {
-                    let productInfo = sortedFromId[i];
-                    let productSrc = "./" + sortedFromId[i]['src'].split('/').slice([2]).join('/');
-                    let productGame = sortedFromId[i]['game'];
-                    let productPrice = sortedFromId[i]['price'];
-                    let productName = sortedFromId[i]['goodsName'];
-
-                    $('.products-wrapper').append(`<a href="./219.html" class="product-item-link" class="product-item-link" target="_blank">
-                            <div class="product-item">
-                                <img src="${productSrc}" alt=""
-                                    class="product-item-img">
-                                <div class="product-info">
-                                    <div class="product-item-game">${productGame}</div>
-                                    <div class="product-item-name">${productName}</div>
-                                    <div class="product-item-price">${productPrice}원</div>
-                                </div>
-                            </div>
-                        </a>`);
-
-                    // <a href="../products/productClick.html" class="product-item-link" class="product-item-link">
-                    //         <div class="product-item">
-                    //             <img src="https://image.auction.co.kr/itemimage/2e/62/6b/2e626b3626.jpg" alt=""
-                    //                 class="product-item-img">
-                    //             <div class="product-item-game">리그오브레전드</div>
-                    //             <div class="product-item-name">포로인형</div>
-                    //             <div class="product-item-price">24,000원</div>
-                    //         </div>
-                    //     </a>
-
-                }
-                // 21, 50, 51, 97, 123, 191, 192, 193, 209
-
-                // 상품 개수 표시
-
-                $('.items-count').text(`Total Items: ${overWatch.length}`);
-
-                // 상품 정렬
-
-                $('#sortNew').click(function () {
-                    $('#sortBtn').empty().text('신상품 순');
-                    $('.products-wrapper').empty();
-
-                    let sortedFromId = overWatch.sort(function (a, b) {
-                        return b['id'] - a['id']
-                    })
-
-                    for (let i = 0; i < sortedFromId.length; i++) {
-                        let productInfo = sortedFromId[i];
-                        let productSrc = "./" + sortedFromId[i]['src'].split('/').slice([2]).join('/');
-                        let productGame = sortedFromId[i]['game'];
-                        let productPrice = sortedFromId[i]['price'];
-                        let productName = sortedFromId[i]['goodsName'];
-
-                        $('.products-wrapper').append(`<a href="./219.html" class="product-item-link" class="product-item-link" target="_blank">
-                            <div class="product-item">
-                                <img src="${productSrc}" alt=""
-                                    class="product-item-img">
-                                <div class="product-info">
-                                    <div class="product-item-game">${productGame}</div>
-                                    <div class="product-item-name">${productName}</div>
-                                    <div class="product-item-price">${productPrice}원</div>
-                                </div>
-                            </div>
-                        </a>`);
-                    }
-                })
-
-                $('#sortHighPrice').click(function () {
-                    $('#sortBtn').empty().text('높은가격 순');
-                    $('.products-wrapper').empty();
-
-                    let sortedFromHighPrice = overWatch.sort(function (a, b) {
-                        return b['price'] - a['price']
-                    })
-
-                    for (let i = 0; i < sortedFromHighPrice.length; i++) {
-                        let productInfo = sortedFromHighPrice[i];
-                        let productSrc = "./" + sortedFromHighPrice[i]['src'].split('/').slice([2]).join('/');
-                        let productGame = sortedFromHighPrice[i]['game'];
-                        let productPrice = sortedFromHighPrice[i]['price'];
-                        let productName = sortedFromHighPrice[i]['goodsName'];
-
-                        $('.products-wrapper').append(`<a href="./219.html" class="product-item-link" class="product-item-link" target="_blank">
-                            <div class="product-item">
-                                <img src="${productSrc}" alt=""
-                                    class="product-item-img">
-                                <div class="product-info">
-                                    <div class="product-item-game">${productGame}</div>
-                                    <div class="product-item-name">${productName}</div>
-                                    <div class="product-item-price">${productPrice}원</div>
-                                </div>
-                            </div>
-                        </a>`);
-                    }
-                })
-
-                $('#sortLowPrice').click(function () {
-                    $('#sortBtn').empty().text('낮은가격 순');
-                    $('.products-wrapper').empty();
-
-                    let sortedFromLowPrice = overWatch.sort(function (a, b) {
-                        return a['price'] - b['price']
-                    })
-
-                    for (let i = 0; i < sortedFromLowPrice.length; i++) {
-                        let productInfo = sortedFromLowPrice[i];
-                        let productSrc = "./" + sortedFromLowPrice[i]['src'].split('/').slice([2]).join('/');
-                        let productGame = sortedFromLowPrice[i]['game'];
-                        let productPrice = sortedFromLowPrice[i]['price'];
-                        let productName = sortedFromLowPrice[i]['goodsName'];
-
-                        $('.products-wrapper').append(`<a href="./219.html" class="product-item-link" class="product-item-link" target="_blank">
-                            <div class="product-item">
-                                <img src="${productSrc}" alt=""
-                                    class="product-item-img">
-                                <div class="product-info">
-                                    <div class="product-item-game">${productGame}</div>
-                                    <div class="product-item-name">${productName}</div>
-                                    <div class="product-item-price">${productPrice}원</div>
-                                </div>
-                            </div>
-                        </a>`);
-                    }
-                })
-            };
-            load();
-
-        </script>
+                <li id="nextBtn" class="page-item">
+                    <a id="nextBtn" class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
     </main>
 
@@ -435,6 +299,8 @@
         crossorigin="anonymous"></script>
     <!-- Dark mode & goTopBtn -->
     <script src="./js/index.js"></script>
+    <!-- JS -->
+    <script src="./js/overWatch.js"></script>
 </body>
 
 </html>

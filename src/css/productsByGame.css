@@ -157,7 +157,6 @@ li.dropdown-item:nth-child(2) {
     font-size:13px;
 }
 
-
 @media screen and (max-width: 992px){
     .game-category-container {
         display: grid;
