@@ -270,7 +270,7 @@
                             <div>25,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,12);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,10);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="./70.html">
@@ -280,7 +280,7 @@
                             <div>25,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,13);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,11);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="./71.html">
@@ -290,7 +290,7 @@
                             <div>25,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,14);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,12);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="./72.html">
@@ -300,7 +300,7 @@
                             <div>25,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,13);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="./73.html">
@@ -310,7 +310,7 @@
                             <div>19,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,16);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,14);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="./74.html">
@@ -320,7 +320,7 @@
                             <div>18,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,17);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
                     </div>
                     <div class="Goods">
                         <a href="./75.html">
@@ -330,7 +330,7 @@
                             <div>15,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,18);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,16);"  ></i>
                     </div>
                 </div>
                 <br>
@@ -450,8 +450,8 @@
 
         // 더보기 버튼 클릭 
         let a = localStorage.getItem("favoriteDollArray") 
-        let b = a !=null ? JSON.parse(a) : [0,0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        let parentRecommend=$(".typeGoodsList.recommend > .Goods > i")
+        let b = a !=null ? JSON.parse(a) : [0,0,0,0,0, 0,0,0,0 ,0,0,0,0 ,0,0,0,0, 0,0,0,0 ,0,0,0,0,0]
+        let parentRecommend=$(".typeGoodsList > .Goods > i")
 
         for(let i=0; i<parentRecommend.length;i++){
             console.log(`${i}: ${b[i]}`)
@@ -535,6 +535,7 @@
                 console.log(localStorage.getItem("바구니"))
                 //b에 값 넣어서 색 값 저장해야함
                 b[idx]=1
+                console.log()
                 localStorage.setItem("favoriteDollArray",JSON.stringify(b))
 
             }else if($(sourceBtn).hasClass("fa-solid")){
