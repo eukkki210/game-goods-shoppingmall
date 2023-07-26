@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게임 굿즈 쇼핑몰</title>
-     <!-- 부트스트랩 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- jquery 다운 -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-    crossorigin="anonymous"></script>
-      
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
     <!-- 아이콘 -->
     <script src="https://kit.fontawesome.com/8786e78429.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- css 링크-->
     <link rel="stylesheet" href="./css/productListCss.css">
     <!-- backend가 없는 상태로, 클릭이 되면 하트가 눌려있는게 저장이 되야한다. -->
 
-    
+
     <style>
-       
+
     </style>
 </head>
+
 <body>
     <header class="container">
         <!-- Navbar -->
@@ -65,8 +69,8 @@
         <div class="container">
 
             <div>
-                <div id="carouselExample" class="carousel slide" >
-                    <div class="carousel-inner" >
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./typeBanner/shop1.jpg" class="d-block w-100" alt="...">
                         </div>
@@ -75,64 +79,66 @@
                             <!-- <button type="button">버튼 체크</button> -->
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                </div> 
+                </div>
             </div>
 
             <br>
             <div>
                 <ul class="typeButtonGroup">
                     <!-- borderBtn이 눌리면, page가 이동한다. -->
-                    <li  onclick="borderBtnClicked('Doll')">
+                    <li onclick="borderBtnClicked('Doll')">
                         <div class="buttonClass">
                             <img id="doll_main" src="./img/doll/doll_main.png">
                         </div>
                         <p class="littleBorderButton">인형</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Airpot')">
+                    <li onclick="borderBtnClicked('Airpot')">
                         <div class="buttonClass">
                             <img id="airpot_main" src="./img/pot/airpot_main.png">
                         </div>
                         <p class="littleBorderButton">에어팟</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Clothes')">
+                    <li onclick="borderBtnClicked('Clothes')">
                         <div class="buttonClass">
                             <img id="cloth_main" src="./img/cloth/cloth_main.png">
                         </div>
                         <p class="littleBorderButton">의류</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Statue')">
+                    <li onclick="borderBtnClicked('Statue')">
                         <div class="buttonClass">
                             <img id="statue_main" src="./img/statue/statue_main.jpg">
                         </div>
                         <p class="littleBorderButton">스태츄</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Phonecase')">
+                    <li onclick="borderBtnClicked('Phonecase')">
                         <div class="buttonClass">
                             <img id="phonecase_main" src="./img/phonecase/case_main.jpg">
-                         </div>
+                        </div>
                         <p class="littleBorderButton">모바일 ACC</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Accessory')">
+                    <li onclick="borderBtnClicked('Accessory')">
                         <div class="buttonClass">
                             <img id="acc_main" src="./img/accessory/acc_main.jpg">
                         </div>
                         <p class="littleBorderButton">악세서리</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Pad')">
+                    <li onclick="borderBtnClicked('Pad')">
                         <div class="buttonClass">
                             <img id="pad_main" src="./img/pad/pad_main.jpg">
                         </div>
                         <p class="littleBorderButton">마우스 패드</p>
                     </li>
-                    <li  onclick="borderBtnClicked('Goods')">
+                    <li onclick="borderBtnClicked('Goods')">
                         <div class="buttonClass">
                             <img id="other_main" src="./img/other/other_main.jpg">
                         </div>
@@ -155,7 +161,7 @@
                             <div>38,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('52',this,0);" ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('52',this,0);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./53.html">
@@ -165,7 +171,7 @@
                             <div>38,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('53',this,1);" ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('53',this,1);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./54.html">
@@ -175,7 +181,7 @@
                             <div>35,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('54',this,2);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('54',this,2);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./55.html">
@@ -185,7 +191,7 @@
                             <div>38,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('55',this,3);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('55',this,3);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./56.html">
@@ -195,7 +201,7 @@
                             <div>35,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('56',this,4);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('56',this,4);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./57.html">
@@ -205,7 +211,7 @@
                             <div>30,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('57',this,5);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('57',this,5);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./58.html">
@@ -215,7 +221,7 @@
                             <div>38,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('58',this,6);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('58',this,6);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./59.html">
@@ -225,7 +231,7 @@
                             <div>35,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('59',this,7);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('59',this,7);"></i>
                     </div>
                     <div class="Goods">
                         <a href="./60.html">
@@ -235,226 +241,134 @@
                             <div>35,000원</div>
                         </a>
                         <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('60',this,8);"  ></i>
+                        <i class="fa-regular fa-heart" onclick="favoriteBtn('60',this,8);"></i>
                     </div>
                 </div>
-                
+
                 <br>
                 <br>
                 <div class="moreBtnContainer">
-                    <button type="button" class="moreBtn recommend buttonClass" onclick="moreBtnClicked('recommend')">더보기</button>
+                    <button type="button" class="moreBtn recommend buttonClass"
+                        onclick="moreBtnClicked('recommend')">더보기</button>
                 </div>
                 <br>
                 <hr>
-                           <div class="typeGoodsGroup">
-                <h2>배틀그라운드 의상모음전</h2>
-                <p style="color: rgba(34,34,34,.5);">오늘 저녘은 치킨이닭!</p>
-                <div class="typeGoodsList popular">
-                    <div class="Goods">
-                        <a href="./35.html">
-                            <img src="./img/clothing/01d675da61f1e0b77f89e469d490d3e2.jpg">
-                            <div>BUGGY 그래픽 반팔 티셔츠</div>
-                            <div>배틀그라운드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('35',this,8);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./36.html">
-                            <img src="./img/clothing/307334782e8cd04c8594e6811b41125b.jpg">
-                            <div>배틀그라운드 인게임 그래픽 티셔츠 블랙</div>
-                            <div>배틀그라운드</div>
-                            <div>19,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('36',this,9);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./37.html">
-                            <img src="./img/clothing/992fe08a8a166fedfb5786ab7b1f0037.png">
-                            <div>배틀그라운드 인게임 그래픽 티셔츠 그레이</div>
-                            <div>배틀그라운드</div>
-                            <div>19,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('37',this,10);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./41.html">
-                            <img src="./img/clothing/1d540942b192ad2222afe8d23bd33a79.jpg">
-                            <div>배틀그라운드 봄버자켓</div>
-                            <div>배틀그라운드</div>
-                            <div>59,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('41',this,11);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./42.html">
-                            <img src="./img/clothing/340232c66ba4a2a67bfbf335b33e7ed7.jpg">
-                            <div>배틀그라운드 로고 후드티</div>
-                            <div>배틀그라운드</div>
-                            <div>44,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('42',this,12);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./49.html">
-                            <img src="./img/clothing/5f0e2854fb724cf88bd7034faa2d5b9f.jpg">
-                            <div>배틀그라운드 로고 맨투맨</div>
-                            <div>리그 오브 레전드</div>
-                            <div>42,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('49',this,13);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./48.html">
-                            <img src="./img/clothing/f39eeea48fd04f34282e257fe1d15a1c.jpg">
-                            <div>토마리 자수 티셔츠(게임 쿠폰 포함)</div>
-                            <div>라테일</div>
-                            <div>25,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('48',this,14);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./48.html">
-                            <img src="./img/clothing/952dbfd904e5169044e2ccf755fb7955.jpg">
-                            <div>라그나로크 데비루치 티셔츠</div>
-                            <div>라그나로크
+                <div class="typeGoodsGroup">
+                    <h2>배틀그라운드 의상모음전</h2>
+                    <p style="color: rgba(34,34,34,.5);">오늘 저녘은 치킨이닭!</p>
+                    <div class="typeGoodsList popular">
+                        <div class="Goods">
+                            <a href="./35.html">
+                                <img src="./img/clothing/01d675da61f1e0b77f89e469d490d3e2.jpg">
+                                <div>BUGGY 그래픽 반팔 티셔츠</div>
+                                <div>배틀그라운드</div>
+                                <div>30,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('35',this,8);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./36.html">
+                                <img src="./img/clothing/307334782e8cd04c8594e6811b41125b.jpg">
+                                <div>배틀그라운드 인게임 그래픽 티셔츠 블랙</div>
+                                <div>배틀그라운드</div>
+                                <div>19,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('36',this,9);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./37.html">
+                                <img src="./img/clothing/992fe08a8a166fedfb5786ab7b1f0037.png">
+                                <div>배틀그라운드 인게임 그래픽 티셔츠 그레이</div>
+                                <div>배틀그라운드</div>
+                                <div>19,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('37',this,10);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./41.html">
+                                <img src="./img/clothing/1d540942b192ad2222afe8d23bd33a79.jpg">
+                                <div>배틀그라운드 봄버자켓</div>
+                                <div>배틀그라운드</div>
+                                <div>59,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('41',this,11);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./42.html">
+                                <img src="./img/clothing/340232c66ba4a2a67bfbf335b33e7ed7.jpg">
+                                <div>배틀그라운드 로고 후드티</div>
+                                <div>배틀그라운드</div>
+                                <div>44,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('42',this,12);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./49.html">
+                                <img src="./img/clothing/5f0e2854fb724cf88bd7034faa2d5b9f.jpg">
+                                <div>배틀그라운드 로고 맨투맨</div>
+                                <div>리그 오브 레전드</div>
+                                <div>42,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('49',this,13);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./48.html">
+                                <img src="./img/clothing/f39eeea48fd04f34282e257fe1d15a1c.jpg">
+                                <div>토마리 자수 티셔츠(게임 쿠폰 포함)</div>
+                                <div>라테일</div>
+                                <div>25,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('48',this,14);"></i>
+                        </div>
+                        <div class="Goods">
+                            <a href="./48.html">
+                                <img src="./img/clothing/952dbfd904e5169044e2ccf755fb7955.jpg">
+                                <div>라그나로크 데비루치 티셔츠</div>
+                                <div>라그나로크
 
-                            </div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
-                    </div> 
+                                </div>
+                                <div>30,000원</div>
+                            </a>
+                            <!-- 아이콘 -->
+                            <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"></i>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="moreBtnContainer">
+                        <button type="button" class="moreBtn popular buttonClass"
+                            onclick="moreBtnClicked('popular')">더보기</button>
+                    </div>
+                    <br>
+                    <hr>
                 </div>
-                <br>
-                <br>
-                <div class="moreBtnContainer">
-                    <button type="button" class="moreBtn popular buttonClass" onclick="moreBtnClicked('popular')">더보기</button>
-                </div>
-                <br>
-                <hr>
             </div>
-            <div class="typeGoodsGroup">
-                <h2>배틀그라운드 의상모음전</h2>
-                <p style="color: rgba(34,34,34,.5);">오늘 저녘은 치킨이닭!</p>
-                <div class="typeGoodsList popular">
-                    <div class="Goods">
-                        <a href="./35.html">
-                            <img src="./img/clothing/01d675da61f1e0b77f89e469d490d3e2.jpg">
-                            <div>BUGGY 그래픽 반팔 티셔츠</div>
-                            <div>배틀그라운드</div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('35',this,8);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./36.html">
-                            <img src="./img/clothing/307334782e8cd04c8594e6811b41125b.jpg">
-                            <div>배틀그라운드 인게임 그래픽 티셔츠 블랙</div>
-                            <div>배틀그라운드</div>
-                            <div>19,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('36',this,9);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./37.html">
-                            <img src="./img/clothing/992fe08a8a166fedfb5786ab7b1f0037.png">
-                            <div>배틀그라운드 인게임 그래픽 티셔츠 그레이</div>
-                            <div>배틀그라운드</div>
-                            <div>19,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('37',this,10);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./41.html">
-                            <img src="./img/clothing/1d540942b192ad2222afe8d23bd33a79.jpg">
-                            <div>배틀그라운드 봄버자켓</div>
-                            <div>배틀그라운드</div>
-                            <div>59,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('41',this,11);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./42.html">
-                            <img src="./img/clothing/340232c66ba4a2a67bfbf335b33e7ed7.jpg">
-                            <div>배틀그라운드 로고 후드티</div>
-                            <div>배틀그라운드</div>
-                            <div>44,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('42',this,12);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./49.html">
-                            <img src="./img/clothing/5f0e2854fb724cf88bd7034faa2d5b9f.jpg">
-                            <div>배틀그라운드 로고 맨투맨</div>
-                            <div>리그 오브 레전드</div>
-                            <div>42,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('49',this,13);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./48.html">
-                            <img src="./img/clothing/f39eeea48fd04f34282e257fe1d15a1c.jpg">
-                            <div>토마리 자수 티셔츠(게임 쿠폰 포함)</div>
-                            <div>라테일</div>
-                            <div>25,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('48',this,14);"  ></i>
-                    </div>
-                    <div class="Goods">
-                        <a href="./48.html">
-                            <img src="./img/clothing/952dbfd904e5169044e2ccf755fb7955.jpg">
-                            <div>라그나로크 데비루치 티셔츠</div>
-                            <div>라그나로크
-
-                            </div>
-                            <div>30,000원</div>
-                        </a>
-                        <!-- 아이콘 -->
-                        <i class="fa-regular fa-heart" onclick="favoriteBtn('poro',this,15);"  ></i>
-                    </div> 
-                </div>
-                <br>
-                <br>
-                <div class="moreBtnContainer">
-                    <button type="button" class="moreBtn popular buttonClass" onclick="moreBtnClicked('popular')">더보기</button>
-                </div>
-                <br>
-                <hr>
-            </div>
-            </div>
-                
 
 
-  
+
+
         </div>
-     
- <!-- <i class="fa-regular fa-heart"></i> -->
+
+        <!-- <i class="fa-regular fa-heart"></i> -->
     </main>
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="staticBackdropLabel">관심 상품 추가</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- <div class="dropdown">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="staticBackdropLabel">관심 상품 추가</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown button
                     </button>
@@ -464,77 +378,77 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div> -->
-                상품이 좋아요 목록에 추가되었습니다.</br>
-                페이지를 이동하여 확인해보시겠습니까?
+                    상품이 좋아요 목록에 추가되었습니다.</br>
+                    페이지를 이동하여 확인해보시겠습니까?
+                </div>
+                <div class="modal-footer">
+                    <!--취소하면, 좋아요 목록에 추가된 상태로 원래 페이지로 나가야하고, -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
+                    <!-- 확인이라면, 쿠키에 추가하고 다른 페이지로 나가야한다. -->
+                    <button id="favoriteModalOK" type="button" class="btn btn-primary">확인</button>
+                </div>
             </div>
-            <div class="modal-footer">
-            <!--취소하면, 좋아요 목록에 추가된 상태로 원래 페이지로 나가야하고, -->
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
-            <!-- 확인이라면, 쿠키에 추가하고 다른 페이지로 나가야한다. -->
-            <button id="favoriteModalOK" type="button" class="btn btn-primary">확인</button>
-            </div>
-        </div>
         </div>
     </div>
     <!-- Footer mt-5 bg-light text-center -->
-    <footer class="footer container" >
+    <footer class="footer container">
         <div class="footerDiv">
             <div>
-            <ul class="footer_ul" style="display: flex;" >
-                <li>
-                    <a>회사소개</a>
-                </li>
-                <li>
-                    <a>인재채용</a>
-                </li>
-                <li><a>회사약관</a></li>
-                <li><a>개인정보처리약관</a></li>
-            </ul>
+                <ul class="footer_ul" style="display: flex;">
+                    <li>
+                        <a>회사소개</a>
+                    </li>
+                    <li>
+                        <a>인재채용</a>
+                    </li>
+                    <li><a>회사약관</a></li>
+                    <li><a>개인정보처리약관</a></li>
+                </ul>
             </div>
-            <div  class="div_sns">
-                <a href="https://www.instagram.com/" >
+            <div class="div_sns">
+                <a href="https://www.instagram.com/">
                     <i class="bi bi-instagram fs-1" , style="color: black;"></i>
                 </a>
-                <a href="https://www.twitter.com/" >
+                <a href="https://www.twitter.com/">
                     <i class="bi bi-twitter fs-1" , style="color: black;"></i>
                 </a>
                 <a href="https://www.youtube.com/">
-                    <i class="bi bi-youtube fs-1"  , style="color: black;"></i>
+                    <i class="bi bi-youtube fs-1" , style="color: black;"></i>
                 </a>
 
             </div>
         </div>
-            <div class="footer_div_dt">
+        <div class="footer_div_dt">
             <dl>
                 <dt class="dt_title">
                     크림 주식회사 · 대표 김창욱
                     <span class="blank"></span>
-                        사업자등록번호 : 570-88-01618
+                    사업자등록번호 : 570-88-01618
                     <a></a>
-                        사업자정보확인
+                    사업자정보확인
                     <span class="blank"></span>
-                        사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층
+                    사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층
                     <span class="blank"></span>
-                        호스팅 서비스 : 네이버 클라우드 (주)
+                    호스팅 서비스 : 네이버 클라우드 (주)
                     <span class="blank"></span>
                     <br><br>
                     셀러 상품의 경우 (주)마플코퍼레이션은 통신판매중개자로서 통신판매의 당사자가 아니며 상품, 거래정보, 거래에 대하여 책임을 지지 않습니다.
                     각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
                     <br><br>
-                    고객센터 
+                    고객센터
                     <span class="blank"></span>
-                    신고센터 
+                    신고센터
                     <span class="blank"></span>
-                    셀러신청  
+                    셀러신청
                     <span class="blank"></span>
-                    기업셀러신청 
+                    기업셀러신청
                     <span class="blank"></span>
-                    개인정보처리방침이용약관 
+                    개인정보처리방침이용약관
                     <span class="blank"></span>
-                    마플코퍼레이션 
+                    마플코퍼레이션
                 </dt>
             </dl>
-            </div>
+        </div>
         </div>
     </footer>
     <!-- <button id="toggle">다크 모드로 이용하기</button> -->
@@ -544,7 +458,7 @@
 
 
 
-      <script>
+    <script>
         // 페이지 상단으로 올라가는 함수
         function goToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -566,119 +480,119 @@
 
         // 다크 모드 토글 버튼 클릭 이벤트 리스너
 
-        $(".Goods > i:last-child").attr("data-bs-target","#staticBackdrop")
-        $(".Goods > i:last-child").attr("data-bs-toggle","modal")
+        $(".Goods > i:last-child").attr("data-bs-target", "#staticBackdrop")
+        $(".Goods > i:last-child").attr("data-bs-toggle", "modal")
         // /* 좋아요 버튼(하트)에 모달 링크 달기 */
         // 배열에 없으면 modal 뺴야함
         //
 
         // 더보기 버튼 클릭 
-        let a = localStorage.getItem("favoriteTypeArray") 
-        let b = a !=null ? JSON.parse(a) : [0,0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        let parentRecommend=$(".typeGoodsList> .Goods > i")
+        let a = localStorage.getItem("favoriteTypeArray")
+        let b = a != null ? JSON.parse(a) : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let parentRecommend = $(".typeGoodsList> .Goods > i")
 
-        for(let i=0; i<parentRecommend.length;i++){
+        for (let i = 0; i < parentRecommend.length; i++) {
             console.log(`${i}: ${b[i]}`)
-            if(b[i]==1){
+            if (b[i] == 1) {
                 console.log((parentRecommend[i]))
                 $(parentRecommend[i]).removeClass("fa-regular")
                 $(parentRecommend[i]).addClass("fa-solid")
                 $(parentRecommend[i]).addClass("red")
-                $(parentRecommend[i]).attr("data-bs-target","none")
-                $(parentRecommend[i]).attr("data-bs-toggle","none")
+                $(parentRecommend[i]).attr("data-bs-target", "none")
+                $(parentRecommend[i]).attr("data-bs-toggle", "none")
 
-            }else{
+            } else {
 
             }
-           
+
         }
-        $("#favoriteModalOK").click(()=>{
+        $("#favoriteModalOK").click(() => {
             // 경로 변경 
-            location.href= "./save.html"
+            location.href = "./save.html"
         })
-        function initFavorite(){
+        function initFavorite() {
             let favoriteArrays = JSON.parse(localStorage.getItem("favoriteArray"))
-            let favoriteArray= favoriteArrays["type"]
+            let favoriteArray = favoriteArrays["type"]
             // 0 기본값 1하트
         }
 
-        function moreBtnClicked(stringattr){
+        function moreBtnClicked(stringattr) {
             console.log(stringattr)
             let hideItems = $(`.typeGoodsList.${stringattr} > div:nth-child(n+5)`)
             let btn = $(`.moreBtn.${stringattr}`)
-            hideItems.attr("style","display : block ")
-            btn.attr("style","display : none ")
+            hideItems.attr("style", "display : block ")
+            btn.attr("style", "display : none ")
         }
-        let category = ["doll","airpot","clothes","statue","phonecase","pad","charge","goods"]
-        function borderBtnClicked(goodsStr){
+        let category = ["doll", "airpot", "clothes", "statue", "phonecase", "pad", "charge", "goods"]
+        function borderBtnClicked(goodsStr) {
             console.log(goodsStr)
             // 음.. border가 클릭이 되면 어떤 폴더에서 굿즈들을 잔뜩 가져오고, 그만큼 요소들을 생성하고 없애야한다.
             location.href = `./productsBy${goodsStr}.html`
             // location.href= "https://www.naver.com"
         }
-        function favoriteBtn(favoritegoods,sourceBtn,idx){
+        function favoriteBtn(favoritegoods, sourceBtn, idx) {
             // 로그
             console.log($(sourceBtn))
-            let myfavoriteGoods= localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
-            if ( $(sourceBtn).hasClass("fa-regular")){
+            let myfavoriteGoods = localStorage.getItem("바구니") != null ? JSON.parse(localStorage.getItem("바구니")) : new Array();
+            if ($(sourceBtn).hasClass("fa-regular")) {
                 $(sourceBtn).removeClass("fa-regular")
                 $(sourceBtn).addClass("fa-solid")
                 $(sourceBtn).addClass("red")
 
-                $(sourceBtn).attr("data-bs-target","none")
-                $(sourceBtn).attr("data-bs-toggle","none")
+                $(sourceBtn).attr("data-bs-target", "none")
+                $(sourceBtn).attr("data-bs-toggle", "none")
 
                 // 형제들에서, 위치,굳즈이름,게임이름,가격,Type을 가져온다.
                 // 하트 추가시 추가
-                let parentArray= $( sourceBtn).prev().children() ;
+                let parentArray = $(sourceBtn).prev().children();
 
                 const parentSrc = $(parentArray[0]).attr("src");
                 const goodsID = favoritegoods;
-                const parentGoodsName =  $(parentArray[1]).text();
-                const parentGameName =  $(parentArray[2]).text();
-                const parentPrice =  $(parentArray[3]).text();
+                const parentGoodsName = $(parentArray[1]).text();
+                const parentGameName = $(parentArray[2]).text();
+                const parentPrice = $(parentArray[3]).text();
                 const goodsType = "인형"
 
 
                 let data = new Object()
                 console.log(myfavoriteGoods)
-                if(myfavoriteGoods != null){
-                    data.number= myfavoriteGoods.length;
-                }else{
-                    data.number= 0;
+                if (myfavoriteGoods != null) {
+                    data.number = myfavoriteGoods.length;
+                } else {
+                    data.number = 0;
                 }
-                data.src=parentSrc
-                data.goodsName=parentGoodsName
-                data.gameName=parentGameName
-                data.price=parentPrice
-                data.goodsType=goodsType
+                data.src = parentSrc
+                data.goodsName = parentGoodsName
+                data.gameName = parentGameName
+                data.price = parentPrice
+                data.goodsType = goodsType
 
                 myfavoriteGoods.push(data)
 
                 localStorage.setItem("바구니", JSON.stringify(myfavoriteGoods));
                 console.log(localStorage.getItem("바구니"))
                 //b에 값 넣어서 색 값 저장해야함
-                b[idx]=1
-                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
+                b[idx] = 1
+                localStorage.setItem("favoriteTypeArray", JSON.stringify(b))
                 console.log(b)
 
-            }else if($(sourceBtn).hasClass("fa-solid")){
+            } else if ($(sourceBtn).hasClass("fa-solid")) {
                 $(sourceBtn).removeClass("fa-solid")
                 $(sourceBtn).removeClass("red")
                 $(sourceBtn).addClass("fa-regular")
-                $(sourceBtn).attr("data-bs-target","#staticBackdrop")
-                $(sourceBtn).attr("data-bs-toggle","modal")
+                $(sourceBtn).attr("data-bs-target", "#staticBackdrop")
+                $(sourceBtn).attr("data-bs-toggle", "modal")
                 //b에서 값 빼야함
                 // json에서 없애서 다시 넣어야한다. 끔찍하군.
-                b[idx]=0
-                for(let j in myfavoriteGoods){
-                    if(myfavoriteGoods[j].goodsName === favoritegoods){
+                b[idx] = 0
+                for (let j in myfavoriteGoods) {
+                    if (myfavoriteGoods[j].goodsName === favoritegoods) {
                         myfavoriteGoods.splice(j, favoritegoods)
                         j--;
                     }
                 }
                 localStorage.removeItem("favoriteTypeArray")
-                localStorage.setItem("favoriteTypeArray",JSON.stringify(b))
+                localStorage.setItem("favoriteTypeArray", JSON.stringify(b))
             }
 
 
@@ -686,8 +600,11 @@
 
     </script>
     <!-- 부트스트랩 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
-    </body>
+
+</body>
+
 </html>
