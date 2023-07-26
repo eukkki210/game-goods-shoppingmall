@@ -16,6 +16,11 @@ body{
 
     /* margin-right: 5%; */ 
 }
+
+.logo-img {
+    height: 28px;
+}
+
 .shoppingUl{
     list-style: none;
 }
